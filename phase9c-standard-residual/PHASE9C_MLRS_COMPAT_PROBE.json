@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "docker_image_id": "sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e",
+  "compat_build": {
+    "successful_roots": 2,
+    "failed_roots": 5,
+    "f77_missing_failures": 0,
+    "undefined_reference_failures": 0,
+    "write_crd_source_found": true,
+    "write_crd_object_built": true,
+    "built_src_executables": 4
+  },
+  "npt_test": {
+    "found": true,
+    "noncomment_commands": 8,
+    "contains_diff_or_cmp": true,
+    "recognized_programs": 1,
+    "executed": false
+  },
+  "vendor_source_unchanged": true,
+  "gate": "BUILD_STILL_BLOCKED",
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

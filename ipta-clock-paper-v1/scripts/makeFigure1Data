@@ -1,0 +1,12 @@
+#!/bin/tcsh
+#
+echo "STARTING"
+foreach tim (`ls -1 ../finalFrequentistData | grep tim`)
+ echo $tim
+ \rm dataForFigure1/$tim.toas
+ touch dataForFigure1/$tim.toas
+ 
+ grep -v FORMAT ../finalFrequentistData/$tim | grep "pta " | awk '{print $3}' >> dataForFigure1/$tim.toas
+ 
+end
+

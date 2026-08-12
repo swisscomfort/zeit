@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "pep_commit": "480ed0cfc9e97ec9057521165383214bd54df162",
+  "target_jd": 2454080,
+  "pep_public_ephemeris": {
+    "dated_card_image_tapes": 3,
+    "cover_target_2006": 0,
+    "min_jd": 2441840,
+    "max_jd": 2444020,
+    "usable_for_2006_standard_baseline": false
+  },
+  "geoazur": {
+    "fetch": "PASS",
+    "sha256": "9feb043a8cf3907e2414f2f6b5eb28f7f1ef2c1d583430bfb38dc965ac0201ac",
+    "forms": 0,
+    "interesting_links": 0,
+    "residual_term_hits": 0,
+    "inpop_term_hits": 0,
+    "year_2006_hits": 0,
+    "mcdonald_related_hits": 0,
+    "residual_interface_found": "NO"
+  },
+  "external_2006_llr_ingested": true,
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

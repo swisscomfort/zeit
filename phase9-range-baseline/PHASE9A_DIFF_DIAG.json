@@ -1,0 +1,102 @@
+{
+  "status": "REVIEW",
+  "classification": "STRUCTURAL_DIFFERENCES",
+  "files": {
+    "tv1.out": {
+      "sha1": "945b26f67d9f33d9573db71bdb40c4b188ca8f11c128d8b482a791e7395f49a2",
+      "sha2": "09382163765aa0088f6ef42f16d4eafb0fabd8cc74c760b1bf6a5edd2e0d83c7",
+      "bytes1": 143699,
+      "bytes2": 143699,
+      "raw_identical": false,
+      "line_count1": 1560,
+      "line_count2": 1560,
+      "different_aligned_lines": 7,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 2,
+      "structural_lines": 5,
+      "max_abs_numeric_delta": 0.16666999999999998,
+      "max_rel_numeric_delta": 0.4852992649632482
+    },
+    "tv1.abc": {
+      "sha1": "bd3bef166d3cca1e0de5fd2971dd37a8183b3f3bb278eb217f84560e73c83242",
+      "sha2": "bd3bef166d3cca1e0de5fd2971dd37a8183b3f3bb278eb217f84560e73c83242",
+      "bytes1": 20,
+      "bytes2": 20,
+      "raw_identical": true,
+      "line_count1": null,
+      "line_count2": null,
+      "different_aligned_lines": 0,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 0,
+      "structural_lines": 0,
+      "max_abs_numeric_delta": 0.0,
+      "max_rel_numeric_delta": 0.0
+    },
+    "tv1.verout": {
+      "sha1": "319ad6ffcbe72c3b8bfb040978e222a6adc5c91e2fe24d32666fdc6f217ace09",
+      "sha2": "319ad6ffcbe72c3b8bfb040978e222a6adc5c91e2fe24d32666fdc6f217ace09",
+      "bytes1": 1116,
+      "bytes2": 1116,
+      "raw_identical": true,
+      "line_count1": null,
+      "line_count2": null,
+      "different_aligned_lines": 0,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 0,
+      "structural_lines": 0,
+      "max_abs_numeric_delta": 0.0,
+      "max_rel_numeric_delta": 0.0
+    },
+    "tv2.out": {
+      "sha1": "8f1beb33a8020f2c39e75de1568b631190b33326a52819f47d11c0182f6d0f2e",
+      "sha2": "05a47db8f23ff6654c3206c382fcec000d14be3b2d9eeb07251d746d67611083",
+      "bytes1": 67770,
+      "bytes2": 67770,
+      "raw_identical": false,
+      "line_count1": 830,
+      "line_count2": 830,
+      "different_aligned_lines": 2,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 0,
+      "structural_lines": 2,
+      "max_abs_numeric_delta": 0.0,
+      "max_rel_numeric_delta": 0.0
+    },
+    "tv2.abc": {
+      "sha1": "bd3bef166d3cca1e0de5fd2971dd37a8183b3f3bb278eb217f84560e73c83242",
+      "sha2": "bd3bef166d3cca1e0de5fd2971dd37a8183b3f3bb278eb217f84560e73c83242",
+      "bytes1": 20,
+      "bytes2": 20,
+      "raw_identical": true,
+      "line_count1": null,
+      "line_count2": null,
+      "different_aligned_lines": 0,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 0,
+      "structural_lines": 0,
+      "max_abs_numeric_delta": 0.0,
+      "max_rel_numeric_delta": 0.0
+    },
+    "tv2.verout": {
+      "sha1": "1113bd5bb4d8797194742e657383c5d946b6dce3f36bd5187ec21f49a8166946",
+      "sha2": "1113bd5bb4d8797194742e657383c5d946b6dce3f36bd5187ec21f49a8166946",
+      "bytes1": 1588,
+      "bytes2": 1588,
+      "raw_identical": true,
+      "line_count1": null,
+      "line_count2": null,
+      "different_aligned_lines": 0,
+      "metadata_only_lines": 0,
+      "numeric_only_lines": 0,
+      "structural_lines": 0,
+      "max_abs_numeric_delta": 0.0,
+      "max_rel_numeric_delta": 0.0
+    }
+  },
+  "totals": {
+    "metadata_only_lines": 0,
+    "numeric_only_lines": 2,
+    "structural_lines": 7
+  },
+  "phase9b_gate": false
+}

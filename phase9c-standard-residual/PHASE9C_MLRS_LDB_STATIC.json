@@ -1,0 +1,761 @@
+{
+  "status": "OK",
+  "ldb": {
+    "path": "bin/ldb_crd",
+    "sha256": "bfa04ad9d45fe49a2188840421b7aa05307652f2d0626bf64f9cb3c5f2fa55d0",
+    "shebang": "#! /bin/csh -f",
+    "interpreter": "/bin/csh -f",
+    "commands": [
+      {
+        "line": 58,
+        "text": "set DATA_DIR_LIB= (data/lib/)"
+      },
+      {
+        "line": 59,
+        "text": "set DATA_DIR_FR= (data/fr/)"
+      },
+      {
+        "line": 60,
+        "text": "set DATA_DIR= (data/analysis/)"
+      },
+      {
+        "line": 61,
+        "text": "set SLR_DATA_DIR= (data/analysis/)"
+      },
+      {
+        "line": 62,
+        "text": "@ SWFAIL = 0"
+      },
+      {
+        "line": 63,
+        "text": "@ CSTAT = 0"
+      },
+      {
+        "line": 64,
+        "text": "@ NCSTAT = 0"
+      },
+      {
+        "line": 65,
+        "text": "@ FCSTAT = 0"
+      },
+      {
+        "line": 67,
+        "text": "if ( $#argv == 0 ) then"
+      },
+      {
+        "line": 68,
+        "text": "  echo No file specified. Try again!"
+      },
+      {
+        "line": 69,
+        "text": "  exit 1"
+      },
+      {
+        "line": 70,
+        "text": "endif"
+      },
+      {
+        "line": 71,
+        "text": "echo == Started processing lunar data file $1. =="
+      },
+      {
+        "line": 77,
+        "text": "if (-e $DATA_DIR$1\".errorc\") then"
+      },
+      {
+        "line": 78,
+        "text": "  rm -f  $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 79,
+        "text": "endif"
+      },
+      {
+        "line": 80,
+        "text": "if (-e $DATA_DIR$1\".llc\") then"
+      },
+      {
+        "line": 81,
+        "text": "  rm -f $DATA_DIR$1\".llc\""
+      },
+      {
+        "line": 82,
+        "text": "endif"
+      },
+      {
+        "line": 83,
+        "text": "if (-e $DATA_DIR$1\".lsc\") then"
+      },
+      {
+        "line": 84,
+        "text": "  rm -f $DATA_DIR$1\".lsc\""
+      },
+      {
+        "line": 85,
+        "text": "endif"
+      },
+      {
+        "line": 86,
+        "text": "if (-e $DATA_DIR$1\".frd\") then"
+      },
+      {
+        "line": 87,
+        "text": "  rm -f $DATA_DIR$1\".frd\""
+      },
+      {
+        "line": 88,
+        "text": "endif"
+      },
+      {
+        "line": 89,
+        "text": "if (-e $DATA_DIR$1\".npt\") then"
+      },
+      {
+        "line": 90,
+        "text": "  rm -f $DATA_DIR$1\".npt\""
+      },
+      {
+        "line": 91,
+        "text": "endif"
+      },
+      {
+        "line": 100,
+        "text": "  touch $DATA_DIR$1\".llc\""
+      },
+      {
+        "line": 115,
+        "text": "echo Recalc is now executing..."
+      },
+      {
+        "line": 118,
+        "text": "bin/llr_npt_crd -r -p poldat_thruJ17 \\"
+      },
+      {
+        "line": 119,
+        "text": "        -i $DATA_DIR$1\".frcal\" -o $DATA_DIR$1\".frrec\" \\"
+      },
+      {
+        "line": 120,
+        "text": "\t-c  $DATA_DIR$1\".rsc\" -l $DATA_DIR$1\".llc\" -s $DATA_DIR$1\".lsc\" \\"
+      },
+      {
+        "line": 121,
+        "text": "\t>>& $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 123,
+        "text": "if (!(-z $DATA_DIR$1\".errorc\")) then"
+      },
+      {
+        "line": 124,
+        "text": "    echo Recalc Failed."
+      },
+      {
+        "line": 125,
+        "text": "      exit 1"
+      },
+      {
+        "line": 126,
+        "text": "endif"
+      },
+      {
+        "line": 132,
+        "text": "echo Poisson Filter is now executing..."
+      },
+      {
+        "line": 133,
+        "text": "bin/Poisson_crd -i $DATA_DIR$1\".frrec\" -o $DATA_DIR$1\".frfil\" \\"
+      },
+      {
+        "line": 134,
+        "text": "\t-c data/lib/filter_crd.pc \\"
+      },
+      {
+        "line": 135,
+        "text": "\t-l $DATA_DIR$1\".llc\" -s $DATA_DIR$1\".lsc\" >>& $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 136,
+        "text": "@ PSTAT= $status"
+      },
+      {
+        "line": 137,
+        "text": "if ($PSTAT >= 2) then"
+      },
+      {
+        "line": 138,
+        "text": "  echo Poisson Failed."
+      },
+      {
+        "line": 139,
+        "text": "  mv $DATA_DIR$1\".frrec\" $DATA_DIR$1\".frfil\""
+      },
+      {
+        "line": 140,
+        "text": "  @ SWFAIL= 1"
+      },
+      {
+        "line": 141,
+        "text": "  goto end"
+      },
+      {
+        "line": 142,
+        "text": "endif"
+      },
+      {
+        "line": 147,
+        "text": "echo Lun_auto is now executing..."
+      },
+      {
+        "line": 148,
+        "text": "bin/lun_auto_crd -i $DATA_DIR$1\".frfil\" -o $DATA_DIR$1\".frfil2\" \\"
+      },
+      {
+        "line": 149,
+        "text": "\t-l $DATA_DIR$1\".llc\" -s $DATA_DIR$1\".lsc\" \\"
+      },
+      {
+        "line": 150,
+        "text": "\t>>& $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 151,
+        "text": "@ PSTAT= $status"
+      },
+      {
+        "line": 152,
+        "text": "if ($PSTAT <> 0) then"
+      },
+      {
+        "line": 153,
+        "text": "  echo Lun_auto Failed."
+      },
+      {
+        "line": 154,
+        "text": "  mv $DATA_DIR$1\".frfil\" $DATA_DIR$1\".frfil2\""
+      },
+      {
+        "line": 155,
+        "text": "endif"
+      },
+      {
+        "line": 161,
+        "text": "echo Lun_sdqi is now executing..."
+      },
+      {
+        "line": 162,
+        "text": "bin/lun_sdqi_crd -i $DATA_DIR$1\".frfil2\" -o $DATA_DIR$1\".frfil3\" \\"
+      },
+      {
+        "line": 163,
+        "text": "\t-l $DATA_DIR$1\".llc\" -s $DATA_DIR$1\".lsc\" \\"
+      },
+      {
+        "line": 164,
+        "text": "\t>>& $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 165,
+        "text": "@ PSTAT= $status"
+      },
+      {
+        "line": 166,
+        "text": "if ($PSTAT <> 0) then"
+      },
+      {
+        "line": 167,
+        "text": "  echo Lun_sdqi Failed."
+      },
+      {
+        "line": 168,
+        "text": "  mv $DATA_DIR$1\".frfil2\" $DATA_DIR$1\".frfil3\""
+      },
+      {
+        "line": 169,
+        "text": "endif"
+      },
+      {
+        "line": 174,
+        "text": "echo NormalPoint is now executing..."
+      },
+      {
+        "line": 177,
+        "text": "bin/llr_npt_crd -n -p poldat_thruJ17 \\"
+      },
+      {
+        "line": 178,
+        "text": "        -i $DATA_DIR$1\".frfil3\" -o $DATA_DIR$1\".frfin\" \\"
+      },
+      {
+        "line": 179,
+        "text": "\t-m $DATA_DIR$1\".npt\" -c  $DATA_DIR$1\".rsc\" -l $DATA_DIR$1\".llc\" \\"
+      },
+      {
+        "line": 180,
+        "text": "\t-s $DATA_DIR$1\".lsc\" >>& $DATA_DIR$1\".errorc\""
+      },
+      {
+        "line": 181,
+        "text": "if (!(-z $DATA_DIR$1\".errorc\")) then"
+      },
+      {
+        "line": 182,
+        "text": "    echo NormalPoint Failed."
+      },
+      {
+        "line": 183,
+        "text": "    @ SWFAIL= 1"
+      },
+      {
+        "line": 184,
+        "text": "    goto end"
+      },
+      {
+        "line": 185,
+        "text": "endif"
+      },
+      {
+        "line": 187,
+        "text": "bin/frd_strip $DATA_DIR$1\".frfin\" $DATA_DIR$1\".frd\""
+      },
+      {
+        "line": 191,
+        "text": "end:"
+      },
+      {
+        "line": 193,
+        "text": "echo Cleaning up..."
+      },
+      {
+        "line": 194,
+        "text": "if (-e $DATA_DIR$1\".templist\") \\"
+      },
+      {
+        "line": 195,
+        "text": "    rm -f $DATA_DIR$1\".templist\""
+      },
+      {
+        "line": 199,
+        "text": "echo == Finished processing lunar data file $1! =="
+      },
+      {
+        "line": 200,
+        "text": "unset DATA_DIR"
+      },
+      {
+        "line": 201,
+        "text": "exit 0"
+      }
+    ],
+    "assignments": [
+      {
+        "line": 58,
+        "text": "set DATA_DIR_LIB= (data/lib/)"
+      },
+      {
+        "line": 59,
+        "text": "set DATA_DIR_FR= (data/fr/)"
+      },
+      {
+        "line": 60,
+        "text": "set DATA_DIR= (data/analysis/)"
+      },
+      {
+        "line": 61,
+        "text": "set SLR_DATA_DIR= (data/analysis/)"
+      }
+    ],
+    "conditionals": [
+      {
+        "line": 67,
+        "text": "if ( $#argv == 0 ) then"
+      },
+      {
+        "line": 70,
+        "text": "endif"
+      },
+      {
+        "line": 77,
+        "text": "if (-e $DATA_DIR$1\".errorc\") then"
+      },
+      {
+        "line": 79,
+        "text": "endif"
+      },
+      {
+        "line": 80,
+        "text": "if (-e $DATA_DIR$1\".llc\") then"
+      },
+      {
+        "line": 82,
+        "text": "endif"
+      },
+      {
+        "line": 83,
+        "text": "if (-e $DATA_DIR$1\".lsc\") then"
+      },
+      {
+        "line": 85,
+        "text": "endif"
+      },
+      {
+        "line": 86,
+        "text": "if (-e $DATA_DIR$1\".frd\") then"
+      },
+      {
+        "line": 88,
+        "text": "endif"
+      },
+      {
+        "line": 89,
+        "text": "if (-e $DATA_DIR$1\".npt\") then"
+      },
+      {
+        "line": 91,
+        "text": "endif"
+      },
+      {
+        "line": 123,
+        "text": "if (!(-z $DATA_DIR$1\".errorc\")) then"
+      },
+      {
+        "line": 126,
+        "text": "endif"
+      },
+      {
+        "line": 137,
+        "text": "if ($PSTAT >= 2) then"
+      },
+      {
+        "line": 142,
+        "text": "endif"
+      },
+      {
+        "line": 152,
+        "text": "if ($PSTAT <> 0) then"
+      },
+      {
+        "line": 155,
+        "text": "endif"
+      },
+      {
+        "line": 166,
+        "text": "if ($PSTAT <> 0) then"
+      },
+      {
+        "line": 169,
+        "text": "endif"
+      },
+      {
+        "line": 181,
+        "text": "if (!(-z $DATA_DIR$1\".errorc\")) then"
+      },
+      {
+        "line": 185,
+        "text": "endif"
+      },
+      {
+        "line": 191,
+        "text": "end:"
+      },
+      {
+        "line": 194,
+        "text": "if (-e $DATA_DIR$1\".templist\") \\"
+      }
+    ],
+    "invoked_programs": [
+      {
+        "program": "Poisson_crd",
+        "lines": [
+          {
+            "line": 133,
+            "text": "bin/Poisson_crd -i $DATA_DIR$1\".frrec\" -o $DATA_DIR$1\".frfil\" \\"
+          }
+        ]
+      },
+      {
+        "program": "lun_auto_crd",
+        "lines": [
+          {
+            "line": 148,
+            "text": "bin/lun_auto_crd -i $DATA_DIR$1\".frfil\" -o $DATA_DIR$1\".frfil2\" \\"
+          }
+        ]
+      },
+      {
+        "program": "lun_sdqi_crd",
+        "lines": [
+          {
+            "line": 162,
+            "text": "bin/lun_sdqi_crd -i $DATA_DIR$1\".frfil2\" -o $DATA_DIR$1\".frfil3\" \\"
+          }
+        ]
+      },
+      {
+        "program": "frd_strip",
+        "lines": [
+          {
+            "line": 187,
+            "text": "bin/frd_strip $DATA_DIR$1\".frfin\" $DATA_DIR$1\".frd\""
+          }
+        ]
+      },
+      {
+        "program": "llr_npt_crd",
+        "lines": [
+          {
+            "line": 116,
+            "text": "##bin/llr_npt_crd -r \\"
+          },
+          {
+            "line": 118,
+            "text": "bin/llr_npt_crd -r -p poldat_thruJ17 \\"
+          },
+          {
+            "line": 175,
+            "text": "#bin/llr_npt_crd -n \\"
+          },
+          {
+            "line": 177,
+            "text": "bin/llr_npt_crd -n -p poldat_thruJ17 \\"
+          }
+        ]
+      }
+    ],
+    "resolved_tokens": [
+      {
+        "token": "(data/analysis/)",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "(data/fr/)",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "(data/lib/)",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "Lun_auto",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "Lun_sdqi",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "Poisson",
+        "status": "NOT_FOUND",
+        "matches": []
+      },
+      {
+        "token": "bin/Poisson_crd",
+        "status": "FOUND",
+        "matches": [
+          "bin/Poisson_crd"
+        ]
+      },
+      {
+        "token": "bin/frd_strip",
+        "status": "FOUND",
+        "matches": [
+          "bin/frd_strip"
+        ]
+      },
+      {
+        "token": "bin/llr_npt_crd",
+        "status": "FOUND",
+        "matches": [
+          "bin/llr_npt_crd"
+        ]
+      },
+      {
+        "token": "bin/lun_auto_crd",
+        "status": "FOUND",
+        "matches": [
+          "bin/lun_auto_crd"
+        ]
+      },
+      {
+        "token": "bin/lun_sdqi_crd",
+        "status": "FOUND",
+        "matches": [
+          "bin/lun_sdqi_crd"
+        ]
+      },
+      {
+        "token": "data/lib/filter_crd.pc",
+        "status": "FOUND",
+        "matches": [
+          "data/lib/filter_crd.pc"
+        ]
+      }
+    ]
+  },
+  "npt_test": {
+    "sha256": "13a89c363a05e35cf9b147e45eea8850045f24fb4f4b0a56181f60b7f7f44e9c",
+    "sessions": [
+      "s25y11d016t0231\\#103",
+      "s25y11d042t0234\\#103"
+    ],
+    "diffs": [
+      {
+        "line": 6,
+        "text": "diff data/analysis/s25y11d016t0231\\#103.npt data/analysis/ref/s25y11d016t0231\\#103.npt"
+      },
+      {
+        "line": 8,
+        "text": "diff data/analysis/s25y11d016t0231\\#103.frd data/analysis/ref/s25y11d016t0231\\#103.frd"
+      },
+      {
+        "line": 10,
+        "text": "diff data/analysis/s25y11d042t0234\\#103.npt data/analysis/ref/s25y11d042t0234\\#103.npt"
+      },
+      {
+        "line": 11,
+        "text": "diff data/analysis/s25y11d042t0234\\#103.frd data/analysis/ref/s25y11d042t0234\\#103.frd"
+      }
+    ],
+    "executed": false
+  },
+  "binaries": [
+    {
+      "file": "bin/BullA",
+      "sha256": "a17dffdbb4855ccdc7b9f48c8766388cecf93c3c3360b33031010570c2f80b6e",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=1675210921ea59df1e73d77096bfdac11e78885a, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007ffbbb954000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007ffbbb600000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007ffbbb956000)"
+      ],
+      "missing": []
+    },
+    {
+      "file": "bin/Poisson_crd",
+      "sha256": "000fa34cb0fff486e21b990b3db0751da114a817a304146ecae907ef35ebb299",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=d595796ef06e1d95dca35587f60a6615e924a31f, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007f6f7da35000)",
+        "\tlibgfortran.so.3 => not found",
+        "\tlibm.so.6 => /lib64/libm.so.6 (0x00007f6f7d8f7000)",
+        "\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f6f7d8c9000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007f6f7d600000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007f6f7da37000)"
+      ],
+      "missing": [
+        "libgfortran.so.3 => not found"
+      ]
+    },
+    {
+      "file": "bin/XCgetBullAM",
+      "sha256": "73e5956585889b0a1532a58597a76f23b8e6fd83ca060f2288b37c2f6d8ace5d",
+      "type": "Bourne-Again shell script, ASCII text executable",
+      "ldd": [],
+      "missing": []
+    },
+    {
+      "file": "bin/XClungeo",
+      "sha256": "ae84b0fd8b3b245f60bc0b28238d2a190828ce2476802c4795c0cf5c60453655",
+      "type": "Bourne-Again shell script, ASCII text executable",
+      "ldd": [],
+      "missing": []
+    },
+    {
+      "file": "bin/frd_strip",
+      "sha256": "eb09dd917d5bd18473f4194ead7579e862e8ad4bb623f96689e1fb8207b7c596",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=a5f7d910331b925cbab211c1297be1c9bad2667e, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007fc26381c000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007fc263400000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007fc26381e000)"
+      ],
+      "missing": []
+    },
+    {
+      "file": "bin/genpred",
+      "sha256": "af4c1b28f7272af486e4ecbfce56d9548a30ceecf6dc976c835af8a9983caac5",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=05ccae870b176e6810672ae2198252ad7335b1bf, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007f5fe3940000)",
+        "\tlibgfortran.so.3 => not found",
+        "\tlibm.so.6 => /lib64/libm.so.6 (0x00007f5fe3802000)",
+        "\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f5fe37d4000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007f5fe3400000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007f5fe3942000)"
+      ],
+      "missing": [
+        "libgfortran.so.3 => not found"
+      ]
+    },
+    {
+      "file": "bin/ldb_crd",
+      "sha256": "bfa04ad9d45fe49a2188840421b7aa05307652f2d0626bf64f9cb3c5f2fa55d0",
+      "type": "C shell script, ASCII text executable",
+      "ldd": [],
+      "missing": []
+    },
+    {
+      "file": "bin/llr_npt_crd",
+      "sha256": "5842eee9104c5b74436a9afcac83cc43064e2ef130549e3e30ecb94e27c3fe3c",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=88cc3fcd742235b24c6e3d159b4ed209e46cb9f2, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007fc1a297a000)",
+        "\tlibgfortran.so.3 => not found",
+        "\tlibm.so.6 => /lib64/libm.so.6 (0x00007fc1a283c000)",
+        "\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fc1a280e000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007fc1a2400000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007fc1a297c000)"
+      ],
+      "missing": [
+        "libgfortran.so.3 => not found"
+      ]
+    },
+    {
+      "file": "bin/lun_auto_crd",
+      "sha256": "7eb960cedc5ba92e0d9aa84377b33a1c92f0568eb9c67d6e79af511f910b977a",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=f9f7c7d50478c5d7abe4e6c0e49f7db28d6e98da, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007fd34bd41000)",
+        "\tlibm.so.6 => /lib64/libm.so.6 (0x00007fd34bc03000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007fd34b800000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007fd34bd43000)"
+      ],
+      "missing": []
+    },
+    {
+      "file": "bin/lun_sdqi_crd",
+      "sha256": "d4dce71146fbfc44a5f41352b650eb61eb409ea07eda060ff0895f643a52cf5c",
+      "type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=0698f344c43cb38a4c680d7171ebd369b827f2ee, with debug_info, not stripped",
+      "ldd": [
+        "\tlinux-vdso.so.1 (0x00007fa3f8680000)",
+        "\tlibm.so.6 => /lib64/libm.so.6 (0x00007fa3f8542000)",
+        "\tlibc.so.6 => /lib64/libc.so.6 (0x00007fa3f8200000)",
+        "\t/lib64/ld-linux-x86-64.so.2 (0x00007fa3f8682000)"
+      ],
+      "missing": []
+    }
+  ],
+  "required_programs": [
+    "Poisson_crd",
+    "frd_strip",
+    "llr_npt_crd",
+    "lun_auto_crd",
+    "lun_sdqi_crd"
+  ],
+  "required_programs_missing_libraries": {
+    "Poisson_crd": [
+      "libgfortran.so.3 => not found"
+    ],
+    "llr_npt_crd": [
+      "libgfortran.so.3 => not found"
+    ]
+  },
+  "gate": "REFERENCE_RUNTIME_COMPAT_REQUIRED",
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

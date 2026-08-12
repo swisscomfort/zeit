@@ -1,0 +1,204 @@
+STATUS OK
+SUCCESSFUL_BUILD_ROOTS 2
+FAILED_BUILD_ROOTS 5
+BUILD_SUCCESS MLRS_Lunar_Code/src/utilib
+BUILD_SUCCESS MLRS_Lunar_Code/src/bulla
+BUILD_FAIL MLRS_Lunar_Code/src/Poisson
+  CONTEXT_BEGIN
+     35 |       |                                      1
+     36 | Warning: Deleted feature: Step expression in DO loop at (1) must be integer
+     37 | Poisson_crd.f:1062:72:
+     38 | 
+     39 |  1062 |      +            error('Too many slopes (>500)',nslopes)
+     40 |       |                                                                        1
+     41 | Error: Type mismatch in argument 'ierr' at (1); passed INTEGER(2) to INTEGER(4)
+     42 | Poisson_crd.f:1385:72:
+     43 | 
+     44 |  1385 |      +        error('Findanom - too many possible data bins (>2500)',i)
+     45 |       |                                                                        1
+     46 | Error: Type mismatch in argument 'ierr' at (1); passed INTEGER(2) to INTEGER(4)
+     47 | Poisson_crd.f:1409:72:
+     48 | 
+     49 |  1409 |      +        error('Findanom - too many possible anomaly bins (>50)',i)
+  CONTEXT_END
+  CONTEXT_BEGIN
+     40 |       |                                                                        1
+     41 | Error: Type mismatch in argument 'ierr' at (1); passed INTEGER(2) to INTEGER(4)
+     42 | Poisson_crd.f:1385:72:
+     43 | 
+     44 |  1385 |      +        error('Findanom - too many possible data bins (>2500)',i)
+     45 |       |                                                                        1
+     46 | Error: Type mismatch in argument 'ierr' at (1); passed INTEGER(2) to INTEGER(4)
+     47 | Poisson_crd.f:1409:72:
+     48 | 
+     49 |  1409 |      +        error('Findanom - too many possible anomaly bins (>50)',i)
+     50 |       |                                                                        1
+     51 | Error: Type mismatch in argument 'ierr' at (1); passed INTEGER(2) to INTEGER(4)
+     52 | Poisson_crd.f:1275:72:
+     53 | 
+     54 |  1275 |       IF (m.gt.10000) CALL error('More than 10000 bins!',m)
+  CONTEXT_END
+BUILD_FAIL MLRS_Lunar_Code/src/genpred
+  CONTEXT_BEGIN
+    371 |       |                                                                        1
+    372 | Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 201 at (1)
+    373 | djeulpkg.f:406:24:
+    374 | 
+    375 |   406 |       CALL MATMUL(GASTM,BODTEL,CELTEL,6,3,1)
+    376 |       |                        1
+    377 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    378 | djeulpkg.f:414:25:
+    379 | 
+    380 |   414 |       CALL MATMUL(NUTPRM,CELTEL,EPHMTEL,6,3,1)
+    381 |       |                         1
+    382 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    383 | djeulpkg.f:1334:25:
+    384 | 
+    385 |  1334 |  CALL MATMUL(LIBMAT,BODRFL,CELRFL,6,3,1)
+  CONTEXT_END
+  CONTEXT_BEGIN
+    376 |       |                        1
+    377 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    378 | djeulpkg.f:414:25:
+    379 | 
+    380 |   414 |       CALL MATMUL(NUTPRM,CELTEL,EPHMTEL,6,3,1)
+    381 |       |                         1
+    382 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    383 | djeulpkg.f:1334:25:
+    384 | 
+    385 |  1334 |  CALL MATMUL(LIBMAT,BODRFL,CELRFL,6,3,1)
+    386 |       |                         1
+    387 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    388 | djeulpkg.f:1340:26:
+    389 | 
+    390 |  1340 |    CALL MATMUL(PRECM,CELRFL,EPHRFL,6,3,1)
+  CONTEXT_END
+BUILD_FAIL MLRS_Lunar_Code/src/llr_npt
+  CONTEXT_BEGIN
+    307 |       |                                                                        1
+    308 | Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 201 at (1)
+    309 | jeulpkg.f:397:24:
+    310 | 
+    311 |   397 |       CALL MATMUL(GASTM,BODTEL,CELTEL,6,3,1)
+    312 |       |                        1
+    313 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    314 | jeulpkg.f:401:25:
+    315 | 
+    316 |   401 |       CALL MATMUL(NUTPRM,CELTEL,EPHMTEL,6,3,1)
+    317 |       |                         1
+    318 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    319 | jeulpkg.f:1262:25:
+    320 | 
+    321 |  1262 |  CALL MATMUL(LIBMAT,BODRFL,CELRFL,6,3,1)
+  CONTEXT_END
+  CONTEXT_BEGIN
+    312 |       |                        1
+    313 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    314 | jeulpkg.f:401:25:
+    315 | 
+    316 |   401 |       CALL MATMUL(NUTPRM,CELTEL,EPHMTEL,6,3,1)
+    317 |       |                         1
+    318 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    319 | jeulpkg.f:1262:25:
+    320 | 
+    321 |  1262 |  CALL MATMUL(LIBMAT,BODRFL,CELRFL,6,3,1)
+    322 |       |                         1
+    323 | Error: Actual argument contains too few elements for dummy argument 'b' (6/18) at (1)
+    324 | jeulpkg.f:1268:26:
+    325 | 
+    326 |  1268 |    CALL MATMUL(PRECM,CELRFL,EPHRFL,6,3,1)
+  CONTEXT_END
+BUILD_FAIL MLRS_Lunar_Code/src/lun_auto
+  CONTEXT_BEGIN
+    513 |    40 |           &data_recd->nptvers, &data_recd->frsvers);
+    514 |       |                                ~~~~~~~~~~~~~~~~~~~
+    515 |       |                                |
+    516 |       |                                char (*)[41]
+    517 | cc -g -Wall -I../include   -c -o ../utilib/write_crd_MLRS.o ../utilib/write_crd_MLRS.c
+    518 | cc -g -Wall -I../include -o lun_auto_crd lun_auto_crd.o ../utilib/getfield.o ../utilib/read_crd.o ../utilib/write_crd.o ../utilib/read_crd_MLRS.o ../utilib/write_crd_MLRS.o  -lm
+    519 | /usr/bin/ld: ../utilib/write_crd.o:(.bss+0x0): multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    520 | /usr/bin/ld: ../utilib/read_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd_MLRS.c:5: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    521 | /usr/bin/ld: ../utilib/write_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/write_crd_MLRS.c:8: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    522 | collect2: error: ld returned 1 exit status
+    523 | make: *** [makefile:18: lac] Error 1
+  CONTEXT_END
+  CONTEXT_BEGIN
+    514 |       |                                ~~~~~~~~~~~~~~~~~~~
+    515 |       |                                |
+    516 |       |                                char (*)[41]
+    517 | cc -g -Wall -I../include   -c -o ../utilib/write_crd_MLRS.o ../utilib/write_crd_MLRS.c
+    518 | cc -g -Wall -I../include -o lun_auto_crd lun_auto_crd.o ../utilib/getfield.o ../utilib/read_crd.o ../utilib/write_crd.o ../utilib/read_crd_MLRS.o ../utilib/write_crd_MLRS.o  -lm
+    519 | /usr/bin/ld: ../utilib/write_crd.o:(.bss+0x0): multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    520 | /usr/bin/ld: ../utilib/read_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd_MLRS.c:5: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    521 | /usr/bin/ld: ../utilib/write_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/write_crd_MLRS.c:8: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+    522 | collect2: error: ld returned 1 exit status
+    523 | make: *** [makefile:18: lac] Error 1
+  CONTEXT_END
+BUILD_FAIL MLRS_Lunar_Code/src/utils
+  CONTEXT_BEGIN
+     29 |       |             ^~~~~~~~
+     30 | frd_strip.c:110:4: warning: implicit declaration of function 'read_30' [-Wimplicit-function-declaration]
+     31 |   110 |    read_30 (str, &d30);
+     32 |       |    ^~~~~~~
+     33 | gcc -g -I/usr/include -I. -I../include -I.  frd_strip.o ../utilib/read_crd.o ../utilib/read_crd_MLRS.o ../utilib/write_crd.o \
+     34 | 	-lm -o frd_strip
+     35 | /usr/bin/ld: ../utilib/read_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd_MLRS.c:5: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+     36 | /usr/bin/ld: ../utilib/write_crd.o:(.bss+0x0): multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+     37 | collect2: error: ld returned 1 exit status
+     38 | make: *** [makefile:16: frs] Error 1
+  CONTEXT_END
+  CONTEXT_BEGIN
+     30 | frd_strip.c:110:4: warning: implicit declaration of function 'read_30' [-Wimplicit-function-declaration]
+     31 |   110 |    read_30 (str, &d30);
+     32 |       |    ^~~~~~~
+     33 | gcc -g -I/usr/include -I. -I../include -I.  frd_strip.o ../utilib/read_crd.o ../utilib/read_crd_MLRS.o ../utilib/write_crd.o \
+     34 | 	-lm -o frd_strip
+     35 | /usr/bin/ld: ../utilib/read_crd_MLRS.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd_MLRS.c:5: multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+     36 | /usr/bin/ld: ../utilib/write_crd.o:(.bss+0x0): multiple definition of `stro'; ../utilib/read_crd.o:/work/MLRS_Lunar_Code/src/lun_auto/../utilib/read_crd.c:16: first defined here
+     37 | collect2: error: ld returned 1 exit status
+     38 | make: *** [makefile:16: frs] Error 1
+  CONTEXT_END
+NPT_TEST_SHA256 13a89c363a05e35cf9b147e45eea8850045f24fb4f4b0a56181f60b7f7f44e9c
+NPT_TEST_COMMANDS 8
+NPT    4 | bin/ldb_crd s25y11d016t0231\#103
+NPT    5 | echo comparing normal point files:
+NPT    6 | diff data/analysis/s25y11d016t0231\#103.npt data/analysis/ref/s25y11d016t0231\#103.npt
+NPT    7 | echo comparing full rate files:
+NPT    8 | diff data/analysis/s25y11d016t0231\#103.frd data/analysis/ref/s25y11d016t0231\#103.frd
+NPT    9 | bin/ldb_crd s25y11d042t0234\#103
+NPT   10 | diff data/analysis/s25y11d042t0234\#103.npt data/analysis/ref/s25y11d042t0234\#103.npt
+NPT   11 | diff data/analysis/s25y11d042t0234\#103.frd data/analysis/ref/s25y11d042t0234\#103.frd
+NPT_COMPARISONS 4
+NPT_COMPARE    6 | diff data/analysis/s25y11d016t0231\#103.npt data/analysis/ref/s25y11d016t0231\#103.npt
+NPT_COMPARE    8 | diff data/analysis/s25y11d016t0231\#103.frd data/analysis/ref/s25y11d016t0231\#103.frd
+NPT_COMPARE   10 | diff data/analysis/s25y11d042t0234\#103.npt data/analysis/ref/s25y11d042t0234\#103.npt
+NPT_COMPARE   11 | diff data/analysis/s25y11d042t0234\#103.frd data/analysis/ref/s25y11d042t0234\#103.frd
+NPT_TOKEN_COUNT 10
+NPT_TOKEN bin/ldb_crd STATUS=FOUND MATCHES=MLRS_Lunar_Code/bin/ldb_crd
+NPT_TOKEN data/analysis/ref/s25y11d016t0231#103.frd STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/ref/s25y11d016t0231#103.frd
+NPT_TOKEN data/analysis/ref/s25y11d016t0231#103.npt STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/ref/s25y11d016t0231#103.npt
+NPT_TOKEN data/analysis/ref/s25y11d042t0234#103.frd STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/ref/s25y11d042t0234#103.frd
+NPT_TOKEN data/analysis/ref/s25y11d042t0234#103.npt STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/ref/s25y11d042t0234#103.npt
+NPT_TOKEN data/analysis/s25y11d016t0231#103.frd STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/s25y11d016t0231#103.frd
+NPT_TOKEN data/analysis/s25y11d016t0231#103.npt STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/s25y11d016t0231#103.npt
+NPT_TOKEN data/analysis/s25y11d042t0234#103.frd STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/s25y11d042t0234#103.frd
+NPT_TOKEN data/analysis/s25y11d042t0234#103.npt STATUS=FOUND MATCHES=MLRS_Lunar_Code/data/analysis/s25y11d042t0234#103.npt
+NPT_TOKEN diff STATUS=SYSTEM_OR_SHELL MATCHES=
+NPT_REFERENCE_CLASS REFERENCE_SCRIPT_DEPENDENCIES_RESOLVED
+SHIPPED_BIN_FILES 10
+SHIPPED_ELF_BINARIES 7
+SHIPPED_BIN_MISSING_LIBRARY_LINES 3
+BIN MLRS_Lunar_Code/bin/BullA TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=1675210921ea59df1e73d77096bfdac11e78885a, with debug_info, not stripped MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/Poisson_crd TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=d595796ef06e1d95dca35587f60a6615e924a31f, with debug_info, not stripped MISSING_LIBS=libgfortran.so.3 => not found
+BIN MLRS_Lunar_Code/bin/XCgetBullAM TYPE=Bourne-Again shell script, ASCII text executable MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/XClungeo TYPE=Bourne-Again shell script, ASCII text executable MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/frd_strip TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=a5f7d910331b925cbab211c1297be1c9bad2667e, with debug_info, not stripped MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/genpred TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=05ccae870b176e6810672ae2198252ad7335b1bf, with debug_info, not stripped MISSING_LIBS=libgfortran.so.3 => not found
+BIN MLRS_Lunar_Code/bin/ldb_crd TYPE=C shell script, ASCII text executable MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/llr_npt_crd TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=88cc3fcd742235b24c6e3d159b4ed209e46cb9f2, with debug_info, not stripped MISSING_LIBS=libgfortran.so.3 => not found
+BIN MLRS_Lunar_Code/bin/lun_auto_crd TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=f9f7c7d50478c5d7abe4e6c0e49f7db28d6e98da, with debug_info, not stripped MISSING_LIBS=
+BIN MLRS_Lunar_Code/bin/lun_sdqi_crd TYPE=ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=0698f344c43cb38a4c680d7171ebd369b827f2ee, with debug_info, not stripped MISSING_LIBS=
+NPT_TEST_EXECUTED NO
+STANDARD_MODEL_RESIDUAL_BASELINE NO
+FULL_TAU_REFIT_EXECUTED NO
+JSON /home/emil/zeitdrift-ipta/phase9c-standard-residual/PHASE9C_MLRS_EXACT_FAILURES.json

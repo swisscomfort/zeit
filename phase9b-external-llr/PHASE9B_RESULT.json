@@ -1,0 +1,57 @@
+{
+  "status": "OK",
+  "phase9a_final": "PASS_METADATA_ONLY",
+  "pep_commit": "480ed0cfc9e97ec9057521165383214bd54df162",
+  "docker_image_id": "sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e",
+  "source": {
+    "provider": "EUROLAS Data Center (EDC), DGFI-TUM",
+    "dataset": "Apollo-15 daily CSTG normal points, McDonald Observatory, 2006-12-10",
+    "detail_url": "https://edc.dgfi.tum.de/en/data/np/53069/",
+    "https_data_url": "https://edc.dgfi.tum.de/pub/slr/data/npt/apollo15/2006/apollo15.20061210",
+    "ftp_data_url": "ftp://edc.dgfi.tum.de/pub/slr/data/npt/apollo15/2006/apollo15.20061210",
+    "acquisition": "EDC_DAILY_ARCHIVE_LIVE",
+    "raw_sha256": "7ca60f9eac15fda1eb0f9b218eb36ff4195266708d2a1d49c53d220ce4032329",
+    "detail_page_sha256": "NOT_DOWNLOADED",
+    "format": "CSTG normal point",
+    "cstg_headers": 2,
+    "apollo15_headers": 2,
+    "mcdonald_headers": 2,
+    "scope": "EDC_DAILY_ARCHIVE",
+    "datasets": [
+      {
+        "dataset_no": "53067",
+        "time": "2006-12-10 13:31:59",
+        "observations": 1,
+        "station": "McDonald Observatory, Texas",
+        "station_id": "70802419",
+        "target": "Apollo-15",
+        "official_record_match": true
+      },
+      {
+        "dataset_no": "53069",
+        "time": "2006-12-10 14:09:51",
+        "observations": 1,
+        "station": "McDonald Observatory, Texas",
+        "station_id": "70802419",
+        "target": "Apollo-15",
+        "official_record_match": true
+      }
+    ],
+    "daily_observations": 2,
+    "official_dataset_match": true
+  },
+  "pep_ingest": {
+    "converter": "peputil/prepmnpt",
+    "build": "PASS",
+    "obslib_run1_sha256": "47fb6e7f1c46025c83a78a8ff2c4abfb4d65a641daeb83137edc91fe1b8faa09",
+    "obslib_run2_sha256": "47fb6e7f1c46025c83a78a8ff2c4abfb4d65a641daeb83137edc91fe1b8faa09",
+    "repeat_identical": true,
+    "cpyobs_read": "PASS",
+    "observations_read": 2,
+    "site_mlr2_found": true,
+    "spot_ap15_found": true
+  },
+  "external_public_range_ingested": true,
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

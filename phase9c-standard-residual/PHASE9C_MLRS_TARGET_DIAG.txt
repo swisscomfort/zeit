@@ -1,0 +1,49 @@
+STATUS OK
+SUCCESSFUL_ROOTS 2
+BUILD_SUCCESS MLRS_Lunar_Code/src/bulla
+BUILD_SUCCESS MLRS_Lunar_Code/src/utilib
+FAILED_ROOTS 5
+BUILD_FAIL MLRS_Lunar_Code/src/Poisson CLASS=MISSING_FILE
+  ERROR make: f77: No such file or directory
+  ERROR make: *** [<builtin>: Poisson_crd.o] Error 127
+BUILD_FAIL MLRS_Lunar_Code/src/genpred CLASS=MISSING_FILE
+  ERROR make: f77: No such file or directory
+  ERROR make: *** [<builtin>: genpred.o] Error 127
+BUILD_FAIL MLRS_Lunar_Code/src/llr_npt CLASS=MISSING_FILE
+  ERROR make: f77: No such file or directory
+  ERROR make: *** [<builtin>: np_crd.o] Error 127
+BUILD_FAIL MLRS_Lunar_Code/src/lun_auto CLASS=OTHER
+  ERROR collect2: error: ld returned 1 exit status
+  ERROR make: *** [makefile:18: lac] Error 1
+BUILD_FAIL MLRS_Lunar_Code/src/utils CLASS=LEGACY_C,MISSING_FILE
+  ERROR gcc: error: ../utilib/write_crd.o: No such file or directory
+  ERROR make: *** [makefile:16: frs] Error 1
+ALL_FAILURES_GUI_OR_SYSTEM_DEP NO
+EXECUTABLES 16
+EXEC MLRS_Lunar_Code/bin/BullA ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/Poisson_crd ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/XCgetBullAM ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/XClungeo ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/frd_strip ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/genpred ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/ldb_crd ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/llr_npt_crd ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/lun_auto_crd ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/bin/lun_sdqi_crd ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/npt_test.sh ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/src/bulla/BullA ROOT=MLRS_Lunar_Code/src/bulla NEW=YES
+EXEC MLRS_Lunar_Code/src/genpred/XCglunpred ROOT=MLRS_Lunar_Code/src/genpred NEW=NO
+EXEC MLRS_Lunar_Code/src/make.sh ROOT=. NEW=NO
+EXEC MLRS_Lunar_Code/src/utilib/dmt ROOT=MLRS_Lunar_Code/src/utilib NEW=NO
+EXEC MLRS_Lunar_Code/src/utilib/makefile ROOT=MLRS_Lunar_Code/src/utilib NEW=NO
+REFERENCE_DIRS 2
+REFERENCE_DIR MLRS_Lunar_Code/src/llr_npt
+REFERENCE_DIR MLRS_Lunar_Code/src/genpred
+INVOCATION_LINKS 39
+COMPARISON_MARKER_FILES 52
+REFERENCE_RUNNER_CANDIDATES 0
+GATE REFERENCE_DATA_IDENTIFIED_RUNNER_UNRESOLVED
+REFERENCE_EXECUTED NO
+STANDARD_MODEL_RESIDUAL_BASELINE NO
+FULL_TAU_REFIT_EXECUTED NO
+JSON /home/emil/zeitdrift-ipta/phase9c-standard-residual/PHASE9C_MLRS_TARGET_DIAG.json

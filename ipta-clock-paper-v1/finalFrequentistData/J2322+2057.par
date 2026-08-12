@@ -1,0 +1,42 @@
+PSRJ           J2322+2057
+RAJ             23:22:22.3353670     
+DECJ           +20:57:02.67239       
+F0             207.96816335911924083     1  0.00000000001853671514   
+F1             -4.1951596177346494875e-16 1  6.6253128514026666062e-19
+PEPOCH         55000                       
+POSEPOCH       55000                       
+DMEPOCH        55000                       
+DM             13.56240161419690287        
+DM1            0.057535919364403756556     
+PMRA           -18.854062667378868354      
+PMDEC          -16.525119214329017111      
+PX             2.6679050986615727541       
+START          53915.198157206536365     
+FINISH         55921.971857401848872      
+TZRMJD         54907.4367025351164         
+TZRFRQ         1400                     
+TZRSITE        jb   
+TRES           11.144       
+EPHVER         5                           
+NE_SW          4                           
+CLK            TT(BIPM2013)
+MODE 1
+UNITS          TCB
+TIMEEPH        IF99
+DILATEFREQ     Y
+PLANET_SHAPIRO Y
+T2CMETHOD      IAU2000B
+NE_SW          4.000
+CORRECT_TROPOSPHERE  Y
+EPHEM          DE421
+NITS           1
+NTOA           199
+CHI2R          1.0355 191
+JUMP -sys NRT.BON.1600 -0.00013503616046874 1
+JUMP -sys JBO.DFB.1520 -5.7644767454869e-05 1
+JUMP -sys JBO.DFB.1400 2.4709039945427e-05 1
+T2EFAC -sys JBO.DFB.1400 0.380643
+T2EFAC -sys JBO.DFB.1520 1.5
+T2EFAC -sys NRT.BON.1400 1.7
+T2EFAC -sys NRT.BON.1600 1.4
+T2EQUAD -sys NRT.BON.1600 0.70296

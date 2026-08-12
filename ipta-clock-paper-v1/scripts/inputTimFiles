@@ -1,0 +1,110 @@
+#
+# Input arrival time files for each pulsar
+# Column 1: pulsar name
+# Column 2: PTA (EPTA, PPTA, NANO_EARLY, NANO_RECENT)
+# Column 3: input .tim file
+J0030+0451 EPTA inputData/iptaA/J0030+0451/tims/EPTA.J0030+0451.tim    
+J0030+0451 NANO_RECENT inputData/iptaA/J0030+0451/tims/NANOGrav.J0030+0451.dfg+12.tim
+J0034-0534 EPTA inputData/iptaA/J0034-0534/tims/EPTA.J0034-0534.cut.tim    
+J0218+4232 EPTA inputData/iptaA/J0218+4232/tims/EPTA.J0218+4232.tim    
+J0437-4715 PPTA inputData/reardonFiles/J0437-4715.tim
+J0610-2100 EPTA inputData/iptaA/J0610-2100/tims/EPTA.J0610-2100.cut.tim    
+J0613-0200 EPTA inputData/iptaA/J0613-0200/tims/EPTA.J0613-0200.tim
+J0613-0200 PPTA inputData/iptaA/J0613-0200/tims/PPTA.J0613-0200.dr1e.tim
+J0613-0200 NANO_RECENT inputData/iptaA/J0613-0200/tims/NANOGrav.J0613-0200.dfg+12.tim
+
+J0621+1002 EPTA inputData/iptaA/J0621+1002/tims/EPTA.J0621+1002.tim    
+J0711-6830 PPTA inputData/reardonFiles/J0711-6830.tim
+J0751+1807 EPTA inputData/iptaA/J0751+1807/tims/EPTA.J0751+1807.tim    
+J0900-3144 EPTA inputData/iptaA/J0900-3144/tims/EPTA.J0900-3144.tim        
+
+J1012+5307 EPTA inputData/iptaA/J1012+5307/tims/EPTA.J1012+5307.cut.tim
+J1012+5307 NANO_RECENT inputData/iptaA/J1012+5307/tims/NANOGrav.J1012+5307.dfg+12.tim
+
+J1022+1001 EPTA inputData/iptaA/J1022+1001/tims/EPTA.J1022+1001.tim
+J1022+1001 PPTA inputData/iptaA/J1022+1001/tims/PPTA.J1022+1001.dr1e.cut.tim
+
+J1024-0719 EPTA inputData/iptaA/J1024-0719/tims/EPTA.J1024-0719.tim
+J1024-0719 PPTA inputData/iptaA/J1024-0719/tims/PPTA.J1024-0719.dr1e.cut.tim
+    
+J1045-4509 PPTA inputData/reardonFiles/J1045-4509.tim
+
+J1455-3330 EPTA inputData/iptaA/J1455-3330/tims/EPTA.J1455-3330.cut.tim
+J1455-3330 NANO_RECENT inputData/iptaA/J1955+2908/tims/NANOGrav.J1455-3330.dfg+12.tim
+
+J1600-3053 EPTA inputData/iptaA/J1600-3053/tims/EPTA.J1600-3053.tim
+J1600-3053 PPTA inputData/iptaA/J1600-3053/tims/PPTA.J1600-3053.dr1e.cut.tim
+J1600-3053 NANO_RECENT inputData/iptaA/J1600-3053/tims/NANOGrav.J1600-3053.dfg+12.tim
+
+J1603-7202 PPTA inputData/reardonFiles/J1603-7202.tim
+
+J1640+2224 EPTA inputData/iptaA/J1640+2224/tims/EPTA.J1640+2224.cut.tim
+J1640+2224 NANO_RECENT inputData/iptaA/J1640+2224/tims/NANOGrav.J1640+2224.dfg+12.tim
+
+J1643-1224 EPTA inputData/iptaA/J1643-1224/tims/EPTA.J1643-1224.cut.tim
+J1643-1224 PPTA inputData/iptaA/J1643-1224/tims/PPTA.J1643-1224.dr1e.cut.tim
+J1643-1224 NANO_RECENT inputData/iptaA/J1643-1224/tims/NANOGrav.J1643-1224.dfg+12.tim
+    
+J1713+0747 EPTA inputData/iptaA/J1713+0747/tims/EPTA.J1713+0747.tim
+J1713+0747 PPTA inputData/iptaA/J1713+0747/tims/PPTA.J1713+0747.dr1e.tim
+J1713+0747 NANO_EARLY inputData/iptaA/J1713+0747/tims/J1713+0747_NANOGrav_sns+05.tim    
+J1713+0747 NANO_RECENT inputData/iptaA/J1713+0747/tims/J1713+0747_NANOGrav_8y.tim
+J1721-2457 EPTA inputData/iptaA/J1721-2457/tims/EPTA.J1721-2457.tim    
+J1730-2304 EPTA inputData/iptaA/J1730-2304/tims/EPTA.J1730-2304.cut.tim
+J1730-2304 PPTA inputData/iptaA/J1730-2304/tims/PPTA.J1730-2304.dr1e.cut.tim
+J1732-5049 PPTA inputData/reardonFiles/J1732-5049.tim
+
+J1738+0333 EPTA inputData/iptaA/J1738+0333/tims/EPTA.J1738+0333.tim
+    
+J1744-1134 EPTA inputData/iptaA/J1744-1134/tims/EPTA.J1744-1134.tim
+J1744-1134 PPTA inputData/iptaA/J1744-1134/tims/PPTA.J1744-1134.dr1e.cut.tim
+J1744-1134 NANO_RECENT inputData/iptaA/J1744-1134/tims/NANOGrav.J1744-1134.dfg+12.tim
+
+J1751-2857 EPTA inputData/iptaA/J1751-2857/tims/EPTA.J1751-2857.cut.tim
+J1801-1417 EPTA inputData/iptaA/J1801-1417/tims/EPTA.J1801-1417.cut.tim    
+J1802-2124 EPTA inputData/iptaA/J1802-2124/tims/EPTA.J1802-2124.tim    
+J1804-2717 EPTA inputData/iptaA/J1804-2717/tims/EPTA.J1804-2717.cut.tim    
+J1824-2452A PPTA inputData/reardonFiles/J1824-2452A.tim
+J1843-1113 EPTA inputData/iptaA/J1843-1113/tims/EPTA.J1843-1113.cut.tim    
+
+J1853+1303 EPTA inputData/iptaA/J1853+1303/tims/EPTA.J1853+1303.cut.tim
+J1853+1303 NANO_RECENT inputData/iptaA/J1853+1303/tims/NANOGrav.J1853+1303.dfg+12.tim
+
+J1857+0943 EPTA inputData/iptaA/J1857+0943/tims/EPTA.J1857+0943.tim
+J1857+0943 PPTA inputData/iptaA/J1857+0943/tims/PPTA.J1857+0943.dr1e.cut.tim
+J1857+0943 NANO_RECENT inputData/iptaA/J1857+0943/tims/NANOGrav.J1857+0943.dfg+12.tim
+
+J1909-3744 EPTA inputData/iptaA/J1909-3744/tims/EPTA.J1909-3744.tim
+J1909-3744 PPTA inputData/reardonFiles/J1909-3744.tim
+J1909-3744 NANO_RECENT inputData/iptaA/J1909-3744/tims/NANOGrav.J1909-3744.dfg+12.tim
+
+J1910+1256 EPTA inputData/iptaA/J1910+1256/tims/EPTA.J1910+1256.cut.tim
+J1910+1256 NANO_RECENT inputData/iptaA/J1910+1256/tims/NANOGrav.J1910+1256.dfg+12.tim
+
+J1911-1114 EPTA inputData/iptaA/J1911-1114/tims/EPTA.J1911-1114.cut.tim
+J1911+1347 EPTA inputData/iptaA/J1911+1347/tims/EPTA.J1911+1347.cut.tim
+J1918-0642 EPTA inputData/iptaA/J1918-0642/tims/EPTA.J1918-0642.cut.tim
+J1918-0642 NANO_RECENT inputData/iptaA/J1918-0642/tims/NANOGrav.J1918-0642.dfg+12.tim
+J1955+2908 EPTA inputData/iptaA/J1955+2908/tims/EPTA.J1955+2908.cut.tim
+J1955+2908 NANO_RECENT inputData/iptaA/J1955+2908/tims/NANOGrav.J1955+2908.dfg+12.tim
+
+J2010-1323 EPTA inputData/iptaA/J2010-1323/tims/EPTA.J2010-1323.tim    
+J2019+2425 EPTA inputData/iptaA/J2019+2425/tims/EPTA.J2019+2425.cut.tim    
+J2033+1734 EPTA inputData/iptaA/J2033+1734/tims/EPTA.J2033+1734.cut.tim    
+
+J2124-3358 EPTA inputData/iptaA/J2124-3358/tims/EPTA.J2124-3358.tim
+J2124-3358 PPTA inputData/iptaA/J2124-3358/tims/PPTA.J2124-3358.dr1e.cut.tim
+
+J2129-5721 PPTA inputData/reardonFiles/J2129-5721.tim
+
+J2145-0750 EPTA inputData/iptaA/J2145-0750/tims/EPTA.J2145-0750.tim
+J2145-0750 PPTA inputData/iptaA/J2145-0750/tims/PPTA.J2145-0750.dr1e.tim
+J2145-0750 NANO_RECENT inputData/iptaA/J1600-3053/tims/NANOGrav.J2145-0750.dfg+12.tim
+    
+J2229+2643 EPTA inputData/iptaA/J2229+2643/tims/EPTA.J2229+2643.tim
+    
+J2317+1439 EPTA inputData/iptaA/J2317+1439/tims/EPTA.J2317+1439.cut.tim
+J2317+1439 NANO_RECENT inputData/iptaA/J2317+1439/tims/NANOGrav.J2317+1439.dfg+12.tim
+
+J2322+2057 EPTA inputData/iptaA/J2322+2057/tims/EPTA.J2322+2057.tim
+    

@@ -1,0 +1,2 @@
+#
+gcc -lm -o plotFigure2_2 plotFigure2_2.c T2toolkit.c TKfit.c -I/opt/build_psrsoft/workspace/psr-pgplot-build/pgplot_build/ -L/opt/build_psrsoft/workspace/psr-pgplot-build/pgplot_build/ -lcpgplot -lpgplot -lgfortran -lX11 -lpng

@@ -1,0 +1,14 @@
+STATUS OK
+PROVENANCE /home/emil/zeitdrift-ipta/phase4-pioneer/provenance.sha256
+MODEL tau=t+0.5*a_t*t^2 ; d_tau/d_t=1+a_t*t
+PIONEER_CLOCK_ACCELERATION 2.800e-18/s
+PIONEER_8Y_RATE_CHANGE 7.068902400e-10
+PIONEER_8Y_ACCUMULATED_OFFSET 0.089231038s
+PIONEER_20Y_RATE_CHANGE 1.767225600e-09
+PIONEER_20Y_ACCUMULATED_OFFSET 0.557693986s
+VIKING_SYNODIC_ANGULAR_FRACTIONAL_ACCURACY 7.000e-11
+PIONEER_8Y_RATE_CHANGE_OVER_VIKING_ACCURACY 10.098
+PRIMARY_RESULT Anderson et al. 2002 explicitly state that a universal time-acceleration model is ruled out by planetary observations and clock checks.
+RESOLUTION Turyshev et al. 2012 find no anomalous acceleration remains after thermal recoil is modeled.
+INTERPRETATION The historical signal that most closely mimicked atomic-time acceleration was not a universal speeding-up of time.
+CAUTION The ratio to Viking angular accuracy is an order-of-magnitude comparison, not a refit of the Viking ranging data.

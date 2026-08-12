@@ -1,0 +1,27 @@
+1                   * * VERIFY * * VERSION 3.8 * *
+      INPUT STREAM:
+  &CNTL  JSIZ=132, KFIN=132, IRFM=3, LCMP=3, IPUN=0  &END                        
+  &CNTL  PG1ST=0,3, PG1FN=1,9999, PG2ST=0,3, PG2FN=1,9999,                       
+   FNAME='biglist.tv2', 'tv2.out' &END                                           
+ ------------------------------------------------------------------------XXXXXXXX END INPUT AFTER   3 CARDS
+-                    * * * *  VERIFY  * * * *
+0     FILE    DATA SET NAME                                MEMBER      VOLUME
+       1   biglist.tv2                                                         
+       2   tv2.out                                                             
+       0                                                                       
+-*--- FILE 1 PAGE 11 LINE  26 ---*
+ ILDT=   0   0   0   0   0   0 -1.06459965504428D+05     DERIV(2)=  9.99999977648258D-03  0.00000000000000D+00  4.92860268792273D+03 
+ *--- FILE 2 PAGE 11 LINE  26 ---*
+ ILDT=   0   0   0   0   0   0 -1.06459965504428D+05     DERIV(2)=  9.99999977648258D-03  0.00000000000000D+00  4.92860268792272D+03 
++                                                                                                                              _     
+-*--- FILE 1 PAGE 22 LINE  28 ---*
+ *--- END ---*
+ *--- FILE 2 PAGE 22 LINE  28 ---*
+ *--- END ---*
+-FINISHED PROCESSING AFTER
+     741 CARDS FROM FILE 1
+     741 CARDS FROM FILE 2
+       1 DISCREPANCY   
+     89 AND  89 LINES SUPPRESSED
+-                    * * * *  VERIFY  * * * *
+0          * * * END OF VERIFICATION * * *

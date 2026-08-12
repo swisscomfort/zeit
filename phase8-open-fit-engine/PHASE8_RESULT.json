@@ -1,0 +1,39 @@
+{
+  "status": "OK",
+  "pep": {
+    "remote": "https://github.com/jbattat/pep_core.git",
+    "commit": "480ed0cfc9e97ec9057521165383214bd54df162",
+    "container_tag": "gcc:10",
+    "container_id": "sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e",
+    "container_digest": "gcc@sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e",
+    "gfortran_version": "GNU Fortran (GCC) 10.5.0",
+    "compat_fflags": "-fno-automatic -w -frecord-marker=8 -m128bit-long-double -fallow-argument-mismatch",
+    "build_rc": 0,
+    "bigtest_rc": 0,
+    "bigtest_label": "PASS_REVIEW_OUTPUT_DIFF",
+    "verout_files": 11,
+    "verout_exact_1116_bytes": 3,
+    "executable_files": 31,
+    "range_source_files": 92,
+    "time_source_files": 187,
+    "llr_source_files": 3,
+    "disposable_build_source_unchanged": "YES",
+    "canonical_worktree_clean": "YES"
+  },
+  "inpop21a": {
+    "url": "https://ftp.imcce.fr/pub/ephem/planets/inpop21a/inpop21a_TDB_m100_p100_tt.dat",
+    "sha256": "7b0bd873f144dad407343893a478b9e53989e63cdb214f934d50d47e0f73e692",
+    "bytes": 22970336
+  },
+  "source_endpoints": {
+    "imcce_inpop21a": "200",
+    "apdb": "200",
+    "moon_observations": "200",
+    "mars_express_pds": "200"
+  },
+  "full_tau_fit": {
+    "executed": false,
+    "ready": true,
+    "reason": "PEP has now been compiled with a pinned GCC-10 container and its validation run. The next step is an unchanged baseline observation fit before any tau(t) physics modification."
+  }
+}

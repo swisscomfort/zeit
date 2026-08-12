@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "toolchain": {
+    "tag": "gcc:10",
+    "image_id": "sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e",
+    "digest": "gcc@sha256:19b31d0b2b263047b173e4e253d91f199d99c082973f13604d2913252c13309e"
+  },
+  "build": {
+    "build_files": 8,
+    "make_roots": 7,
+    "dryrun_success": 5,
+    "successful_build_roots": 2,
+    "failed_build_roots": 5,
+    "classification": "PARTIAL_OR_FULL_BUILD_SUCCESS"
+  },
+  "products": {
+    "new_files": 6,
+    "executables": 16,
+    "runtime_executables": 16
+  },
+  "reference": {
+    "filename_candidates": 6,
+    "reference_dirs": 2,
+    "classification": "REFERENCE_CANDIDATE_IDENTIFIED",
+    "executed": false
+  },
+  "vendor_source_unchanged": true,
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

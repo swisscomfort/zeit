@@ -1,0 +1,70 @@
+===== tv1.out =====
+{
+  "sha1": "945b26f67d9f33d9573db71bdb40c4b188ca8f11c128d8b482a791e7395f49a2",
+  "sha2": "09382163765aa0088f6ef42f16d4eafb0fabd8cc74c760b1bf6a5edd2e0d83c7",
+  "bytes1": 143699,
+  "bytes2": 143699,
+  "raw_identical": false,
+  "line_count1": 1560,
+  "line_count2": 1560,
+  "different_aligned_lines": 7,
+  "metadata_only_lines": 0,
+  "numeric_only_lines": 2,
+  "structural_lines": 5,
+  "max_abs_numeric_delta": 0.16666999999999998,
+  "max_rel_numeric_delta": 0.4852992649632482
+}
+
+LINE 172 CLASS STRUCTURAL
+RUN1: 0DAY OF YEAR= 222    CLOCK TIME AT EXECUTION= 21H 54M 26.00S
+RUN2: 0DAY OF YEAR= 222    CLOCK TIME AT EXECUTION= 21H 54M 48.00S
+
+LINE 660 CLASS STRUCTURAL
+RUN1:            0H  0M  0.03S REAL TIME
+RUN2:            0H  0M  0.02S REAL TIME
+
+LINE 661 CLASS STRUCTURAL
+RUN1:            0H  0M  0.02S TASK TIME
+RUN2:            0H  0M  0.01S TASK TIME
+
+LINE 662 CLASS NUMERIC_ONLY
+RUN1:   (TASK TIME)/(REAL TIME)= 0.66667
+RUN2:   (TASK TIME)/(REAL TIME)= 0.50000
+
+LINE 1531 CLASS STRUCTURAL
+RUN1:   TERMINATION CLOCK TIME = 21H 54M 26.35S
+RUN2:   TERMINATION CLOCK TIME = 21H 54M 48.34S
+
+LINE 1535 CLASS STRUCTURAL
+RUN1:     TOTAL EXECUTION TIME =  0H  0M  0.35S   0H  0M  0.02S 
+RUN2:     TOTAL EXECUTION TIME =  0H  0M  0.34S   0H  0M  0.01S 
+
+LINE 1536 CLASS NUMERIC_ONLY
+RUN1:  (TASK TIME)/(REAL TIME) = 0.05714
+RUN2:  (TASK TIME)/(REAL TIME) = 0.02941
+
+===== tv2.out =====
+{
+  "sha1": "8f1beb33a8020f2c39e75de1568b631190b33326a52819f47d11c0182f6d0f2e",
+  "sha2": "05a47db8f23ff6654c3206c382fcec000d14be3b2d9eeb07251d746d67611083",
+  "bytes1": 67770,
+  "bytes2": 67770,
+  "raw_identical": false,
+  "line_count1": 830,
+  "line_count2": 830,
+  "different_aligned_lines": 2,
+  "metadata_only_lines": 0,
+  "numeric_only_lines": 0,
+  "structural_lines": 2,
+  "max_abs_numeric_delta": 0.0,
+  "max_rel_numeric_delta": 0.0
+}
+
+LINE 96 CLASS STRUCTURAL
+RUN1: 0DAY OF YEAR= 222    CLOCK TIME AT EXECUTION= 21H 54M 26.00S
+RUN2: 0DAY OF YEAR= 222    CLOCK TIME AT EXECUTION= 21H 54M 48.00S
+
+LINE 801 CLASS STRUCTURAL
+RUN1:   TERMINATION CLOCK TIME = 21H 54M 26.29S
+RUN2:   TERMINATION CLOCK TIME = 21H 54M 48.29S
+

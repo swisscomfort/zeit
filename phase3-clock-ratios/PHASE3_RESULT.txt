@@ -1,0 +1,14 @@
+STATUS OK
+DATASETS 4
+PROVENANCE /home/emil/zeitdrift-ipta/phase3-clock-ratios/provenance.sha256
+CSV /home/emil/zeitdrift-ipta/phase3-clock-ratios/clock_ratio_constraints.csv
+MARION_2003_RB_CS PAIR='87Rb/133Cs hyperfine' SPAN=5.000y DRIFT=+2.000e-17/y SIGMA=7.000e-16/y Z=+0.03 ABS95=1.392e-15/y OBSERVED_SPAN_RATIO_CHANGE95=6.960e-15
+GUENA_2012_RB_CS PAIR='87Rb/133Cs hyperfine' SPAN=14.000y DRIFT=-1.390e-16/y SIGMA=9.100e-17/y Z=-1.53 ABS95=3.174e-16/y OBSERVED_SPAN_RATIO_CHANGE95=4.443e-15
+LANGE_2021_YB_E3_E2 PAIR='171Yb+ E3/E2 optical' SPAN=4.107y DRIFT=-6.800e-18/y SIGMA=7.500e-18/y Z=-0.91 ABS95=2.150e-17/y OBSERVED_SPAN_RATIO_CHANGE95=8.830e-17
+LANGE_2021_YB_E3_CS PAIR='171Yb+ E3 / 133Cs hyperfine' SPAN=9.175y DRIFT=-3.100e-17/y SIGMA=3.400e-17/y Z=-0.91 ABS95=9.764e-17/y OBSERVED_SPAN_RATIO_CHANGE95=8.958e-16
+ALLE_DRIFTS_UNTER_2SIGMA JA
+BESTE_DIREKTE_SCHRANKE LANGE_2021_YB_E3_E2 ABS95=2.150e-17/y
+BESTE_20J_RATIOAENDERUNG_EXTRAPOLIERT 4.300e-16
+BESTE_20J_AKKUMULIERTE_ZEITDIFFERENZ_EXTRAPOLIERT 1.356976800e-07s
+INTERPRETATION Keine der vier unabhaengigen/verwandten Clock-Ratio-Serien zeigt eine signifikante lineare relative Beschleunigung. Eine universelle gemeinsame Reskalierung aller Prozesse bleibt prinzipiell unbeobachtbar.
+ACHTUNG 20J-Werte sind Modell-Extrapolationen der publizierten linearen Driftgrenzen, keine direkte 2006-2026-Messung.

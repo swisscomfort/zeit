@@ -1,0 +1,30 @@
+{
+  "status": "REVIEW",
+  "base_image": {
+    "tag": "gcc:6.3.0",
+    "id": "sha256:fd85c014d8c03e94f86974a4c334fd744cb921c08dcc75defa33b08e3035d335",
+    "digest": "gcc@sha256:fd85c014d8c03e94f86974a4c334fd744cb921c08dcc75defa33b08e3035d335"
+  },
+  "runtime_image": {
+    "tag": "zeitdrift-mlrs-runtime:gcc630",
+    "id": "sha256:3abca23659a5427984eb2ee3a941986c496bd683210c47441beb5f630c141cea",
+    "csh": true,
+    "libgfortran_so_3": true,
+    "required_binaries_ldd_clean": true
+  },
+  "reference": {
+    "run1_rc": 2,
+    "run2_rc": 2,
+    "reference_diffs_pass": 0,
+    "reference_diffs_fail": 4,
+    "repeat_bit_identical_pass": 0,
+    "repeat_bit_identical_fail": 4,
+    "nonempty_errorc_files": 4,
+    "classification": "FAIL",
+    "executed": true
+  },
+  "vendor_source_unchanged": true,
+  "standard_model_residual_baseline": false,
+  "external_2006_llr_applied": false,
+  "tau_model_modified": false
+}

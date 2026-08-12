@@ -1,0 +1,4 @@
+study,process,max_span,laboratories,best_fractional_amplitude_limit,worst_fractional_amplitude_limit,tests,secular_linear_drift_bound
+Pomme_2016_all_modes,"alpha,beta-,beta+,electron-capture",up to 4 decades,14,6e-06,8e-05,annual modulation; weeks/months,NO
+Pomme_2017_alpha,alpha decay,up to 2 decades,,6e-06,6e-05,annual modulation; weeks/months,NO
+Pomme_2017_beta_minus,beta- decay,up to 5 decades,,3e-05,7e-05,annual modulation; weeks/months,NO

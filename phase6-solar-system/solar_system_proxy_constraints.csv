@@ -1,0 +1,3 @@
+dataset,observable,published_center_per_year,published_sigma_per_year,published_conservative_bound_per_year,proxy_clock_accel_per_second,proxy_20y_rate_change,proxy_20y_accumulated_offset_s,pioneer_over_proxy_bound,direct_clock_test
+LLR_1970_2020,Gdot/G,-5e-15,9.6e-15,2.3816e-14,3.7734174968945675e-22,2.3816e-13,7.515758016e-05,7420.329190460195,NO
+INPOP20a,mudot_sun/mu_sun,,,2.28e-13,3.6124420107993e-21,2.28e-12,0.0007195132799999999,775.0989473684211,NO

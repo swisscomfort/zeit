@@ -1,0 +1,2152 @@
+{
+  "status": "OK",
+  "runs": {
+    "run1": {
+      "sessions": {
+        "s25y11d016t0231#103": {
+          "frcal": {
+            "exists": true,
+            "bytes": 282315,
+            "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+            "nonempty": true
+          },
+          "frrec": {
+            "exists": true,
+            "bytes": 584,
+            "sha256": "f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7",
+            "nonempty": true
+          },
+          "frfil": {
+            "exists": true,
+            "bytes": 318087,
+            "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+            "nonempty": true
+          },
+          "frfil2": {
+            "exists": true,
+            "bytes": 318087,
+            "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+            "nonempty": true
+          },
+          "frfil3": {
+            "exists": true,
+            "bytes": 318120,
+            "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+            "nonempty": true
+          },
+          "frfin": {
+            "exists": true,
+            "bytes": 178052,
+            "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+            "nonempty": true
+          },
+          "frd": {
+            "exists": false
+          },
+          "npt": {
+            "exists": false
+          },
+          "rsc": {
+            "exists": true,
+            "bytes": 33,
+            "sha256": "30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d",
+            "nonempty": true,
+            "text": "p11 116 231318025364 0   -326727\n"
+          },
+          "llc": {
+            "exists": true,
+            "bytes": 1738,
+            "sha256": "7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b",
+            "nonempty": true,
+            "text": "          Lunar Residual Calculation / Normalpoint Program     v 2.1    \n\n\n Input/Output Lunar Data File:\ndata/analysis/s25y11d016t0231#103.frcal\n\n CONTROL: JPL               \n MODEL: jpl_de-421        \n TWOWAY: T     POLAR MOTION: T     UT1 TIDE: F\n TOLERANCE:  0.100E-13     MAX NUMBER OF ITERATIONS:   10\n SPEED OF LIGHT:  0.299792458E+06     AU/KM:  0.14959787069100E+09\n E/M: 81.30056907     K2 LOVE: 0.22\n POLAR MOTION: K1 THROUGH K12 FOR MJD(UT1-UTC)     0. AND MJD(A/B)     0.\n  FROM OT DEFINED . . .              \n  X:   0.00000  0.00000  0.00000  0.00000  0.00000\n  Y:   0.00000  0.00000  0.00000  0.00000  0.00000\n  UT1-UTC:   0.00000  0.00000\n N*SIGMA:  3.0\n\n REFLECTOR SET: JPL DE-421        \n REFLECTOR 0 COORDINATES:\n   RADIUS:       1735.472732000\n   LONGITUDE:  23.454307500\n   LATITUDE:    0.693430900\n REFLECTOR 1 COORDINATES:\n   RADIUS:       1734.929200000\n   LONGITUDE: -35.036686000\n   LATITUDE:   38.333089000\n REFLECTOR 2 COORDINATES:\n   RADIUS:       1736.336135000\n   LONGITUDE: -17.497106500\n   LATITUDE:   -3.623328800\n REFLECTOR 3 COORDINATES:\n   RADIUS:       1735.477340000\n   LONGITUDE:   3.610352000\n   LATITUDE:   26.155174300\n REFLECTOR 4 COORDINATES:\n   RADIUS:       1734.639009000\n   LONGITUDE:  30.908742600\n   LATITUDE:   25.850992800\n\n MLRS (JPL-421) (71\n TRANSMITTER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n RECEIVER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n\n\n NORMALPOINT GROUP #  1\n RECD        JD              GREG DATE       RF OBSY    OBS RANGE    REFR      O-C     X       Y       DUT  EOS  LHA      DEC     ALT\n"
+          },
+          "lsc": {
+            "exists": true,
+            "bytes": 16,
+            "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+            "nonempty": true,
+            "text": "Normalpoint(s):\n"
+          },
+          "errorc": {
+            "exists": true,
+            "bytes": 1011,
+            "sha256": "642d7bca9699b00bfde33f92af631f1f7a8aa0376f3a5ef6c29ecc596262a119",
+            "nonempty": true,
+            "text": "At line 978 of file testeph.F (unit = 2)\nFortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory\n\nError termination. Backtrace:\n#0  0x7f6499f9cd17 in ???\n#1  0x7f6499f9d825 in ???\n#2  0x7f6499f9df79 in ???\n#3  0x7f649a05d43a in ???\n#4  0x7f649a05d67d in ???\n#5  0x4103e1 in state_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978\n#6  0x41253f in master.0.pleph\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533\n#7  0x412454 in pleph_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448\n#8  0x410045 in jreade_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33\n#9  0x404b74 in ephtel_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348\n#10  0x40a985 in initrng_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93\n#11  0x421a21 in sublasr_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52\n#12  0x402748 in np12\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439\n#13  0x403f0f in main\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654\n"
+          },
+          "templist": {
+            "exists": false
+          },
+          "all_session_files": [
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.errorc",
+              "exists": true,
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "nonempty": false
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal",
+              "exists": true,
+              "bytes": 282315,
+              "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.errorc",
+              "exists": true,
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "nonempty": false
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.llc",
+              "exists": true,
+              "bytes": 168,
+              "sha256": "4b38e4d91991b98ce2a936ff11aaa40417cfb697597fdaac732669594a4d6ddf",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.lsc",
+              "exists": true,
+              "bytes": 57,
+              "sha256": "7bc0d4268df8636edeaa9058831007b4260d82170132132541de953063934fa9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frd",
+              "exists": true,
+              "bytes": 67802,
+              "sha256": "4272bdc33b31ce1fd070dce342370f9de90b4e5108a6b88801f21527f4a53144",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil2",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil3",
+              "exists": true,
+              "bytes": 318120,
+              "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfin",
+              "exists": true,
+              "bytes": 178052,
+              "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frrec",
+              "exists": true,
+              "bytes": 305815,
+              "sha256": "72e50e190f3d3a20b664a6950f3c3d2dc7460967ac6da0d15c7698c98dd5fbe6",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.llc",
+              "exists": true,
+              "bytes": 211138,
+              "sha256": "ef1025dfa211603c7ab3974d3f840b486cbd7c4a418f82f8f3cc200c04364b2f",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.lsc",
+              "exists": true,
+              "bytes": 1827,
+              "sha256": "cecce220fe19f26357ba418394115eac10b047193d940ddc74ef04811fce7841",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.npt",
+              "exists": true,
+              "bytes": 608,
+              "sha256": "0ae42a7ecee9dab52a08a90460fc38bf0ac99bef6ffb2e661df339b5dcdaf0f9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.rsc",
+              "exists": true,
+              "bytes": 48081,
+              "sha256": "9e4051c77377a1e0232898313325bfd5de3b788620b4f211f613fc8d592a3987",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.errorc",
+              "exists": true,
+              "bytes": 1011,
+              "sha256": "642d7bca9699b00bfde33f92af631f1f7a8aa0376f3a5ef6c29ecc596262a119",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frcal",
+              "exists": true,
+              "bytes": 282315,
+              "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil2",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil3",
+              "exists": true,
+              "bytes": 318120,
+              "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfin",
+              "exists": true,
+              "bytes": 178052,
+              "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frrec",
+              "exists": true,
+              "bytes": 584,
+              "sha256": "f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.llc",
+              "exists": true,
+              "bytes": 1738,
+              "sha256": "7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.lsc",
+              "exists": true,
+              "bytes": 16,
+              "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.rsc",
+              "exists": true,
+              "bytes": 33,
+              "sha256": "30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d",
+              "nonempty": true
+            }
+          ]
+        },
+        "s25y11d042t0234#103": {
+          "frcal": {
+            "exists": true,
+            "bytes": 99197,
+            "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+            "nonempty": true
+          },
+          "frrec": {
+            "exists": true,
+            "bytes": 1739,
+            "sha256": "110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439",
+            "nonempty": true
+          },
+          "frfil": {
+            "exists": true,
+            "bytes": 105436,
+            "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+            "nonempty": true
+          },
+          "frfil2": {
+            "exists": true,
+            "bytes": 105436,
+            "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+            "nonempty": true
+          },
+          "frfil3": {
+            "exists": true,
+            "bytes": 105469,
+            "sha256": "341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4",
+            "nonempty": true
+          },
+          "frfin": {
+            "exists": true,
+            "bytes": 81510,
+            "sha256": "21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752",
+            "nonempty": true
+          },
+          "frd": {
+            "exists": false
+          },
+          "npt": {
+            "exists": false
+          },
+          "rsc": {
+            "exists": true,
+            "bytes": 33,
+            "sha256": "c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54",
+            "nonempty": true,
+            "text": "p11 211 234313295959 0   -234614\n"
+          },
+          "llc": {
+            "exists": true,
+            "bytes": 1738,
+            "sha256": "b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c",
+            "nonempty": true,
+            "text": "          Lunar Residual Calculation / Normalpoint Program     v 2.1    \n\n\n Input/Output Lunar Data File:\ndata/analysis/s25y11d042t0234#103.frcal\n\n CONTROL: JPL               \n MODEL: jpl_de-421        \n TWOWAY: T     POLAR MOTION: T     UT1 TIDE: F\n TOLERANCE:  0.100E-13     MAX NUMBER OF ITERATIONS:   10\n SPEED OF LIGHT:  0.299792458E+06     AU/KM:  0.14959787069100E+09\n E/M: 81.30056907     K2 LOVE: 0.22\n POLAR MOTION: K1 THROUGH K12 FOR MJD(UT1-UTC)     0. AND MJD(A/B)     0.\n  FROM OT DEFINED . . .              \n  X:   0.00000  0.00000  0.00000  0.00000  0.00000\n  Y:   0.00000  0.00000  0.00000  0.00000  0.00000\n  UT1-UTC:   0.00000  0.00000\n N*SIGMA:  3.0\n\n REFLECTOR SET: JPL DE-421        \n REFLECTOR 0 COORDINATES:\n   RADIUS:       1735.472732000\n   LONGITUDE:  23.454307500\n   LATITUDE:    0.693430900\n REFLECTOR 1 COORDINATES:\n   RADIUS:       1734.929200000\n   LONGITUDE: -35.036686000\n   LATITUDE:   38.333089000\n REFLECTOR 2 COORDINATES:\n   RADIUS:       1736.336135000\n   LONGITUDE: -17.497106500\n   LATITUDE:   -3.623328800\n REFLECTOR 3 COORDINATES:\n   RADIUS:       1735.477340000\n   LONGITUDE:   3.610352000\n   LATITUDE:   26.155174300\n REFLECTOR 4 COORDINATES:\n   RADIUS:       1734.639009000\n   LONGITUDE:  30.908742600\n   LATITUDE:   25.850992800\n\n MLRS (JPL-421) (71\n TRANSMITTER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n RECEIVER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n\n\n NORMALPOINT GROUP #  1\n RECD        JD              GREG DATE       RF OBSY    OBS RANGE    REFR      O-C     X       Y       DUT  EOS  LHA      DEC     ALT\n"
+          },
+          "lsc": {
+            "exists": true,
+            "bytes": 16,
+            "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+            "nonempty": true,
+            "text": "Normalpoint(s):\n"
+          },
+          "errorc": {
+            "exists": true,
+            "bytes": 1011,
+            "sha256": "68c21f45a593667bd4bbc392f28ccfd1f0645117ff2e44e8880d48c5edb37ffe",
+            "nonempty": true,
+            "text": "At line 978 of file testeph.F (unit = 2)\nFortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory\n\nError termination. Backtrace:\n#0  0x7f36d7d2cd17 in ???\n#1  0x7f36d7d2d825 in ???\n#2  0x7f36d7d2df79 in ???\n#3  0x7f36d7ded43a in ???\n#4  0x7f36d7ded67d in ???\n#5  0x4103e1 in state_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978\n#6  0x41253f in master.0.pleph\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533\n#7  0x412454 in pleph_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448\n#8  0x410045 in jreade_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33\n#9  0x404b74 in ephtel_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348\n#10  0x40a985 in initrng_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93\n#11  0x421a21 in sublasr_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52\n#12  0x402748 in np12\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439\n#13  0x403f0f in main\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654\n"
+          },
+          "templist": {
+            "exists": false
+          },
+          "all_session_files": [
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.frcal",
+              "exists": true,
+              "bytes": 99197,
+              "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.frd",
+              "exists": true,
+              "bytes": 13484,
+              "sha256": "cc198f7a80ca6131409be1a8084e144c16c4d4b4c8760e00318e57fd75c44b83",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.llc",
+              "exists": true,
+              "bytes": 43473,
+              "sha256": "41b18323a963c1bea64ecdef60e77106cc1e0fddb519bedf4645ace4b9a24f5f",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.lsc",
+              "exists": true,
+              "bytes": 1604,
+              "sha256": "3c746fa9c242e2f23bab7517097d74a43a7158cb884210e769a908943840cd36",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.npt",
+              "exists": true,
+              "bytes": 656,
+              "sha256": "fdebb72984c216252cb160cf20d7a05421cba22aab8bdb66b9ea73e03ac9a4a1",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.errorc",
+              "exists": true,
+              "bytes": 1011,
+              "sha256": "68c21f45a593667bd4bbc392f28ccfd1f0645117ff2e44e8880d48c5edb37ffe",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frcal",
+              "exists": true,
+              "bytes": 99197,
+              "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil",
+              "exists": true,
+              "bytes": 105436,
+              "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil2",
+              "exists": true,
+              "bytes": 105436,
+              "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil3",
+              "exists": true,
+              "bytes": 105469,
+              "sha256": "341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfin",
+              "exists": true,
+              "bytes": 81510,
+              "sha256": "21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frrec",
+              "exists": true,
+              "bytes": 1739,
+              "sha256": "110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.llc",
+              "exists": true,
+              "bytes": 1738,
+              "sha256": "b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.lsc",
+              "exists": true,
+              "bytes": 16,
+              "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.npt_al",
+              "exists": true,
+              "bytes": 759,
+              "sha256": "60acabec0428929cff6baa3b9fc5ee4b78b9975b0c62f504a36e8fdb0cd55d44",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.rsc",
+              "exists": true,
+              "bytes": 33,
+              "sha256": "c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54",
+              "nonempty": true
+            }
+          ]
+        }
+      },
+      "stdout": {
+        "path": "/home/emil/zeitdrift-ipta/phase9c-standard-residual/logs/mlrs_reference_run1.stdout",
+        "text": "== Started processing lunar data file s25y11d016t0231#103. ==\nRecalc is now executing...\nRecalc Failed.\ncomparing normal point files:\ncomparing full rate files:\n== Started processing lunar data file s25y11d042t0234#103. ==\nRecalc is now executing...\nRecalc Failed.\n"
+      },
+      "stderr": {
+        "path": "/home/emil/zeitdrift-ipta/phase9c-standard-residual/logs/mlrs_reference_run1.stderr",
+        "text": "diff: data/analysis/s25y11d016t0231#103.npt: No such file or directory\ndiff: data/analysis/s25y11d016t0231#103.frd: No such file or directory\ndiff: data/analysis/s25y11d042t0234#103.npt: No such file or directory\ndiff: data/analysis/s25y11d042t0234#103.frd: No such file or directory\n"
+      }
+    },
+    "run2": {
+      "sessions": {
+        "s25y11d016t0231#103": {
+          "frcal": {
+            "exists": true,
+            "bytes": 282315,
+            "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+            "nonempty": true
+          },
+          "frrec": {
+            "exists": true,
+            "bytes": 584,
+            "sha256": "f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7",
+            "nonempty": true
+          },
+          "frfil": {
+            "exists": true,
+            "bytes": 318087,
+            "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+            "nonempty": true
+          },
+          "frfil2": {
+            "exists": true,
+            "bytes": 318087,
+            "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+            "nonempty": true
+          },
+          "frfil3": {
+            "exists": true,
+            "bytes": 318120,
+            "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+            "nonempty": true
+          },
+          "frfin": {
+            "exists": true,
+            "bytes": 178052,
+            "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+            "nonempty": true
+          },
+          "frd": {
+            "exists": false
+          },
+          "npt": {
+            "exists": false
+          },
+          "rsc": {
+            "exists": true,
+            "bytes": 33,
+            "sha256": "30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d",
+            "nonempty": true,
+            "text": "p11 116 231318025364 0   -326727\n"
+          },
+          "llc": {
+            "exists": true,
+            "bytes": 1738,
+            "sha256": "7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b",
+            "nonempty": true,
+            "text": "          Lunar Residual Calculation / Normalpoint Program     v 2.1    \n\n\n Input/Output Lunar Data File:\ndata/analysis/s25y11d016t0231#103.frcal\n\n CONTROL: JPL               \n MODEL: jpl_de-421        \n TWOWAY: T     POLAR MOTION: T     UT1 TIDE: F\n TOLERANCE:  0.100E-13     MAX NUMBER OF ITERATIONS:   10\n SPEED OF LIGHT:  0.299792458E+06     AU/KM:  0.14959787069100E+09\n E/M: 81.30056907     K2 LOVE: 0.22\n POLAR MOTION: K1 THROUGH K12 FOR MJD(UT1-UTC)     0. AND MJD(A/B)     0.\n  FROM OT DEFINED . . .              \n  X:   0.00000  0.00000  0.00000  0.00000  0.00000\n  Y:   0.00000  0.00000  0.00000  0.00000  0.00000\n  UT1-UTC:   0.00000  0.00000\n N*SIGMA:  3.0\n\n REFLECTOR SET: JPL DE-421        \n REFLECTOR 0 COORDINATES:\n   RADIUS:       1735.472732000\n   LONGITUDE:  23.454307500\n   LATITUDE:    0.693430900\n REFLECTOR 1 COORDINATES:\n   RADIUS:       1734.929200000\n   LONGITUDE: -35.036686000\n   LATITUDE:   38.333089000\n REFLECTOR 2 COORDINATES:\n   RADIUS:       1736.336135000\n   LONGITUDE: -17.497106500\n   LATITUDE:   -3.623328800\n REFLECTOR 3 COORDINATES:\n   RADIUS:       1735.477340000\n   LONGITUDE:   3.610352000\n   LATITUDE:   26.155174300\n REFLECTOR 4 COORDINATES:\n   RADIUS:       1734.639009000\n   LONGITUDE:  30.908742600\n   LATITUDE:   25.850992800\n\n MLRS (JPL-421) (71\n TRANSMITTER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n RECEIVER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n\n\n NORMALPOINT GROUP #  1\n RECD        JD              GREG DATE       RF OBSY    OBS RANGE    REFR      O-C     X       Y       DUT  EOS  LHA      DEC     ALT\n"
+          },
+          "lsc": {
+            "exists": true,
+            "bytes": 16,
+            "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+            "nonempty": true,
+            "text": "Normalpoint(s):\n"
+          },
+          "errorc": {
+            "exists": true,
+            "bytes": 1011,
+            "sha256": "107af7712c31245a7fde2482e1f929744b1b0a3447a312923e9dfff6395052ff",
+            "nonempty": true,
+            "text": "At line 978 of file testeph.F (unit = 2)\nFortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory\n\nError termination. Backtrace:\n#0  0x7f3c8e8cad17 in ???\n#1  0x7f3c8e8cb825 in ???\n#2  0x7f3c8e8cbf79 in ???\n#3  0x7f3c8e98b43a in ???\n#4  0x7f3c8e98b67d in ???\n#5  0x4103e1 in state_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978\n#6  0x41253f in master.0.pleph\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533\n#7  0x412454 in pleph_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448\n#8  0x410045 in jreade_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33\n#9  0x404b74 in ephtel_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348\n#10  0x40a985 in initrng_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93\n#11  0x421a21 in sublasr_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52\n#12  0x402748 in np12\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439\n#13  0x403f0f in main\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654\n"
+          },
+          "templist": {
+            "exists": false
+          },
+          "all_session_files": [
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.errorc",
+              "exists": true,
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "nonempty": false
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal",
+              "exists": true,
+              "bytes": 282315,
+              "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.errorc",
+              "exists": true,
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "nonempty": false
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.llc",
+              "exists": true,
+              "bytes": 168,
+              "sha256": "4b38e4d91991b98ce2a936ff11aaa40417cfb697597fdaac732669594a4d6ddf",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frcal.lsc",
+              "exists": true,
+              "bytes": 57,
+              "sha256": "7bc0d4268df8636edeaa9058831007b4260d82170132132541de953063934fa9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frd",
+              "exists": true,
+              "bytes": 67802,
+              "sha256": "4272bdc33b31ce1fd070dce342370f9de90b4e5108a6b88801f21527f4a53144",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil2",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfil3",
+              "exists": true,
+              "bytes": 318120,
+              "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frfin",
+              "exists": true,
+              "bytes": 178052,
+              "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.frrec",
+              "exists": true,
+              "bytes": 305815,
+              "sha256": "72e50e190f3d3a20b664a6950f3c3d2dc7460967ac6da0d15c7698c98dd5fbe6",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.llc",
+              "exists": true,
+              "bytes": 211138,
+              "sha256": "ef1025dfa211603c7ab3974d3f840b486cbd7c4a418f82f8f3cc200c04364b2f",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.lsc",
+              "exists": true,
+              "bytes": 1827,
+              "sha256": "cecce220fe19f26357ba418394115eac10b047193d940ddc74ef04811fce7841",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.npt",
+              "exists": true,
+              "bytes": 608,
+              "sha256": "0ae42a7ecee9dab52a08a90460fc38bf0ac99bef6ffb2e661df339b5dcdaf0f9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d016t0231#103.rsc",
+              "exists": true,
+              "bytes": 48081,
+              "sha256": "9e4051c77377a1e0232898313325bfd5de3b788620b4f211f613fc8d592a3987",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.errorc",
+              "exists": true,
+              "bytes": 1011,
+              "sha256": "107af7712c31245a7fde2482e1f929744b1b0a3447a312923e9dfff6395052ff",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frcal",
+              "exists": true,
+              "bytes": 282315,
+              "sha256": "dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil2",
+              "exists": true,
+              "bytes": 318087,
+              "sha256": "37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfil3",
+              "exists": true,
+              "bytes": 318120,
+              "sha256": "842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frfin",
+              "exists": true,
+              "bytes": 178052,
+              "sha256": "f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.frrec",
+              "exists": true,
+              "bytes": 584,
+              "sha256": "f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.llc",
+              "exists": true,
+              "bytes": 1738,
+              "sha256": "7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.lsc",
+              "exists": true,
+              "bytes": 16,
+              "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d016t0231#103.rsc",
+              "exists": true,
+              "bytes": 33,
+              "sha256": "30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d",
+              "nonempty": true
+            }
+          ]
+        },
+        "s25y11d042t0234#103": {
+          "frcal": {
+            "exists": true,
+            "bytes": 99197,
+            "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+            "nonempty": true
+          },
+          "frrec": {
+            "exists": true,
+            "bytes": 1739,
+            "sha256": "110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439",
+            "nonempty": true
+          },
+          "frfil": {
+            "exists": true,
+            "bytes": 105436,
+            "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+            "nonempty": true
+          },
+          "frfil2": {
+            "exists": true,
+            "bytes": 105436,
+            "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+            "nonempty": true
+          },
+          "frfil3": {
+            "exists": true,
+            "bytes": 105469,
+            "sha256": "341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4",
+            "nonempty": true
+          },
+          "frfin": {
+            "exists": true,
+            "bytes": 81510,
+            "sha256": "21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752",
+            "nonempty": true
+          },
+          "frd": {
+            "exists": false
+          },
+          "npt": {
+            "exists": false
+          },
+          "rsc": {
+            "exists": true,
+            "bytes": 33,
+            "sha256": "c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54",
+            "nonempty": true,
+            "text": "p11 211 234313295959 0   -234614\n"
+          },
+          "llc": {
+            "exists": true,
+            "bytes": 1738,
+            "sha256": "b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c",
+            "nonempty": true,
+            "text": "          Lunar Residual Calculation / Normalpoint Program     v 2.1    \n\n\n Input/Output Lunar Data File:\ndata/analysis/s25y11d042t0234#103.frcal\n\n CONTROL: JPL               \n MODEL: jpl_de-421        \n TWOWAY: T     POLAR MOTION: T     UT1 TIDE: F\n TOLERANCE:  0.100E-13     MAX NUMBER OF ITERATIONS:   10\n SPEED OF LIGHT:  0.299792458E+06     AU/KM:  0.14959787069100E+09\n E/M: 81.30056907     K2 LOVE: 0.22\n POLAR MOTION: K1 THROUGH K12 FOR MJD(UT1-UTC)     0. AND MJD(A/B)     0.\n  FROM OT DEFINED . . .              \n  X:   0.00000  0.00000  0.00000  0.00000  0.00000\n  Y:   0.00000  0.00000  0.00000  0.00000  0.00000\n  UT1-UTC:   0.00000  0.00000\n N*SIGMA:  3.0\n\n REFLECTOR SET: JPL DE-421        \n REFLECTOR 0 COORDINATES:\n   RADIUS:       1735.472732000\n   LONGITUDE:  23.454307500\n   LATITUDE:    0.693430900\n REFLECTOR 1 COORDINATES:\n   RADIUS:       1734.929200000\n   LONGITUDE: -35.036686000\n   LATITUDE:   38.333089000\n REFLECTOR 2 COORDINATES:\n   RADIUS:       1736.336135000\n   LONGITUDE: -17.497106500\n   LATITUDE:   -3.623328800\n REFLECTOR 3 COORDINATES:\n   RADIUS:       1735.477340000\n   LONGITUDE:   3.610352000\n   LATITUDE:   26.155174300\n REFLECTOR 4 COORDINATES:\n   RADIUS:       1734.639009000\n   LONGITUDE:  30.908742600\n   LATITUDE:   25.850992800\n\n MLRS (JPL-421) (71\n TRANSMITTER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n RECEIVER COORDINATES:\n   RADIUS   6374.609830000\n   LONGITUDE 255.984803800\n   LATITUDE   30.511710890\n   GEODETIC LATITUDE  30.680266740\n\n\n NORMALPOINT GROUP #  1\n RECD        JD              GREG DATE       RF OBSY    OBS RANGE    REFR      O-C     X       Y       DUT  EOS  LHA      DEC     ALT\n"
+          },
+          "lsc": {
+            "exists": true,
+            "bytes": 16,
+            "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+            "nonempty": true,
+            "text": "Normalpoint(s):\n"
+          },
+          "errorc": {
+            "exists": true,
+            "bytes": 1011,
+            "sha256": "6b6b5e7f382804dc6cfc68f7e69621c10d631e5ea53852eb5f3bf8a5b51da996",
+            "nonempty": true,
+            "text": "At line 978 of file testeph.F (unit = 2)\nFortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory\n\nError termination. Backtrace:\n#0  0x7f6b1beded17 in ???\n#1  0x7f6b1bedf825 in ???\n#2  0x7f6b1bedff79 in ???\n#3  0x7f6b1bf9f43a in ???\n#4  0x7f6b1bf9f67d in ???\n#5  0x4103e1 in state_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978\n#6  0x41253f in master.0.pleph\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533\n#7  0x412454 in pleph_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448\n#8  0x410045 in jreade_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33\n#9  0x404b74 in ephtel_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348\n#10  0x40a985 in initrng_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93\n#11  0x421a21 in sublasr_\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52\n#12  0x402748 in np12\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439\n#13  0x403f0f in main\n\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654\n"
+          },
+          "templist": {
+            "exists": false
+          },
+          "all_session_files": [
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.frcal",
+              "exists": true,
+              "bytes": 99197,
+              "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.frd",
+              "exists": true,
+              "bytes": 13484,
+              "sha256": "cc198f7a80ca6131409be1a8084e144c16c4d4b4c8760e00318e57fd75c44b83",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.llc",
+              "exists": true,
+              "bytes": 43473,
+              "sha256": "41b18323a963c1bea64ecdef60e77106cc1e0fddb519bedf4645ace4b9a24f5f",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.lsc",
+              "exists": true,
+              "bytes": 1604,
+              "sha256": "3c746fa9c242e2f23bab7517097d74a43a7158cb884210e769a908943840cd36",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/ref/s25y11d042t0234#103.npt",
+              "exists": true,
+              "bytes": 656,
+              "sha256": "fdebb72984c216252cb160cf20d7a05421cba22aab8bdb66b9ea73e03ac9a4a1",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.errorc",
+              "exists": true,
+              "bytes": 1011,
+              "sha256": "6b6b5e7f382804dc6cfc68f7e69621c10d631e5ea53852eb5f3bf8a5b51da996",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frcal",
+              "exists": true,
+              "bytes": 99197,
+              "sha256": "4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil",
+              "exists": true,
+              "bytes": 105436,
+              "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil2",
+              "exists": true,
+              "bytes": 105436,
+              "sha256": "ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfil3",
+              "exists": true,
+              "bytes": 105469,
+              "sha256": "341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frfin",
+              "exists": true,
+              "bytes": 81510,
+              "sha256": "21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.frrec",
+              "exists": true,
+              "bytes": 1739,
+              "sha256": "110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.llc",
+              "exists": true,
+              "bytes": 1738,
+              "sha256": "b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.lsc",
+              "exists": true,
+              "bytes": 16,
+              "sha256": "13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.npt_al",
+              "exists": true,
+              "bytes": 759,
+              "sha256": "60acabec0428929cff6baa3b9fc5ee4b78b9975b0c62f504a36e8fdb0cd55d44",
+              "nonempty": true
+            },
+            {
+              "path": "data/analysis/s25y11d042t0234#103.rsc",
+              "exists": true,
+              "bytes": 33,
+              "sha256": "c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54",
+              "nonempty": true
+            }
+          ]
+        }
+      },
+      "stdout": {
+        "path": "/home/emil/zeitdrift-ipta/phase9c-standard-residual/logs/mlrs_reference_run2.stdout",
+        "text": "== Started processing lunar data file s25y11d016t0231#103. ==\nRecalc is now executing...\nRecalc Failed.\ncomparing normal point files:\ncomparing full rate files:\n== Started processing lunar data file s25y11d042t0234#103. ==\nRecalc is now executing...\nRecalc Failed.\n"
+      },
+      "stderr": {
+        "path": "/home/emil/zeitdrift-ipta/phase9c-standard-residual/logs/mlrs_reference_run2.stderr",
+        "text": "diff: data/analysis/s25y11d016t0231#103.npt: No such file or directory\ndiff: data/analysis/s25y11d016t0231#103.frd: No such file or directory\ndiff: data/analysis/s25y11d042t0234#103.npt: No such file or directory\ndiff: data/analysis/s25y11d042t0234#103.frd: No such file or directory\n"
+      }
+    }
+  },
+  "classifications": {
+    "run1": {
+      "s25y11d016t0231#103": "NORMALPOINT_LLR_NPT_N_FAILED",
+      "s25y11d042t0234#103": "NORMALPOINT_LLR_NPT_N_FAILED"
+    },
+    "run2": {
+      "s25y11d016t0231#103": "NORMALPOINT_LLR_NPT_N_FAILED",
+      "s25y11d042t0234#103": "NORMALPOINT_LLR_NPT_N_FAILED"
+    }
+  },
+  "ldb_head": [
+    {
+      "line": 1,
+      "text": "#! /bin/csh -f"
+    },
+    {
+      "line": 2,
+      "text": "#"
+    },
+    {
+      "line": 3,
+      "text": "# ldb_crd"
+    },
+    {
+      "line": 4,
+      "text": "#"
+    },
+    {
+      "line": 5,
+      "text": "# *****************************************************************************"
+    },
+    {
+      "line": 6,
+      "text": "#"
+    },
+    {
+      "line": 7,
+      "text": "# Copyright (c) 2017, The University of Texas at Austin"
+    },
+    {
+      "line": 8,
+      "text": "# All rights reserved."
+    },
+    {
+      "line": 9,
+      "text": "#"
+    },
+    {
+      "line": 10,
+      "text": "# Redistribution and use in source and binary forms, with or without "
+    },
+    {
+      "line": 11,
+      "text": "# modification, are permitted provided that the following conditions are met:"
+    },
+    {
+      "line": 12,
+      "text": "# "
+    },
+    {
+      "line": 13,
+      "text": "# 1. Redistributions of source code must retain the above copyright notice, "
+    },
+    {
+      "line": 14,
+      "text": "# this list of conditions and the following disclaimer."
+    },
+    {
+      "line": 15,
+      "text": "# "
+    },
+    {
+      "line": 16,
+      "text": "# 2. Redistributions in binary form must reproduce the above copyright notice, "
+    },
+    {
+      "line": 17,
+      "text": "# this list of conditions and the following disclaimer in the documentation "
+    },
+    {
+      "line": 18,
+      "text": "# and/or other materials provided with the distribution."
+    },
+    {
+      "line": 19,
+      "text": "#"
+    },
+    {
+      "line": 20,
+      "text": "# 3. Neither the name of the copyright holder nor the names of its contributors "
+    },
+    {
+      "line": 21,
+      "text": "# may be used to endorse or promote products derived from this software without "
+    },
+    {
+      "line": 22,
+      "text": "# specific prior written permission."
+    },
+    {
+      "line": 23,
+      "text": "#"
+    },
+    {
+      "line": 24,
+      "text": "# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" "
+    },
+    {
+      "line": 25,
+      "text": "# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE "
+    },
+    {
+      "line": 26,
+      "text": "# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE "
+    },
+    {
+      "line": 27,
+      "text": "# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE "
+    },
+    {
+      "line": 28,
+      "text": "# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+    },
+    {
+      "line": 29,
+      "text": "# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF "
+    },
+    {
+      "line": 30,
+      "text": "# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS "
+    },
+    {
+      "line": 31,
+      "text": "# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN "
+    },
+    {
+      "line": 32,
+      "text": "# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) "
+    },
+    {
+      "line": 33,
+      "text": "# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF "
+    },
+    {
+      "line": 34,
+      "text": "# THE POSSIBILITY OF SUCH DAMAGE."
+    },
+    {
+      "line": 35,
+      "text": "#"
+    },
+    {
+      "line": 36,
+      "text": "# *****************************************************************************"
+    },
+    {
+      "line": 37,
+      "text": "# "
+    },
+    {
+      "line": 38,
+      "text": "# batch process to convert ranging data file to lunar format,"
+    },
+    {
+      "line": 39,
+      "text": "# filter it, and normalpoint it."
+    },
+    {
+      "line": 40,
+      "text": "# input is the .lf full rate lunar data file."
+    },
+    {
+      "line": 41,
+      "text": "# output are the .frd (lunar full rate) and .npt (lunar normalpoint) files."
+    },
+    {
+      "line": 42,
+      "text": "#"
+    },
+    {
+      "line": 43,
+      "text": "# R. L. Ricklefs / Univerity of Texas / CSR"
+    },
+    {
+      "line": 44,
+      "text": "#"
+    },
+    {
+      "line": 45,
+      "text": "# History"
+    },
+    {
+      "line": 46,
+      "text": "#   01/02/97 - recalculate residuals before filtering. rlr."
+    },
+    {
+      "line": 47,
+      "text": "#   07xx07 - CRD version. Includes flag on arg list to specify whether to"
+    },
+    {
+      "line": 48,
+      "text": "#            perform data plots. rlr."
+    },
+    {
+      "line": 49,
+      "text": "#   120707 - Handle LRO through crd_cal rather than convert_itdf_crd. rlr"
+    },
+    {
+      "line": 50,
+      "text": "#   011717 - Adapt for open dource distribution. rlr."
+    },
+    {
+      "line": 51,
+      "text": "#"
+    },
+    {
+      "line": 52,
+      "text": "# THIS SCRIPT HAS BEEN MODIFIED TO USE poldat_thruJ17 INSTEAD OF THE"
+    },
+    {
+      "line": 53,
+      "text": "# USUAL SHORT poldat FILE FOR FILTERING AND NORMAL POINTING OLD DATA!"
+    },
+    {
+      "line": 54,
+      "text": "#"
+    },
+    {
+      "line": 55,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 56,
+      "text": "#####\t\t\t\tSet Up\t\t\t\t\t#####"
+    },
+    {
+      "line": 57,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 58,
+      "text": "set DATA_DIR_LIB= (data/lib/)"
+    },
+    {
+      "line": 59,
+      "text": "set DATA_DIR_FR= (data/fr/)"
+    },
+    {
+      "line": 60,
+      "text": "set DATA_DIR= (data/analysis/)"
+    },
+    {
+      "line": 61,
+      "text": "set SLR_DATA_DIR= (data/analysis/)"
+    },
+    {
+      "line": 62,
+      "text": "@ SWFAIL = 0"
+    },
+    {
+      "line": 63,
+      "text": "@ CSTAT = 0"
+    },
+    {
+      "line": 64,
+      "text": "@ NCSTAT = 0"
+    },
+    {
+      "line": 65,
+      "text": "@ FCSTAT = 0"
+    },
+    {
+      "line": 66,
+      "text": ""
+    },
+    {
+      "line": 67,
+      "text": "if ( $#argv == 0 ) then"
+    },
+    {
+      "line": 68,
+      "text": "  echo No file specified. Try again!"
+    },
+    {
+      "line": 69,
+      "text": "  exit 1"
+    },
+    {
+      "line": 70,
+      "text": "endif"
+    },
+    {
+      "line": 71,
+      "text": "echo == Started processing lunar data file $1. =="
+    },
+    {
+      "line": 72,
+      "text": ""
+    },
+    {
+      "line": 73,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 74,
+      "text": "#####\t\t\tRemove old files\t\t\t\t#####"
+    },
+    {
+      "line": 75,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 76,
+      "text": ""
+    },
+    {
+      "line": 77,
+      "text": "if (-e $DATA_DIR$1\".errorc\") then"
+    },
+    {
+      "line": 78,
+      "text": "  rm -f  $DATA_DIR$1\".errorc\""
+    },
+    {
+      "line": 79,
+      "text": "endif"
+    },
+    {
+      "line": 80,
+      "text": "if (-e $DATA_DIR$1\".llc\") then"
+    },
+    {
+      "line": 81,
+      "text": "  rm -f $DATA_DIR$1\".llc\""
+    },
+    {
+      "line": 82,
+      "text": "endif"
+    },
+    {
+      "line": 83,
+      "text": "if (-e $DATA_DIR$1\".lsc\") then"
+    },
+    {
+      "line": 84,
+      "text": "  rm -f $DATA_DIR$1\".lsc\""
+    },
+    {
+      "line": 85,
+      "text": "endif"
+    },
+    {
+      "line": 86,
+      "text": "if (-e $DATA_DIR$1\".frd\") then"
+    },
+    {
+      "line": 87,
+      "text": "  rm -f $DATA_DIR$1\".frd\""
+    },
+    {
+      "line": 88,
+      "text": "endif"
+    },
+    {
+      "line": 89,
+      "text": "if (-e $DATA_DIR$1\".npt\") then"
+    },
+    {
+      "line": 90,
+      "text": "  rm -f $DATA_DIR$1\".npt\""
+    },
+    {
+      "line": 91,
+      "text": "endif"
+    },
+    {
+      "line": 92,
+      "text": ""
+    },
+    {
+      "line": 93,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 94,
+      "text": "#####                            Copy in needed files                   #####"
+    },
+    {
+      "line": 95,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 96,
+      "text": "#  make sure listing file exists!"
+    },
+    {
+      "line": 97,
+      "text": "#if (-e $DATA_DIR_FR$1\".dlc\") then"
+    },
+    {
+      "line": 98,
+      "text": "#  cp $DATA_DIR_FR$1\".dlc\" $DATA_DIR$1\".llc\" > /dev/null"
+    },
+    {
+      "line": 99,
+      "text": "#else"
+    },
+    {
+      "line": 100,
+      "text": "  touch $DATA_DIR$1\".llc\""
+    },
+    {
+      "line": 101,
+      "text": "#endif"
+    },
+    {
+      "line": 102,
+      "text": "#mv $DATA_DIR_FR$1\".lfc\" $DATA_DIR$1\".lxc\""
+    },
+    {
+      "line": 103,
+      "text": "#mv $DATA_DIR_FR$1\".ds\" $DATA_DIR$1\".lsc\""
+    },
+    {
+      "line": 104,
+      "text": "#mv $DATA_DIR_FR$1\".dl\" $DATA_DIR$1\".llc\""
+    },
+    {
+      "line": 105,
+      "text": ""
+    },
+    {
+      "line": 106,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 107,
+      "text": "#####\t\t\t\tCalibration\t\t\t\t#####"
+    },
+    {
+      "line": 108,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 109,
+      "text": "# MLRS-specific calibration code removed"
+    },
+    {
+      "line": 110,
+      "text": ""
+    },
+    {
+      "line": 111,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 112,
+      "text": "#####\t\t\t\tRecalculate Residuals\t\t\t#####"
+    },
+    {
+      "line": 113,
+      "text": "#############################################################################"
+    },
+    {
+      "line": 114,
+      "text": ""
+    },
+    {
+      "line": 115,
+      "text": "echo Recalc is now executing..."
+    },
+    {
+      "line": 116,
+      "text": "##bin/llr_npt_crd -r \\"
+    },
+    {
+      "line": 117,
+      "text": "## Changed to reprocess old data!"
+    }
+  ],
+  "npt_test": "#!/bin/csh -f\n# Run a couple tests of the normal point processing. \n# Check the files in data/analysis against those in data/analysis/ref.\nbin/ldb_crd s25y11d016t0231\\#103\necho comparing normal point files:\ndiff data/analysis/s25y11d016t0231\\#103.npt data/analysis/ref/s25y11d016t0231\\#103.npt\necho comparing full rate files:\ndiff data/analysis/s25y11d016t0231\\#103.frd data/analysis/ref/s25y11d016t0231\\#103.frd\nbin/ldb_crd s25y11d042t0234\\#103\ndiff data/analysis/s25y11d042t0234\\#103.npt data/analysis/ref/s25y11d042t0234\\#103.npt\ndiff data/analysis/s25y11d042t0234\\#103.frd data/analysis/ref/s25y11d042t0234\\#103.frd\n\n",
+  "tty_hits": [
+    {
+      "file": "bin/genpred",
+      "line": 499,
+      "text": "\u0000\u0000E\u0000\u0000\u0000\u0000HEH\u0005BS!\u0000\u0000\u0000\u0000\u0000\u000fH\u0083\u0006H\u0001\u0000\u0000\u0000HH\u000fDHsH\u00cb\u0005\u0016S!\u0000\u0000\u0000\u0000\u0000\u000fI\u040b\u0005\u0006S!\u0000\u0000\u0000\u0000\u0000\u000fH\u0006A/B\u0000A\u0006\u0000\u0000\u0000wlb\u0000H\u0789\u0012H\u0005R!\u0000\u0000\u0000\u0000\u0000\u000fH\u0083\u0006H\u01c5/B\u0000\u01c5\u0003\u0000\u0000\u0000\u01c5$\u0003\u0000\u0000\u01c5\u0001\u0000\u0000\u0000HHjHHt\bHZ\u0003\u0001\u000f\u0004\u0000\u0000HEH ERROR IH0HN \"POLINHX\bH\": READ HH\u0010@\u0018TITLf@"
+    },
+    {
+      "file": "bin/genpred",
+      "line": 503,
+      "text": "\u0000\u0000\u0000HHHHC\u0003\u0001\u000f\u0003\u0000\u0000HEH ERROR IH0HN \"POLINHX\bH\": READ HH\u0010HCS VALUEHp\u0018f@ S.HEH\"H        H8H        HX\bH        HH\u0010H        Hp\u0018H        Hx @(    f@,  H\u01c5`'B\u0000\u01c5N"
+    },
+    {
+      "file": "bin/llr_npt_crd",
+      "line": 432,
+      "text": "c\u0000H\u0789.H\u0005(\"\u0000\u0000\u0000\u0000\u0000\u000fH\u0083\u0006H\u01c5\u0271B\u0000\u01c5\u0003\u0000\u0000\u0000\u01c5$\u0003\u0000\u0000\u01c5\u0001\u0000\u0000\u0000HH&-HHt\bH\u0006.\u0003\u0001\u000f\u0004\u0000\u0000HEH ERROR IH0HN \"POLINHX\bH\": READ HH\u0010@\u0018TITLf@"
+    },
+    {
+      "file": "bin/llr_npt_crd",
+      "line": 436,
+      "text": "\u0000\u0000\u0000HH-HH,\u0003\u0001\u000f\u0003\u0000\u0000HEH ERROR IH0HN \"POLINHX\bH\": READ HH\u0010HCS VALUEHp\u0018f@ S.HEH\"H        H8H        HX\bH        HH\u0010H        Hp\u0018H        Hx @(    f@,  H\u01c5xB\u0000\u01c5v"
+    },
+    {
+      "file": "bin/llr_npt_crd",
+      "line": 903,
+      "text": "HR\u0002H@\u0002HE\u000f\u0010\u0000\u000f\u0011\u0005I!\u0000\u0005Z!\u0000\u0001\u0005Q!\u0000H npaug: H\u0005<!\u0000Htoo manyH\u0005<!\u0000H normalpH\u0005<!\u0000Hoints inH\u0005<!\u0000H this ruH\u0005<!\u0000Hn.  NumbH\u0005<!\u0000Her read H\u0005<!\u0000Hand max H\u0005}<!\u0000\u0005{<!\u0000are:"
+    },
+    {
+      "file": "src/lun_auto/lun_auto_crd.c",
+      "line": 132,
+      "text": "/*  Read lunar data file, saving time and residual of returns */"
+    },
+    {
+      "file": "src/lun_auto/lun_auto_crd.c",
+      "line": 136,
+      "text": "      /*   Read every record in file */"
+    },
+    {
+      "file": "src/lun_auto/lun_auto_crd.c",
+      "line": 368,
+      "text": "      /*   Read every record in file */"
+    },
+    {
+      "file": "src/lun_auto/lun_sdqi_crd.c",
+      "line": 83,
+      "text": "/*  Read and reformat lunar data file, one shot at a time  */"
+    },
+    {
+      "file": "src/lun_auto/lun_sdqi_crd.c",
+      "line": 87,
+      "text": "      /* Read every record in burst */"
+    },
+    {
+      "file": "src/lun_auto/lun_sdqi_crd.c",
+      "line": 163,
+      "text": "      /*   Read every record in file */"
+    },
+    {
+      "file": "src/genpred/LIOCMN.INC",
+      "line": 5,
+      "text": "cc  to or read from file types 6 & 7.)"
+    },
+    {
+      "file": "src/genpred/eulcomnp.f",
+      "line": 196,
+      "text": "c This is now read in by EPHINIT from file CUTABLE."
+    },
+    {
+      "file": "src/genpred/kustner01.f",
+      "line": 116,
+      "text": "c  read the file (again?)"
+    },
+    {
+      "file": "src/genpred/lunio02.f",
+      "line": 7,
+      "text": "C     INPUT: MODE    1 = READ FROM DESIGNATED FILE"
+    },
+    {
+      "file": "src/genpred/lunio02.f",
+      "line": 22,
+      "text": "C     OUTPUT:IRECD   AN ARRAY TO BE READ FROM FILE"
+    },
+    {
+      "file": "src/genpred/misclibnp.f",
+      "line": 59,
+      "text": "C     READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/genpred/misclibnp.f",
+      "line": 97,
+      "text": "C     TO READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/genpred/genpred.f",
+      "line": 1,
+      "text": "C        PROGRAM EULER(INPUT,OUTPUT,TTY,UTPOLE,POLDAT,MITEPHB,"
+    },
+    {
+      "file": "src/genpred/genpred.f",
+      "line": 2,
+      "text": "C     X TAPE5=INPUT,TAPE6=OUTPUT,TAPE10=TTY)"
+    },
+    {
+      "file": "src/genpred/genpred.f",
+      "line": 333,
+      "text": "c:read polar motion & ut1-utc polynomial coefficients"
+    },
+    {
+      "file": "src/genpred/genpred.f",
+      "line": 568,
+      "text": "C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT"
+    },
+    {
+      "file": "src/genpred/pparin11.f",
+      "line": 27,
+      "text": "C  READ CONTROL PARAMETERS,"
+    },
+    {
+      "file": "src/genpred/pparin11.f",
+      "line": 44,
+      "text": "C\t07-20-87 - READ PROPER REFLECTOR COORDINATE SET FROM FILE LREFL1.PC"
+    },
+    {
+      "file": "src/genpred/pparin11.f",
+      "line": 105,
+      "text": "C:READ CONTROL, MODEL, & REFLECTOR FILES"
+    },
+    {
+      "file": "src/genpred/pparin11.f",
+      "line": 111,
+      "text": "c  read into /modinf/ starting at \"nammod\""
+    },
+    {
+      "file": "src/genpred/pparin11.f",
+      "line": 115,
+      "text": "c  read into /rflinf/ starting at \"rfset\""
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 144,
+      "text": "c  Oct 89 - tlr:  read time from file \"CUTABLE\""
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 168,
+      "text": "c Read in the TIME array from file CUTABLE."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 256,
+      "text": "C 24 Sep 90, 0947:add option to read JPL ephemeris."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 304,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 351,
+      "text": "c  Read from JPL or MIT ephemeris."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 1144,
+      "text": "C 25 Sep 90, 0836: add option to read JPL ephemeris."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 1193,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 1266,
+      "text": "c  Read from JPL or MIT ephemeris."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 1294,
+      "text": "c  Read from JPL or MIT ephemeris."
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 2819,
+      "text": "C  READ INITIAL OR FINAL JULIAN DATES FROM KEYBOARD"
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 2872,
+      "text": "C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM"
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 2890,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ TITLE.'"
+    },
+    {
+      "file": "src/genpred/djeulpkg.f",
+      "line": 2893,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ CS VALUES.'"
+    },
+    {
+      "file": "src/genpred/opio.f",
+      "line": 83,
+      "text": "C  IF THE FILENAME READ IN ALREADY CARRIES AN EXTENSION, IT IS USED IN"
+    },
+    {
+      "file": "src/genpred/jjreadnp.f",
+      "line": 6,
+      "text": "c  and the JPL supplied routines PLEPH etc that read the JPL ephemeris."
+    },
+    {
+      "file": "src/Poisson/Poisson_crd.f",
+      "line": 81,
+      "text": "C v1.9a 06/20/97 - Drop record at read rather than write, so that stats"
+    },
+    {
+      "file": "src/Poisson/Poisson_crd.f",
+      "line": 294,
+      "text": "C read time / residual data from file."
+    },
+    {
+      "file": "src/Poisson/Poisson_crd.f",
+      "line": 418,
+      "text": "C Read control parameters for Poisson filtering run."
+    },
+    {
+      "file": "src/Poisson/Poisson_crd.f",
+      "line": 448,
+      "text": "C open file, read parameters, and close"
+    },
+    {
+      "file": "src/Poisson/Poisson_crd.f",
+      "line": 1621,
+      "text": "C   IF THE FILENAME READ IN ALREADY CARRIES AN EXTENSION, IT IS USED IN"
+    },
+    {
+      "file": "src/utilib/read_crdf.f",
+      "line": 2,
+      "text": "C * Subroutines: read CRD data record from an input string"
+    },
+    {
+      "file": "src/utilib/read_crdf.f",
+      "line": 131,
+      "text": "C  Read the correct number of parameters"
+    },
+    {
+      "file": "src/utilib/read_crd.c",
+      "line": 6,
+      "text": " * Subroutines: read CRD data records from an input string."
+    },
+    {
+      "file": "src/llr_npt/LIOCMN.INC",
+      "line": 5,
+      "text": "cc  to or read from file types 6 & 7.)"
+    },
+    {
+      "file": "src/llr_npt/parin11.f",
+      "line": 39,
+      "text": "C  READ CONTROL PARAMETERS,"
+    },
+    {
+      "file": "src/llr_npt/parin11.f",
+      "line": 55,
+      "text": "C\t07-20-87 - READ PROPER REFLECTOR COORDINATE SET FROM FILE LREFL1.PC"
+    },
+    {
+      "file": "src/llr_npt/parin11.f",
+      "line": 117,
+      "text": "C:READ CONTROL, MODEL, & REFLECTOR FILES"
+    },
+    {
+      "file": "src/llr_npt/lunio01.f",
+      "line": 27,
+      "text": "cc 23 Apr 90 - tlr:  For file types 6 & 7, only read from or"
+    },
+    {
+      "file": "src/llr_npt/lunio01.f",
+      "line": 37,
+      "text": "C     INPUT: MODE    1 = READ FROM DESIGNATED FILE"
+    },
+    {
+      "file": "src/llr_npt/lunio01.f",
+      "line": 52,
+      "text": "C     OUTPUT:IRECD   AN ARRAY TO BE READ FROM FILE"
+    },
+    {
+      "file": "src/llr_npt/putnp_crd.f",
+      "line": 144,
+      "text": "C\t  sdqi is read from input fr file"
+    },
+    {
+      "file": "src/llr_npt/sncalc.f",
+      "line": 6,
+      "text": "c  To do this, we accept the o-c residuals read from the data.  A"
+    },
+    {
+      "file": "src/llr_npt/eulcomnp.f",
+      "line": 196,
+      "text": "c This is now read in by EPHINIT from file CUTABLE."
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 23,
+      "text": "C     1) ADD FAKE AZOFF/ALTOFF UNTIL IT CAN BE READ INTO"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 283,
+      "text": "c:read control, model, & reflector files"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 295,
+      "text": "c:initialize ephemeris read package"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 323,
+      "text": "c:read next observation (unless there is already one in /d10/)"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 344,
+      "text": "\t\t      dontread= .true.\t\t\t! we just read a detail"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 351,
+      "text": "c  did we read a header set? if it's not the first one, form a norm pt"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 426,
+      "text": "C:WRITE TTY RECORD INFO"
+    },
+    {
+      "file": "src/llr_npt/np_crd.f",
+      "line": 468,
+      "text": "C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT"
+    },
+    {
+      "file": "src/llr_npt/kustner01.f",
+      "line": 116,
+      "text": "c  read the file (again?)"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 139,
+      "text": "c  Oct 89 - tlr:  read time from file \"CUTABLE\""
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 163,
+      "text": "c Read in the TIME array from file CUTABLE."
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 251,
+      "text": "C 24 Sep 90, 0947:add option to read JPL ephemeris."
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 299,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 344,
+      "text": "c  Read from JPL or MIT ephemeris."
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 1111,
+      "text": "C 25 Sep 90, 0836: add option to read JPL ephemeris."
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 1160,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 1220,
+      "text": "c  Read from JPL or MIT ephemeris."
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 2603,
+      "text": "C  READ INITIAL OR FINAL JULIAN DATES FROM KEYBOARD"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 2656,
+      "text": "C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 2674,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ TITLE.'"
+    },
+    {
+      "file": "src/llr_npt/jeulpkg.f",
+      "line": 2677,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ CS VALUES.'"
+    },
+    {
+      "file": "src/llr_npt/rdlun12.f",
+      "line": 88,
+      "text": "C  NOT A RUN HEADER RECORD, SO READ ANOTHER"
+    },
+    {
+      "file": "src/llr_npt/rdlun12.f",
+      "line": 95,
+      "text": "C  READ A BURST HEADER. CHECK FOR OUT OF SEQUENCE!"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 54,
+      "text": "C     1) ADD FAKE AZOFF/ALTOFF UNTIL IT CAN BE READ INTO"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 304,
+      "text": "c:read control, model, & reflector files"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 318,
+      "text": "c:initialize ephemeris read package"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 344,
+      "text": "c:read next observation (unless there is already one in ip buffer)"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 364,
+      "text": "\t\t      dontread= .true.\t\t\t! we just read a detail"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 369,
+      "text": "\t      go to 100\t\t\t\t\t! read the next recd"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 373,
+      "text": "c  did we read a header set? if it's not the first one, form a norm pt"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 379,
+      "text": "\t      go to 100\t\t\t\t\t! read the next recd"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 398,
+      "text": "c  did we read a header set? if it's not the first one, form a norm pt"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 457,
+      "text": "C:WRITE TTY RECORD INFO"
+    },
+    {
+      "file": "src/llr_npt/np12.f",
+      "line": 493,
+      "text": "C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT"
+    },
+    {
+      "file": "src/llr_npt/putnp13.f",
+      "line": 88,
+      "text": "C  (MUST READ W/F14.0 AND SCALE BY 1.D-13)"
+    },
+    {
+      "file": "src/llr_npt/putnp13.f",
+      "line": 119,
+      "text": "C  POINT TO NPSKEL.  READ W/F10.0 AND SCALE BY 1.D-7."
+    },
+    {
+      "file": "src/llr_npt/putnp13.f",
+      "line": 168,
+      "text": "C  (MUST READ W/F14.0 AND MULTIPLY BY 1.D-13)"
+    },
+    {
+      "file": "src/llr_npt/putnp13.f",
+      "line": 211,
+      "text": "C  POINT TO NPSKEL.  READ W/F10.0 AND SCALE BY 1.D-7."
+    },
+    {
+      "file": "src/llr_npt/testrda.f",
+      "line": 47,
+      "text": "\ttype *, ' Error on read record ',irecerr"
+    },
+    {
+      "file": "src/llr_npt/lunio02.f",
+      "line": 6,
+      "text": "C     INPUT: MODE    1 = READ FROM DESIGNATED FILE"
+    },
+    {
+      "file": "src/llr_npt/lunio02.f",
+      "line": 21,
+      "text": "C     OUTPUT:IRECD   AN ARRAY TO BE READ FROM FILE"
+    },
+    {
+      "file": "src/llr_npt/misclibnp.f",
+      "line": 59,
+      "text": "C     READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/llr_npt/misclibnp.f",
+      "line": 97,
+      "text": "C     TO READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/llr_npt/.jeulpkg.f.swp",
+      "line": 68,
+      "text": "\u0000\u0000\t\u0000\u0000\t\u0000\u0000\t\u0000\u0000\t\u0000\u0000\t\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t   END\u0000C\t   THE\u0000C\u000011    CALL ERROR(1,MSG,9010,IOS)\u0000 \u0000      RETURN\u0000      CLOSE(1)\u0000 \u0000      READ(1,*,ERR=11) (CS(I),I=13,14)\u0000      READ(1,*,ERR=11) (CS(I),I=11,12)\u0000      READ(1,*,ERR=11) (CS(I),I=6,10)\u0000      READ(1,*,ERR=11) (CS(I),I=1,5)\u0000\tMSG=' ERROR IN \"POLIN\": READ CS VALUES.'\u0000 1000 FORMAT(A30)\u0000      READ(1,1000,ERR=11) PMTITLE\u0000\tMSG=' ERROR IN \"POLIN\": READ TITLE.'\u0000C\u0000     1\t\tFILE=pathfil(1:lenfil)//'UTPOLE',STATUS='OLD')\u0000      OPEN(1,IOSTAT=IOS,ERR=11,\u0000\tMSG=' ERROR IN \"POLIN\": OPEN \"UTPOLE\".'\u0000C\u0000\tCHARACTER*80 MSG\u0000\tCHARACTER*30 PMTITLE\u0000      DOUBLE PRECISION CS(14) \u0000\u0000\tinclude 'DEVCOM.INC'\u0000\u0000ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 08 Mar 91, 1555: add parameter to error for exit.\u0000ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000cc  Fri Dec 15 15:10:38 CST 1989, use pathname in open.   tlr\u0000C                                                           RLR 2/84\u0000C  FILE 'UTPOLE'.\u0000C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM \u0000      IMPLICIT DOUBLE PRECISION (A-H,O-Z)\u0000\tSUBROUTINE POLIN(PMTITLE,CS)\u0000\u0000\u0000\t   END\u0000C\t   THE\u0000C\u000010000\tcontinue\u0000      GO TO 5\u00001010  FORMAT(1X,'You entered ',6i8,'; ---- TRY AGAIN!') \u000010    WRITE(ierrout,1010)m,d,y,h,mm,s\u0000 \u0000\tgoto 10000\u0000      CALL GRTJD(Y-1900,M,D,H,MM,S,JDINT,JDF)\u0000CC Y2K      CALL GRTJD(Y,M,D,H,MM,S,JDINT,JDF)\u0000      IF (S.LT.0 .OR. S.GT.59) GO TO 10\u0000      IF (MM.LT.0.OR.MM.GT.59) GO TO 10\u0000      IF (H.LT.0 .OR. H.GT.23) GO TO 10\u0000      IF (D.LT.1 .OR. D.GT.31) GO TO 10\u0000      IF (M.LT.1 .OR. M.GT.12) GO TO 10\u0000      IF (Y.LT.1900 .OR. Y.GT.2099) GO TO 10\u0000ad\u0000\u0000!\u0000\u0000\u0000\u0005\u0002\u0000\u0000\u0000\u0010\u0000\u0000t\u0000\u0000\u0000\u000f\u0000\u0000\u000f\u0000\u0000\u000f\u0000\u0000\u007f\u000f\u0000\u0000]\u000f\u0000\u00003\u000f\u0000\u0000\u0012\u000f\u0000\u0000\b\u000f\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000p\u000e\u0000\u00007\u000e\u0000\u0000\u0011\u000e\u0000\u0000"
+    },
+    {
+      "file": "src/llr_npt/.np12.f.swp",
+      "line": 25,
+      "text": "\t\u0000\u0000\b\u0000\u0000\b\u0000\u0000|\b\u0000\u0000?\b\u0000\u0000\u0006\b\u0000\u0000\u0007\u0000\u0000\u0007\u0000\u0000J\u0007\u0000\u0000\u0007\u0007\u0000\u0000\u0006\u0000\u0000\u0006\u0000\u0000b\u0006\u0000\u0000#\u0006\u0000\u0000\u0005\u0000\u0000\u0005\u0000\u0000\u0005\u0000\u0000X\u0005\u0000\u0000Q\u0005\u0000\u0000\t\u0005\u0000\u0000\u0004\u0000\u0000\u0004\u0000\u0000\u0004\u0000\u0000<\u0004\u0000\u0000-\u0004\u0000\u0000\u0003\u0000\u0000\u0003\u0000\u0000k\u0003\u0000\u0000.\u0003\u0000\u0000\u0004\u0003\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000X\u0002\u0000\u0000\u0011\u0002\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000n\u0001\u0000\u0000R\u0001\u0000\u0000\u0000\u0000C                  IN TIME.\u0000C       10/25/84 - ADD ITERDIR TO ALLOW PREDICTIONS FORWARD OR BACKWARD\u0000C  REVISIONS:\u0000C\u0000C:COORDINATES, AND CONTROL PARAMETERS ARE PRODUCED BY PROGRAM 'PREDCNTRL'.\u0000C:FILES DETAILING MODEL PARAMETERS, REFLECTOR, TRANSMITTER, & RECEIVER\u0000C:UNDER A GENERALIZED SET OF CONDITIONS.\u0000C:THIS PROGRAM IS DESIGNED TO PRODUCE LUNAR NORMALPOINTS\u0000C:%T PURPOSE\u0000C:%G LUNAR RANGE AND POSITION PREDICTION PROGRAM\u0000C:%NOSOURCE\u0000C:%TITLE NP -- PRODUCE LUNAR NORMALPOINTS\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 26 Oct 99,     : Y2K correction to output. rlr.\u0000c 14 May 99,     : Add support for cstg (ilrs) normalpoints. rlr.\u0000c 06 Oct 95,     : Get detector from run header and place into mini npt. rlr.\u0000c\troutine. rlr\u0000c 26 Nov 91,\t : Compile signal & noise stats and call s:n calculation \u0000c\ton time of day. rlr\u0000c 06 Nov 91,     : Allow fixed length npt bins with starting time based\u0000c\tdo not write and error and stop. rlr.\u0000c 05 Nov 91,     : When there are no points in a npt bin, simply go on;\u0000c\trlr.\u0000c\tat all times and limiting NOVA screen output to debugging.\u0000c 31 Jul 91,     : correct output by writing long output to listing\u0000c\trecords read.\u0000c\tif more.  Around statement label 600, check for no data\u0000c\tpathnames.  Allow up to 500 normalpoints and take error exit\u0000c\tMake output to screen like old NOVA programs.  Work on use of\u0000c 23 Apr 91, 1543 through  <:r! vidate>\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 08 Mar 91, 1738: terminate program w/call to exit through ceror.\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 28 Feb 91, 1321 - use new pathnames: /data/lib, /data/llr/pred.\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 22 Feb 91, 1607: put \"continue\" before format for xdb.\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 14 Sep 90, 1529: call pmodrep instead of modrep.\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c 05 Sep 90, 1011: remove \"/us1\" from path names\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c    Use proper geometric delay (geodt) for 71111 and 71112.\u0000c  Tue Apr 17 09:43:45 CDT 1990 - tlr\u0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\u0000c  add command line input (normal point or recalc, file names, etc.)\u0000c\tDec 89  -  tlr\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     2) Add \"oobscode=obsy\".\u0000C     1) Must multiply by cdr to convert azoff to radians.\u0000C  Nov 89 - tlr\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000c     2) fix \"14:29:60.0\" problem\u0000C        correction @ Mt. Fowlkes site.\u0000C     1) Correct handling of clock drift and of geometric\u0000C  Oct 89 - tlr\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C        /SITE/ BLOCK\u0000C     1) ADD FAKE AZOFF/ALTOFF UNTIL IT CAN BE READ INTO\u0000C  Wed May 3, 1989 10:14:09\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     1) KLUDGE D.P. RELATIONAL EXPRESSIONS.\u0000C  Wed Mar 29, 1989 08:09:44\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     1) COMMENT OUT CALLS TO \"SVGET\", \"NAMCHG\", AND \"UNIST\".\u0000C  Thu Nov 3, 1988 15:29:52\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     1) CHANGE TYPE REAL TO TYPE DOUBLE PRECISION.\u0000C  Mon Oct 31, 1988 15:29:19\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     1) REMOVE IN-LINE COMMENTS.\u0000C  Wed Oct 19, 1988 14:28:17\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C     2) MAKE SURE STATEMENTS DON'T EXTEND BEYOND COLUMN 72.\u0000C        \"IMPLICIT DOUBLE PRECISION (A-H,O-Z)\".\u0000C     1) REPLACE \"COMPILER DOUBLE PRECISION\" WITH\u0000C  Mon Aug 29, 1988 09:50:47\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000\timplicit double precision (a-h,o-z)\u0000\tprogram np12\u0000ad\u0000\u0000\u0006\u0000\u0000\u0007\u0000\u0000\u0000\u0010\u0000\u0000A\u0000\u0000\u0000\u000f\u0000\u0000\u000f\u0000\u0000\u000f\u0000\u0000\u000f\u0000\u0000N\u000f\u0000\u00008\u000f\u0000\u00007\u000f\u0000\u0000\b\u000f\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000\u000e\u0000\u0000V\u000e\u0000\u0000-\u000e\u0000\u0000\u0014\u000e\u0000\u0000"
+    },
+    {
+      "file": "src/llr_npt/.np12.f.swp",
+      "line": 88,
+      "text": "\u0005\u0000\u0000\u0000\u0005\u0000\u0000\u0004\u0000\u0000\u0004\u0000\u0000\u0004\u0000\u0000a\u0004\u0000\u00007\u0004\u0000\u0000\u000f\u0004\u0000\u0000\u0003\u0000\u0000\u0003\u0000\u0000\u0003\u0000\u0000\u0003\u0000\u0000C\u0003\u0000\u00003\u0003\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000\u0002\u0000\u0000r\u0002\u0000\u0000=\u0002\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000     2\t\tSPAN,SDQI,AZALTRN(2),AZALTRN(3),detector,isch,isite,ntype)\u0000     1\t\tRANG,CRANGE,OMC,ELDEL,GEODEL,TOFF,UNCERT,SBYS,SD,RSD,\u0000      CALL PUTNP(TJDINT,SUTCT,BH,NSHOTS,ONREFL,OBSY,\u0000      CRANGE= RANG*(1.D0+FREQ/8.64D11) + (ELDEL+GEODEL)/1.D9\u0000C:FORMAT AND WRITE THE STUFF\u0000\u0000\tendif\u0000     x\tAZOFF,AZALTRN(3),ALTOFF\u0000CC\tWRITE(6,*) \"npt recd geodel, geodt\",geodel,geodt,AZALTRN(2),\u0000          endif\u0000     1          mlrsgct(AZALTRN(2)*CDR+AZOFF,AZALTRN(3)*CDR+ALTOFF)\u0000            geodel= geodt+\u0000          else\u0000     1          mlrsgc(AZALTRN(2)*CDR+AZOFF,AZALTRN(3)*CDR+ALTOFF)\u0000            geodel= geodt+\u0000          if (tjdint.lt.2449078.5) then\u0000CC          if (tjdint.lt.2449139.5) then\u0000\telseif(abs(obsy-71112.d0) .LT. 0.1d0) then\u0000     1\t\tmlrsgc((AZALTRN(2)-24.5079D0)*CDR,AZALTRN(3)*CDR)\u0000\t  geodel=geodt+\u0000\tif(abs(obsy-71111.d0) .LT. 0.1d0) then\u0000C:CALCULATE MOUNT GEOM OFFSET\u0000\u0000      RANG= TTLTIM+ OMC*1.D-9\u0000      AZALTRN(3)= AZALTRN(3)+ DALT/CDR\u0000      TTLTIM= TTLTIM+ DTIM*1.D-9\u0000      DTIM= 2.D6*DTIM/VLIGHT\u0000      CALL REFRMM(AZALTRN(3)*CDR,TTLTIM,DALT,DTIM)\u0000C:CALC REFRACTION\u0000\u0000     1\t\tTTLTIM,LHATRN,AZALTRN,LHARCV,AZALRCV)\u0000      CALL SUBLASR(TJDINT,SUTCT,VLITE,UT1C,XPOLE,YPOLE,EOSRC,\u0000C:CALCULATE RANGE AND POINT ANGLES AT NORMALPOINT TIME\u0000\u0000      RECEIV(3)= RLAT\u0000      RECEIV(2)= RLONG\u0000      RECEIV(1)= RRAD\u0000      TRANSM(3)= TLAT\u0000      TRANSM(2)= TLONG\u0000      TRANSM(1)= TRAD\u0000C:SET UP STATION (& REFL) COORDINATES\u0000\u0000\tendif\u0000          endif\u0000CC\tWRITE(6,*) \"last recd geodel, geodt\",geodel,geodt\u0000     1          mlrsgct(azaltrn(2)*cdr+azoff,azaltrn(3)*cdr+altoff)\u0000            geodt=geodel-\u0000          else\u0000     1          mlrsgc(azaltrn(2)*cdr+azoff,azaltrn(3)*cdr+altoff)\u0000            geodt=geodel-\u0000          if (tjdint.lt.2449078.5) then\u0000CCC          if (tjdint.lt.2449139.5) then\u0000\telseif(abs(obsy-71112.d0) .LT. 0.1d0) then\u0000     1\t\tmlrsgc((azaltrn(2)-24.5079)*cdr,azaltrn(3)*cdr)\u0000\t  geodt=geodel-\u0000\tif(abs(obsy-71111.d0) .LT. 0.1d0) then\u0000c Get the basic geometric delay w/o point-angle terms from last record.\u0000\u0000        CALL MAKNORM(TJDINT,SUTCT,OMC,A,B,C,SD,SE,SPAN)\u0000\u0000\tcall sncalc\u0000\u0000\tIF (MODEOP.NE.0) GO TO 699\u0000\tif(nrcd .EQ. 0) go to 699\u0000C\tendif\u0000C\t  call error(2,errmsg,0,0)\u0000C\t  errmsg = ' no data records read.'\u0000C\tif(nrcd .EQ. 0) then\u0000600\tcontinue\u0000C...IF THIS IS RECALC-ONLY MODE, DON'T BOTHER\u0000C:NORMALPOINT PROCESSING\u0000\u0000C========================= END OF OBS LOOP ===========================\u0000\u0000  450 GO TO 100\u0000 \u0000     4\t\t1X,F7.4,1X,F8.4,1X,F7.4)\u0000     3\t\t2(1X,F7.4),1X,F8.5,1X,A1,\u0000     2\t\t1X,F12.10,1X,F7.3,F9.2,\u0000     1\t\t1X,I1,1X,F6.0,\u0000 1055 FORMAT(I4,1X,F18.10,1X,2(I2,'/'),I4,1X,2(I2,':'),F6.2,\u0000     4\t\tLHATRN(2),LHATRN(3),AZALTRN(3)\u0000     3\t\tXPOLE,YPOLE,UT1C,EOSRC,\u0000     2\t\tORANGE,DTIM,OMC,\u0000     1\t\tNREFL,OBSY,\u0000      WRITE(NPLOGFIL,1055) NRCD,TJDUTC,(D1(I),I=1,5),SECOND,\u0000     4\t\tLHATRN(2),LHATRN(3),AZALTRN(3)\u0000     3\t\tXPOLE,YPOLE,UT1C,EOSRC,\u0000     2\t\tORANGE,DTIM,OMC,\u0000     1          (D1(I),I=1,5),SECOND,NREFL,OBSY,\u0000      if (ioutdev .gt. 0) WRITE(IOUTDEV,1055) NRCD,TJDUTC,\u0000      D1(3)= D1(3)+ 1900\u0000C     Y2K correction\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000C 1050 FORMAT(5X,I1,2F10.4,F15.10,D13.6,2(1X,2D11.4))\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000 1050 FORMAT(5X,I1,2F10.4,F15.10,F9.2)\u0000CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\u0000CCC     1\t\t,LHATRN(2),AZALTRN(3)\u0000      if (anydeb) WRITE(NPLOGFIL,1050) NREFL,AZALTRN(2),AZALTRN(3),TTLTIM,OMC\u0000CCC     1\t\t,LHATRN(2),AZALTRN(3)\u0000     1     WRITE(IOUTDEV,1050) NREFL,AZALTRN(2),AZALTRN(3),TTLTIM,OMC\u0000      if (anydeb .and. ioutdev .gt. 0) \u0000CXXXXZZZZZZZZZZZZZZZ   REMOVE THE 2 CONTINUATION LINES BELOW.  XZXZZZZ\u0000C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT\u0000"
+    },
+    {
+      "file": "src/llr_npt/npaug10.f",
+      "line": 45,
+      "text": "     1\t'Number read and max are:'"
+    },
+    {
+      "file": "src/llr_npt/misclibnp_crd.f",
+      "line": 59,
+      "text": "C     READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/llr_npt/misclibnp_crd.f",
+      "line": 97,
+      "text": "C     TO READ RECORD OF LENGTH \"LEN\" INTO BUFF.  USE \"LEN\" TO"
+    },
+    {
+      "file": "src/llr_npt/testda.f",
+      "line": 88,
+      "text": "\ttype *, ' Error on read record ',irecerr"
+    },
+    {
+      "file": "src/llr_npt/sncalc_crd.f",
+      "line": 6,
+      "text": "c  To do this, we accept the o-c residuals read from the data.  A"
+    },
+    {
+      "file": "src/llr_npt/opio.f",
+      "line": 83,
+      "text": "C  IF THE FILENAME READ IN ALREADY CARRIES AN EXTENSION, IT IS USED IN"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 144,
+      "text": "c  Oct 89 - tlr:  read time from file \"CUTABLE\""
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 162,
+      "text": "c Read in the TIME array from file CUTABLE."
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 285,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 1084,
+      "text": "C:ELSE CALL READ ERROR ROUTINE; STOP"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 2457,
+      "text": "C  READ INITIAL OR FINAL JULIAN DATES FROM KEYBOARD"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 2508,
+      "text": "C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 2526,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ TITLE.'"
+    },
+    {
+      "file": "src/llr_npt/eulpkgnp.f",
+      "line": 2529,
+      "text": "\tMSG=' ERROR IN \"POLIN\": READ CS VALUES.'"
+    },
+    {
+      "file": "src/llr_npt/rdlun_crd.f",
+      "line": 195,
+      "text": "C  Read but don't write this record. New one written in putnp."
+    },
+    {
+      "file": "src/llr_npt/parin_crd.f",
+      "line": 39,
+      "text": "C  READ CONTROL PARAMETERS,"
+    },
+    {
+      "file": "src/llr_npt/parin_crd.f",
+      "line": 55,
+      "text": "C\t07-20-87 - READ PROPER REFLECTOR COORDINATE SET FROM FILE LREFL1.PC"
+    },
+    {
+      "file": "src/llr_npt/parin_crd.f",
+      "line": 117,
+      "text": "C:READ CONTROL, MODEL, & REFLECTOR FILES"
+    },
+    {
+      "file": "src/llr_npt/jjreadnp.f",
+      "line": 6,
+      "text": "c  and the JPL supplied routines PLEPH etc that read the JPL ephemeris."
+    }
+  ],
+  "error_signatures": [
+    {
+      "run": "run1",
+      "session": "s25y11d016t0231#103",
+      "lines": [
+        "At line 978 of file testeph.F (unit = 2)",
+        "Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory",
+        "Error termination. Backtrace:",
+        "#0  0x7f6499f9cd17 in ???",
+        "#1  0x7f6499f9d825 in ???",
+        "#2  0x7f6499f9df79 in ???",
+        "#3  0x7f649a05d43a in ???",
+        "#4  0x7f649a05d67d in ???",
+        "#5  0x4103e1 in state_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978",
+        "#6  0x41253f in master.0.pleph",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533",
+        "#7  0x412454 in pleph_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448",
+        "#8  0x410045 in jreade_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33",
+        "#9  0x404b74 in ephtel_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348",
+        "#10  0x40a985 in initrng_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93",
+        "#11  0x421a21 in sublasr_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52",
+        "#12  0x402748 in np12",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439",
+        "#13  0x403f0f in main",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654"
+      ]
+    },
+    {
+      "run": "run1",
+      "session": "s25y11d042t0234#103",
+      "lines": [
+        "At line 978 of file testeph.F (unit = 2)",
+        "Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory",
+        "Error termination. Backtrace:",
+        "#0  0x7f36d7d2cd17 in ???",
+        "#1  0x7f36d7d2d825 in ???",
+        "#2  0x7f36d7d2df79 in ???",
+        "#3  0x7f36d7ded43a in ???",
+        "#4  0x7f36d7ded67d in ???",
+        "#5  0x4103e1 in state_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978",
+        "#6  0x41253f in master.0.pleph",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533",
+        "#7  0x412454 in pleph_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448",
+        "#8  0x410045 in jreade_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33",
+        "#9  0x404b74 in ephtel_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348",
+        "#10  0x40a985 in initrng_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93",
+        "#11  0x421a21 in sublasr_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52",
+        "#12  0x402748 in np12",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439",
+        "#13  0x403f0f in main",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654"
+      ]
+    },
+    {
+      "run": "run2",
+      "session": "s25y11d016t0231#103",
+      "lines": [
+        "At line 978 of file testeph.F (unit = 2)",
+        "Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory",
+        "Error termination. Backtrace:",
+        "#0  0x7f3c8e8cad17 in ???",
+        "#1  0x7f3c8e8cb825 in ???",
+        "#2  0x7f3c8e8cbf79 in ???",
+        "#3  0x7f3c8e98b43a in ???",
+        "#4  0x7f3c8e98b67d in ???",
+        "#5  0x4103e1 in state_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978",
+        "#6  0x41253f in master.0.pleph",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533",
+        "#7  0x412454 in pleph_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448",
+        "#8  0x410045 in jreade_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33",
+        "#9  0x404b74 in ephtel_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348",
+        "#10  0x40a985 in initrng_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93",
+        "#11  0x421a21 in sublasr_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52",
+        "#12  0x402748 in np12",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439",
+        "#13  0x403f0f in main",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654"
+      ]
+    },
+    {
+      "run": "run2",
+      "session": "s25y11d042t0234#103",
+      "lines": [
+        "At line 978 of file testeph.F (unit = 2)",
+        "Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory",
+        "Error termination. Backtrace:",
+        "#0  0x7f6b1beded17 in ???",
+        "#1  0x7f6b1bedf825 in ???",
+        "#2  0x7f6b1bedff79 in ???",
+        "#3  0x7f6b1bf9f43a in ???",
+        "#4  0x7f6b1bf9f67d in ???",
+        "#5  0x4103e1 in state_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978",
+        "#6  0x41253f in master.0.pleph",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533",
+        "#7  0x412454 in pleph_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448",
+        "#8  0x410045 in jreade_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33",
+        "#9  0x404b74 in ephtel_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348",
+        "#10  0x40a985 in initrng_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93",
+        "#11  0x421a21 in sublasr_",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52",
+        "#12  0x402748 in np12",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439",
+        "#13  0x403f0f in main",
+        "\tat /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654"
+      ]
+    }
+  ],
+  "reference_executed": true,
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

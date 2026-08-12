@@ -1,0 +1,125 @@
+STATUS OK
+LDB_SHA256 bfa04ad9d45fe49a2188840421b7aa05307652f2d0626bf64f9cb3c5f2fa55d0
+LDB_SHEBANG #! /bin/csh -f
+LDB_INTERPRETER /bin/csh -f
+LDB_COMMANDS 85
+LDB   58 | set DATA_DIR_LIB= (data/lib/)
+LDB   59 | set DATA_DIR_FR= (data/fr/)
+LDB   60 | set DATA_DIR= (data/analysis/)
+LDB   61 | set SLR_DATA_DIR= (data/analysis/)
+LDB   62 | @ SWFAIL = 0
+LDB   63 | @ CSTAT = 0
+LDB   64 | @ NCSTAT = 0
+LDB   65 | @ FCSTAT = 0
+LDB   67 | if ( $#argv == 0 ) then
+LDB   68 |   echo No file specified. Try again!
+LDB   69 |   exit 1
+LDB   70 | endif
+LDB   71 | echo == Started processing lunar data file $1. ==
+LDB   77 | if (-e $DATA_DIR$1".errorc") then
+LDB   78 |   rm -f  $DATA_DIR$1".errorc"
+LDB   79 | endif
+LDB   80 | if (-e $DATA_DIR$1".llc") then
+LDB   81 |   rm -f $DATA_DIR$1".llc"
+LDB   82 | endif
+LDB   83 | if (-e $DATA_DIR$1".lsc") then
+LDB   84 |   rm -f $DATA_DIR$1".lsc"
+LDB   85 | endif
+LDB   86 | if (-e $DATA_DIR$1".frd") then
+LDB   87 |   rm -f $DATA_DIR$1".frd"
+LDB   88 | endif
+LDB   89 | if (-e $DATA_DIR$1".npt") then
+LDB   90 |   rm -f $DATA_DIR$1".npt"
+LDB   91 | endif
+LDB  100 |   touch $DATA_DIR$1".llc"
+LDB  115 | echo Recalc is now executing...
+LDB  118 | bin/llr_npt_crd -r -p poldat_thruJ17 \
+LDB  119 |         -i $DATA_DIR$1".frcal" -o $DATA_DIR$1".frrec" \
+LDB  120 | 	-c  $DATA_DIR$1".rsc" -l $DATA_DIR$1".llc" -s $DATA_DIR$1".lsc" \
+LDB  121 | 	>>& $DATA_DIR$1".errorc"
+LDB  123 | if (!(-z $DATA_DIR$1".errorc")) then
+LDB  124 |     echo Recalc Failed.
+LDB  125 |       exit 1
+LDB  126 | endif
+LDB  132 | echo Poisson Filter is now executing...
+LDB  133 | bin/Poisson_crd -i $DATA_DIR$1".frrec" -o $DATA_DIR$1".frfil" \
+LDB  134 | 	-c data/lib/filter_crd.pc \
+LDB  135 | 	-l $DATA_DIR$1".llc" -s $DATA_DIR$1".lsc" >>& $DATA_DIR$1".errorc"
+LDB  136 | @ PSTAT= $status
+LDB  137 | if ($PSTAT >= 2) then
+LDB  138 |   echo Poisson Failed.
+LDB  139 |   mv $DATA_DIR$1".frrec" $DATA_DIR$1".frfil"
+LDB  140 |   @ SWFAIL= 1
+LDB  141 |   goto end
+LDB  142 | endif
+LDB  147 | echo Lun_auto is now executing...
+LDB  148 | bin/lun_auto_crd -i $DATA_DIR$1".frfil" -o $DATA_DIR$1".frfil2" \
+LDB  149 | 	-l $DATA_DIR$1".llc" -s $DATA_DIR$1".lsc" \
+LDB  150 | 	>>& $DATA_DIR$1".errorc"
+LDB  151 | @ PSTAT= $status
+LDB  152 | if ($PSTAT <> 0) then
+LDB  153 |   echo Lun_auto Failed.
+LDB  154 |   mv $DATA_DIR$1".frfil" $DATA_DIR$1".frfil2"
+LDB  155 | endif
+LDB  161 | echo Lun_sdqi is now executing...
+LDB  162 | bin/lun_sdqi_crd -i $DATA_DIR$1".frfil2" -o $DATA_DIR$1".frfil3" \
+LDB  163 | 	-l $DATA_DIR$1".llc" -s $DATA_DIR$1".lsc" \
+LDB  164 | 	>>& $DATA_DIR$1".errorc"
+LDB  165 | @ PSTAT= $status
+LDB  166 | if ($PSTAT <> 0) then
+LDB  167 |   echo Lun_sdqi Failed.
+LDB  168 |   mv $DATA_DIR$1".frfil2" $DATA_DIR$1".frfil3"
+LDB  169 | endif
+LDB  174 | echo NormalPoint is now executing...
+LDB  177 | bin/llr_npt_crd -n -p poldat_thruJ17 \
+LDB  178 |         -i $DATA_DIR$1".frfil3" -o $DATA_DIR$1".frfin" \
+LDB  179 | 	-m $DATA_DIR$1".npt" -c  $DATA_DIR$1".rsc" -l $DATA_DIR$1".llc" \
+LDB  180 | 	-s $DATA_DIR$1".lsc" >>& $DATA_DIR$1".errorc"
+LDB  181 | if (!(-z $DATA_DIR$1".errorc")) then
+LDB  182 |     echo NormalPoint Failed.
+LDB  183 |     @ SWFAIL= 1
+LDB  184 |     goto end
+LDB  185 | endif
+LDB  187 | bin/frd_strip $DATA_DIR$1".frfin" $DATA_DIR$1".frd"
+LDB  191 | end:
+LDB  193 | echo Cleaning up...
+LDB  194 | if (-e $DATA_DIR$1".templist") \
+LDB  195 |     rm -f $DATA_DIR$1".templist"
+LDB  199 | echo == Finished processing lunar data file $1! ==
+LDB  200 | unset DATA_DIR
+LDB  201 | exit 0
+LDB_INVOKED_PROGRAMS 5
+INVOKES Poisson_crd
+   133 | bin/Poisson_crd -i $DATA_DIR$1".frrec" -o $DATA_DIR$1".frfil" \
+INVOKES lun_auto_crd
+   148 | bin/lun_auto_crd -i $DATA_DIR$1".frfil" -o $DATA_DIR$1".frfil2" \
+INVOKES lun_sdqi_crd
+   162 | bin/lun_sdqi_crd -i $DATA_DIR$1".frfil2" -o $DATA_DIR$1".frfil3" \
+INVOKES frd_strip
+   187 | bin/frd_strip $DATA_DIR$1".frfin" $DATA_DIR$1".frd"
+INVOKES llr_npt_crd
+   116 | ##bin/llr_npt_crd -r \
+   118 | bin/llr_npt_crd -r -p poldat_thruJ17 \
+   175 | #bin/llr_npt_crd -n \
+   177 | bin/llr_npt_crd -n -p poldat_thruJ17 \
+NPT_SESSIONS 2
+NPT_SESSION s25y11d016t0231\#103
+NPT_SESSION s25y11d042t0234\#103
+NPT_DIFFS 4
+NPT_DIFF    6 | diff data/analysis/s25y11d016t0231\#103.npt data/analysis/ref/s25y11d016t0231\#103.npt
+NPT_DIFF    8 | diff data/analysis/s25y11d016t0231\#103.frd data/analysis/ref/s25y11d016t0231\#103.frd
+NPT_DIFF   10 | diff data/analysis/s25y11d042t0234\#103.npt data/analysis/ref/s25y11d042t0234\#103.npt
+NPT_DIFF   11 | diff data/analysis/s25y11d042t0234\#103.frd data/analysis/ref/s25y11d042t0234\#103.frd
+REQUIRED_PROGRAMS 5
+REQUIRED Poisson_crd
+  MISSING_LIB libgfortran.so.3 => not found
+REQUIRED frd_strip
+REQUIRED llr_npt_crd
+  MISSING_LIB libgfortran.so.3 => not found
+REQUIRED lun_auto_crd
+REQUIRED lun_sdqi_crd
+GATE REFERENCE_RUNTIME_COMPAT_REQUIRED
+REFERENCE_EXECUTED NO
+STANDARD_MODEL_RESIDUAL_BASELINE NO
+FULL_TAU_REFIT_EXECUTED NO
+JSON /home/emil/zeitdrift-ipta/phase9c-standard-residual/PHASE9C_MLRS_LDB_STATIC.json

@@ -1,0 +1,20 @@
+STATUS OK
+PROVENANCE /home/emil/zeitdrift-ipta/phase7-direct-time-model/provenance.sha256
+TEST_CLASS direct published spacecraft radio-metric time-model fit
+CLOCK_DRIFT_RULED_OUT PASS
+DRIFTING_CLOCK_RANGE_FAIL PASS
+QUADRATIC_TIME_AUGMENTATION_FOUND PASS
+QUADRATIC_RANGE_BAD PASS
+MODELS_REJECTED PASS
+FULL_EPHEMERIS_PRINCIPLE PASS
+ALTERNATIVE_RESIDUAL_TEST PASS
+
+PUBLISHED_DIRECT_TEST Drifting-clock and quadratic IAT-ET time models were fitted to spacecraft radiometric data.
+DOPPLER_RESULT some time models fit Doppler well/fairly well
+RANGE_RESULT drifting-clock model failed Galileo/Ulysses range; quadratic IAT-ET augmentation fit range very badly
+PUBLISHED_DECISION models rejected because of poor fits or inconsistent spacecraft solutions
+
+MODERN_METHOD_RULE only a consistently modified ephemeris plus observation refit can give a conclusive modern bound
+MODERN_FULL_TAU_REFIT_EXECUTED_HERE NO
+PHASE6_PROXY_REMAINS_PROXY YES
+INTERPRETATION A relative atomic-vs-ephemeris quadratic time acceleration has already been tested directly in historical spacecraft data and rejected. A new modern 2006-2026 numerical refit remains separate research work.

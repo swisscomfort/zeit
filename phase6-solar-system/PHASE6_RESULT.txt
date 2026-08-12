@@ -1,0 +1,28 @@
+STATUS OK
+PROVENANCE /home/emil/zeitdrift-ipta/phase6-solar-system/provenance.sha256
+CSV /home/emil/zeitdrift-ipta/phase6-solar-system/solar_system_proxy_constraints.csv
+MODEL_LIMIT KEPLER_FREQUENCY_PROXY_ONLY
+PROXY_RELATION apparent_(mudot/mu) ~= -2*a_t
+
+LLR_SOURCE Biskupek_Mueller_Torre_2020
+LLR_DATA_SPAN 1970-04_to_2020-04
+LLR_NORMAL_POINTS 27485
+LLR_GDOT_CENTER -5.000e-15/y
+LLR_GDOT_SIGMA 9.600e-15/y
+LLR_ABS95_ENVELOPE 2.382e-14/y
+LLR_PROXY_CLOCK_ACCEL_BOUND 3.773417497e-22/s
+LLR_PROXY_20Y_RATE_CHANGE 2.381600000e-13
+LLR_PROXY_20Y_ACCUMULATED_OFFSET 7.515758016e-05s
+PIONEER_OVER_LLR_PROXY_BOUND 7420.3
+
+INPOP_SOURCE Fienga_et_al_2021_INPOP20a
+INPOP_MUDOT_CONSERVATIVE_BOUND 2.280e-13/y
+INPOP_PROXY_CLOCK_ACCEL_BOUND 3.612442011e-21/s
+INPOP_PROXY_20Y_RATE_CHANGE 2.280000000e-12
+INPOP_PROXY_20Y_ACCUMULATED_OFFSET 7.195132800e-04s
+PIONEER_OVER_INPOP_PROXY_BOUND 775.1
+
+DIRECT_TIME_ACCELERATION_FIT NO
+INTERPRETATION Under a simple Kepler-frequency proxy, modern lunar/planetary dynamics
+would allow at most a sub-millisecond accumulated 20-year offset, with LLR giving
+the stronger proxy. This is not yet a full tau(t)-modified ephemeris refit.

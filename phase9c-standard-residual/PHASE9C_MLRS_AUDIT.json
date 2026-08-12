@@ -1,0 +1,1241 @@
+{
+  "status": "OK",
+  "acquisition": "ILRS_GSFC_LIVE",
+  "urls": [
+    "https://ilrs.gsfc.nasa.gov/technology/software/MLRS_Lunar_Code_v1.0.tgz",
+    "https://ilrs.cddis.eosdis.nasa.gov/technology/software/MLRS_Lunar_Code_v1.0.tgz"
+  ],
+  "archive_sha256": "0d7469b92f2b5e69577cd8d1a730dca34bb56a9f5faa0ff52b7a83d8726669a9",
+  "archive_bytes": 2537162,
+  "files": 294,
+  "text_files": 200,
+  "languages": {
+    ".sh": 3,
+    ".doc": 2,
+    ".op": 2,
+    ".txt": 1,
+    "<none>": 28,
+    ".h": 4,
+    ".inc": 93,
+    ".c": 13,
+    ".f": 76,
+    ".421": 2,
+    ".diff": 2,
+    ".swp": 2,
+    ".npt": 4,
+    ".frfil": 3,
+    ".lsc": 5,
+    ".frcal": 4,
+    ".frfil2": 3,
+    ".llc": 5,
+    ".frd": 4,
+    ".frfil3": 3,
+    ".npt_al": 1,
+    ".errorc": 4,
+    ".frrec": 3,
+    ".frfin": 3,
+    ".rsc": 3,
+    ".pca": 6,
+    ".out": 1,
+    ".pcag21": 1,
+    ".pc": 1,
+    ".lun_pred_log": 5,
+    ".log": 1,
+    ".utx": 6
+  },
+  "hits": {
+    "residual": [
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/Poisson_crd.f",
+        "hits": 68
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/nrept11.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin_crd.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc_crd.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm10.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin11.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/lun_auto/lun_auto_crd.c",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pparin11.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.h",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd_MLRS.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRS.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/lsq.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/lunio02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lsq.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lsq_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lunio02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/npaug10.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp13.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun12.f",
+        "hits": 1
+      }
+    ],
+    "range": [
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/Poisson_crd.f",
+        "hits": 15
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.h",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.inc",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd.c",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crdf.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd.c",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crdf.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/refrmm.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/dsublasr.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/nrept11.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp13.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sublasr03.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utils/frd_strip.c",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/eulcomnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/opio.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulcomnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/npaug10.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/opio.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/calc_pmmf.f",
+        "hits": 1
+      }
+    ],
+    "ephemeris": [
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 86
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 85
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 47
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 16
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/eulcomnp.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pmodrep02.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulcomnp.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/pmodrep02.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/jjreadnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/misclibnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/mjreadnp.F",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/sbetidnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jjreadnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/mjreadnp.F",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sbetidnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/CHRHDR.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/EPHHDR.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/PLECOM.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/STCOMM.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/usnortns.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/CHRHDR.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/EPHHDR.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/PLECOM.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/STCOMM.INC",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/CNTINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/makefile",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pparin11.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/CNTINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin11.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin_crd.f",
+        "hits": 1
+      }
+    ],
+    "libration": [
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/jjreadnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/mjreadnp.F",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jjreadnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/mjreadnp.F",
+        "hits": 1
+      }
+    ],
+    "reflector": [
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 20
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 19
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 19
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pmodrep02.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/pmodrep02.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/modrep02.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pparin11.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin11.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin_crd.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/eulcomnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/lunio02.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulcomnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lunio02.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/Poisson_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/datio01.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/datio01.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lunio01.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/dsublasr.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sublasr03.f",
+        "hits": 1
+      }
+    ],
+    "station": [
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/mlrsgc01.f",
+        "hits": 14
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/Poisson_crd.f",
+        "hits": 10
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 10
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/makefile",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd_MLRSf.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.inc",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/makefile",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/lun_auto/makefile",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/makefile",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRSf.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/eulcomnp.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.h",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/Makefile",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulcomnp.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRS.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utils/frd_strip.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utils/makefile",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/bulla/BullA.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/sbetidnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.inc",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.h",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm10.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sbetidnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/lun_auto/lun_auto_crd.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd_MLRS.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crdf.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crdf.f",
+        "hits": 1
+      }
+    ],
+    "normal_point": [
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 20
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 20
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp13.f",
+        "hits": 14
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin11.f",
+        "hits": 13
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/parin_crd.f",
+        "hits": 12
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/misclibnp.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp_crd.f",
+        "hits": 9
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp_crd.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pparin11.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/Poisson_crd.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm10.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun12.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/wrlun12.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/wrlun_crd.f",
+        "hits": 6
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/kustner01.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/kustner01.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm_crd.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pmodrep02.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/pmodrep02.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/lun_auto/lun_auto_crd.c",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lunio01.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crdf.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd.c",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crdf.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/npt_test.sh",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.h",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.inc",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.h",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/npaug10.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/nrept11.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/CHRHDR.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/EPHHDR.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/MODINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/PLECOM.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/RFLINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/STCOMM.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/datio01.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/jjreadnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/lunio02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.inc",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/CHRHDR.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/EPHHDR.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/MODINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/Makefile",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/NPHLD.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/PLECOM.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/RFLINF.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/STCOMM.INC",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/datio01.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jjreadnp.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lunio02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/lun_auto/lun_sdqi_crd.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRS.c",
+        "hits": 1
+      }
+    ],
+    "fit": [
+      {
+        "file": "MLRS_Lunar_Code/src/Poisson/lsq.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lsq.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/lsq_crd.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/kustner01.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/misclibnp.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/kustner01.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm10.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/maknorm_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sncalc_crd.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/dgetprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/getprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pmodrep02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/rgetprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/pmodrep02.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 1
+      }
+    ],
+    "earth_orientation": [
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 65
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 49
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 49
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.f",
+        "hits": 10
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/pmodrep02.f",
+        "hits": 10
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/pmodrep02.f",
+        "hits": 10
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/modrep02.f",
+        "hits": 5
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/kustner01.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/kustner01.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp_crd.f",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/misclibnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/misclibnp.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/bulla/BullA.c",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/dgetprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/dsublasr.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/getprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/rgetprdtim.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/usnortns.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/sublasr03.f",
+        "hits": 1
+      }
+    ],
+    "relativity": [
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/djeulpkg.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/eulpkgnp.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/jeulpkg.f",
+        "hits": 8
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/genpred.doc",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/genpred/usnortns.f",
+        "hits": 1
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/refrmm.f",
+        "hits": 1
+      }
+    ],
+    "atmosphere": [
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.inc",
+        "hits": 14
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/refrmm.f",
+        "hits": 14
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd.h",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun_crd.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd.c",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crdf.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd.c",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crdf.f",
+        "hits": 7
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.inc",
+        "hits": 4
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np12.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/np_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp_crd.f",
+        "hits": 3
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/include/crd_MLRS.h",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/putnp13.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd_MLRS.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/read_crd_MLRSf.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRS.c",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/utilib/write_crd_MLRSf.f",
+        "hits": 2
+      },
+      {
+        "file": "MLRS_Lunar_Code/src/llr_npt/rdlun12.f",
+        "hits": 1
+      }
+    ]
+  },
+  "range_ephemeris_candidate": true,
+  "direct_residual_markers": true,
+  "fit_markers": true,
+  "built": false,
+  "external_2006_llr_ingested": true,
+  "standard_model_residual_baseline": false,
+  "tau_model_modified": false
+}

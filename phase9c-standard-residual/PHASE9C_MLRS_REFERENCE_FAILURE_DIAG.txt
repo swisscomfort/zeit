@@ -1,0 +1,430 @@
+STATUS OK
+===== RUN1 =====
+STDOUT_NONEMPTY YES
+STDOUT | == Started processing lunar data file s25y11d016t0231#103. ==
+STDOUT | Recalc is now executing...
+STDOUT | Recalc Failed.
+STDOUT | comparing normal point files:
+STDOUT | comparing full rate files:
+STDOUT | == Started processing lunar data file s25y11d042t0234#103. ==
+STDOUT | Recalc is now executing...
+STDOUT | Recalc Failed.
+STDERR_NONEMPTY YES
+STDERR | diff: data/analysis/s25y11d016t0231#103.npt: No such file or directory
+STDERR | diff: data/analysis/s25y11d016t0231#103.frd: No such file or directory
+STDERR | diff: data/analysis/s25y11d042t0234#103.npt: No such file or directory
+STDERR | diff: data/analysis/s25y11d042t0234#103.frd: No such file or directory
+SESSION s25y11d016t0231#103
+FIRST_FAILURE_STAGE NORMALPOINT_LLR_NPT_N_FAILED
+FILE frcal EXISTS=YES BYTES=282315 SHA256=dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a
+FILE frrec EXISTS=YES BYTES=584 SHA256=f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7
+FILE frfil EXISTS=YES BYTES=318087 SHA256=37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764
+FILE frfil2 EXISTS=YES BYTES=318087 SHA256=37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764
+FILE frfil3 EXISTS=YES BYTES=318120 SHA256=842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9
+FILE frfin EXISTS=YES BYTES=178052 SHA256=f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a
+FILE frd EXISTS=NO
+FILE npt EXISTS=NO
+FILE rsc EXISTS=YES BYTES=33 SHA256=30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d
+FILE llc EXISTS=YES BYTES=1738 SHA256=7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b
+FILE lsc EXISTS=YES BYTES=16 SHA256=13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64
+FILE errorc EXISTS=YES BYTES=1011 SHA256=642d7bca9699b00bfde33f92af631f1f7a8aa0376f3a5ef6c29ecc596262a119
+FILE templist EXISTS=NO
+ERRORC_BEGIN
+ERRORC | At line 978 of file testeph.F (unit = 2)
+ERRORC | Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory
+ERRORC | 
+ERRORC | Error termination. Backtrace:
+ERRORC | #0  0x7f6499f9cd17 in ???
+ERRORC | #1  0x7f6499f9d825 in ???
+ERRORC | #2  0x7f6499f9df79 in ???
+ERRORC | #3  0x7f649a05d43a in ???
+ERRORC | #4  0x7f649a05d67d in ???
+ERRORC | #5  0x4103e1 in state_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978
+ERRORC | #6  0x41253f in master.0.pleph
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533
+ERRORC | #7  0x412454 in pleph_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448
+ERRORC | #8  0x410045 in jreade_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33
+ERRORC | #9  0x404b74 in ephtel_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348
+ERRORC | #10  0x40a985 in initrng_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93
+ERRORC | #11  0x421a21 in sublasr_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52
+ERRORC | #12  0x402748 in np12
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439
+ERRORC | #13  0x403f0f in main
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654
+ERRORC_END
+SESSION s25y11d042t0234#103
+FIRST_FAILURE_STAGE NORMALPOINT_LLR_NPT_N_FAILED
+FILE frcal EXISTS=YES BYTES=99197 SHA256=4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9
+FILE frrec EXISTS=YES BYTES=1739 SHA256=110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439
+FILE frfil EXISTS=YES BYTES=105436 SHA256=ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61
+FILE frfil2 EXISTS=YES BYTES=105436 SHA256=ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61
+FILE frfil3 EXISTS=YES BYTES=105469 SHA256=341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4
+FILE frfin EXISTS=YES BYTES=81510 SHA256=21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752
+FILE frd EXISTS=NO
+FILE npt EXISTS=NO
+FILE rsc EXISTS=YES BYTES=33 SHA256=c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54
+FILE llc EXISTS=YES BYTES=1738 SHA256=b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c
+FILE lsc EXISTS=YES BYTES=16 SHA256=13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64
+FILE errorc EXISTS=YES BYTES=1011 SHA256=68c21f45a593667bd4bbc392f28ccfd1f0645117ff2e44e8880d48c5edb37ffe
+FILE templist EXISTS=NO
+ERRORC_BEGIN
+ERRORC | At line 978 of file testeph.F (unit = 2)
+ERRORC | Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory
+ERRORC | 
+ERRORC | Error termination. Backtrace:
+ERRORC | #0  0x7f36d7d2cd17 in ???
+ERRORC | #1  0x7f36d7d2d825 in ???
+ERRORC | #2  0x7f36d7d2df79 in ???
+ERRORC | #3  0x7f36d7ded43a in ???
+ERRORC | #4  0x7f36d7ded67d in ???
+ERRORC | #5  0x4103e1 in state_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978
+ERRORC | #6  0x41253f in master.0.pleph
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533
+ERRORC | #7  0x412454 in pleph_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448
+ERRORC | #8  0x410045 in jreade_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33
+ERRORC | #9  0x404b74 in ephtel_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348
+ERRORC | #10  0x40a985 in initrng_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93
+ERRORC | #11  0x421a21 in sublasr_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52
+ERRORC | #12  0x402748 in np12
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439
+ERRORC | #13  0x403f0f in main
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654
+ERRORC_END
+===== RUN2 =====
+STDOUT_NONEMPTY YES
+STDOUT | == Started processing lunar data file s25y11d016t0231#103. ==
+STDOUT | Recalc is now executing...
+STDOUT | Recalc Failed.
+STDOUT | comparing normal point files:
+STDOUT | comparing full rate files:
+STDOUT | == Started processing lunar data file s25y11d042t0234#103. ==
+STDOUT | Recalc is now executing...
+STDOUT | Recalc Failed.
+STDERR_NONEMPTY YES
+STDERR | diff: data/analysis/s25y11d016t0231#103.npt: No such file or directory
+STDERR | diff: data/analysis/s25y11d016t0231#103.frd: No such file or directory
+STDERR | diff: data/analysis/s25y11d042t0234#103.npt: No such file or directory
+STDERR | diff: data/analysis/s25y11d042t0234#103.frd: No such file or directory
+SESSION s25y11d016t0231#103
+FIRST_FAILURE_STAGE NORMALPOINT_LLR_NPT_N_FAILED
+FILE frcal EXISTS=YES BYTES=282315 SHA256=dcfadbe72472da2f05a4a23be54f7edac63348c2133e8f75dd9d1bda0d60523a
+FILE frrec EXISTS=YES BYTES=584 SHA256=f5b9de07b8645f42efffafc1ba37f6fd53bb042dd43a99477e4a25edeaf2b7f7
+FILE frfil EXISTS=YES BYTES=318087 SHA256=37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764
+FILE frfil2 EXISTS=YES BYTES=318087 SHA256=37508a9aa06db3cae3a770bc2fd6fbebad03dd7fcb0b53ad32cb5d55f8d2d764
+FILE frfil3 EXISTS=YES BYTES=318120 SHA256=842678c3569cd7b78aabaf98335fd48397671dfa1cfce9baada225a99199dea9
+FILE frfin EXISTS=YES BYTES=178052 SHA256=f5c7e5f0eb87a2eb108df459c553193b96dfbae311003ca881ddb64f6d8f6f8a
+FILE frd EXISTS=NO
+FILE npt EXISTS=NO
+FILE rsc EXISTS=YES BYTES=33 SHA256=30f12b9507428ada9451511082e9f7b084e375f158f2e23d1e968882d592586d
+FILE llc EXISTS=YES BYTES=1738 SHA256=7e1a3bfa95dc393499f8a678dfc9473a9012792a647e7a2328e5207e3524034b
+FILE lsc EXISTS=YES BYTES=16 SHA256=13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64
+FILE errorc EXISTS=YES BYTES=1011 SHA256=107af7712c31245a7fde2482e1f929744b1b0a3447a312923e9dfff6395052ff
+FILE templist EXISTS=NO
+ERRORC_BEGIN
+ERRORC | At line 978 of file testeph.F (unit = 2)
+ERRORC | Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory
+ERRORC | 
+ERRORC | Error termination. Backtrace:
+ERRORC | #0  0x7f3c8e8cad17 in ???
+ERRORC | #1  0x7f3c8e8cb825 in ???
+ERRORC | #2  0x7f3c8e8cbf79 in ???
+ERRORC | #3  0x7f3c8e98b43a in ???
+ERRORC | #4  0x7f3c8e98b67d in ???
+ERRORC | #5  0x4103e1 in state_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978
+ERRORC | #6  0x41253f in master.0.pleph
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533
+ERRORC | #7  0x412454 in pleph_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448
+ERRORC | #8  0x410045 in jreade_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33
+ERRORC | #9  0x404b74 in ephtel_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348
+ERRORC | #10  0x40a985 in initrng_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93
+ERRORC | #11  0x421a21 in sublasr_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52
+ERRORC | #12  0x402748 in np12
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439
+ERRORC | #13  0x403f0f in main
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654
+ERRORC_END
+SESSION s25y11d042t0234#103
+FIRST_FAILURE_STAGE NORMALPOINT_LLR_NPT_N_FAILED
+FILE frcal EXISTS=YES BYTES=99197 SHA256=4f07c023634b1f7f70f511dcdc3692bb59fafab3764489f3de0719871934d6a9
+FILE frrec EXISTS=YES BYTES=1739 SHA256=110f945e1956315018f0d991951e91131e80b33074bd83a3fdfb9fb60de8c439
+FILE frfil EXISTS=YES BYTES=105436 SHA256=ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61
+FILE frfil2 EXISTS=YES BYTES=105436 SHA256=ef975587f6183c04a075d7849396931210d42c7a00eb1d7d25fb48e062a78d61
+FILE frfil3 EXISTS=YES BYTES=105469 SHA256=341caf84c9426f4415cd266a7a875865ed440ff3ea657cf4f54cc36601c3c6b4
+FILE frfin EXISTS=YES BYTES=81510 SHA256=21fbfd333d520bfa49e0165c333f77d7ed7099fd8baa3d782844afedae277752
+FILE frd EXISTS=NO
+FILE npt EXISTS=NO
+FILE rsc EXISTS=YES BYTES=33 SHA256=c7e9505d5a559fffa6fecc88e905d34274272d56d81442f588a66c44c3e74e54
+FILE llc EXISTS=YES BYTES=1738 SHA256=b4218702802364d727841eb8df08c972ac44296f8d789147eaa3ab14b3c84a3c
+FILE lsc EXISTS=YES BYTES=16 SHA256=13d1dc9cfc35a6ace605a890b5cb7a6433cce03e180a07875d5d2fd501b40b64
+FILE errorc EXISTS=YES BYTES=1011 SHA256=6b6b5e7f382804dc6cfc68f7e69621c10d631e5ea53852eb5f3bf8a5b51da996
+FILE templist EXISTS=NO
+ERRORC_BEGIN
+ERRORC | At line 978 of file testeph.F (unit = 2)
+ERRORC | Fortran runtime error: Cannot open file 'data/pred/jpleph': No such file or directory
+ERRORC | 
+ERRORC | Error termination. Backtrace:
+ERRORC | #0  0x7f6b1beded17 in ???
+ERRORC | #1  0x7f6b1bedf825 in ???
+ERRORC | #2  0x7f6b1bedff79 in ???
+ERRORC | #3  0x7f6b1bf9f43a in ???
+ERRORC | #4  0x7f6b1bf9f67d in ???
+ERRORC | #5  0x4103e1 in state_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:978
+ERRORC | #6  0x41253f in master.0.pleph
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:533
+ERRORC | #7  0x412454 in pleph_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/testeph.F:448
+ERRORC | #8  0x410045 in jreade_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jjreadnp.f:33
+ERRORC | #9  0x404b74 in ephtel_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:348
+ERRORC | #10  0x40a985 in initrng_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/jeulpkg.f:93
+ERRORC | #11  0x421a21 in sublasr_
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/sublasr03.f:52
+ERRORC | #12  0x402748 in np12
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:439
+ERRORC | #13  0x403f0f in main
+ERRORC | 	at /home/rlr/MLRS_Lunar_Code/src/llr_npt/np_crd.f:654
+ERRORC_END
+===== LDB_HEAD_1_117 =====
+LDB    1 | #! /bin/csh -f
+LDB    2 | #
+LDB    3 | # ldb_crd
+LDB    4 | #
+LDB    5 | # *****************************************************************************
+LDB    6 | #
+LDB    7 | # Copyright (c) 2017, The University of Texas at Austin
+LDB    8 | # All rights reserved.
+LDB    9 | #
+LDB   10 | # Redistribution and use in source and binary forms, with or without 
+LDB   11 | # modification, are permitted provided that the following conditions are met:
+LDB   12 | # 
+LDB   13 | # 1. Redistributions of source code must retain the above copyright notice, 
+LDB   14 | # this list of conditions and the following disclaimer.
+LDB   15 | # 
+LDB   16 | # 2. Redistributions in binary form must reproduce the above copyright notice, 
+LDB   17 | # this list of conditions and the following disclaimer in the documentation 
+LDB   18 | # and/or other materials provided with the distribution.
+LDB   19 | #
+LDB   20 | # 3. Neither the name of the copyright holder nor the names of its contributors 
+LDB   21 | # may be used to endorse or promote products derived from this software without 
+LDB   22 | # specific prior written permission.
+LDB   23 | #
+LDB   24 | # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+LDB   25 | # AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+LDB   26 | # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+LDB   27 | # ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+LDB   28 | # LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+LDB   29 | # CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+LDB   30 | # SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+LDB   31 | # INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+LDB   32 | # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+LDB   33 | # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+LDB   34 | # THE POSSIBILITY OF SUCH DAMAGE.
+LDB   35 | #
+LDB   36 | # *****************************************************************************
+LDB   37 | # 
+LDB   38 | # batch process to convert ranging data file to lunar format,
+LDB   39 | # filter it, and normalpoint it.
+LDB   40 | # input is the .lf full rate lunar data file.
+LDB   41 | # output are the .frd (lunar full rate) and .npt (lunar normalpoint) files.
+LDB   42 | #
+LDB   43 | # R. L. Ricklefs / Univerity of Texas / CSR
+LDB   44 | #
+LDB   45 | # History
+LDB   46 | #   01/02/97 - recalculate residuals before filtering. rlr.
+LDB   47 | #   07xx07 - CRD version. Includes flag on arg list to specify whether to
+LDB   48 | #            perform data plots. rlr.
+LDB   49 | #   120707 - Handle LRO through crd_cal rather than convert_itdf_crd. rlr
+LDB   50 | #   011717 - Adapt for open dource distribution. rlr.
+LDB   51 | #
+LDB   52 | # THIS SCRIPT HAS BEEN MODIFIED TO USE poldat_thruJ17 INSTEAD OF THE
+LDB   53 | # USUAL SHORT poldat FILE FOR FILTERING AND NORMAL POINTING OLD DATA!
+LDB   54 | #
+LDB   55 | #############################################################################
+LDB   56 | #####				Set Up					#####
+LDB   57 | #############################################################################
+LDB   58 | set DATA_DIR_LIB= (data/lib/)
+LDB   59 | set DATA_DIR_FR= (data/fr/)
+LDB   60 | set DATA_DIR= (data/analysis/)
+LDB   61 | set SLR_DATA_DIR= (data/analysis/)
+LDB   62 | @ SWFAIL = 0
+LDB   63 | @ CSTAT = 0
+LDB   64 | @ NCSTAT = 0
+LDB   65 | @ FCSTAT = 0
+LDB   66 | 
+LDB   67 | if ( $#argv == 0 ) then
+LDB   68 |   echo No file specified. Try again!
+LDB   69 |   exit 1
+LDB   70 | endif
+LDB   71 | echo == Started processing lunar data file $1. ==
+LDB   72 | 
+LDB   73 | #############################################################################
+LDB   74 | #####			Remove old files				#####
+LDB   75 | #############################################################################
+LDB   76 | 
+LDB   77 | if (-e $DATA_DIR$1".errorc") then
+LDB   78 |   rm -f  $DATA_DIR$1".errorc"
+LDB   79 | endif
+LDB   80 | if (-e $DATA_DIR$1".llc") then
+LDB   81 |   rm -f $DATA_DIR$1".llc"
+LDB   82 | endif
+LDB   83 | if (-e $DATA_DIR$1".lsc") then
+LDB   84 |   rm -f $DATA_DIR$1".lsc"
+LDB   85 | endif
+LDB   86 | if (-e $DATA_DIR$1".frd") then
+LDB   87 |   rm -f $DATA_DIR$1".frd"
+LDB   88 | endif
+LDB   89 | if (-e $DATA_DIR$1".npt") then
+LDB   90 |   rm -f $DATA_DIR$1".npt"
+LDB   91 | endif
+LDB   92 | 
+LDB   93 | #############################################################################
+LDB   94 | #####                            Copy in needed files                   #####
+LDB   95 | #############################################################################
+LDB   96 | #  make sure listing file exists!
+LDB   97 | #if (-e $DATA_DIR_FR$1".dlc") then
+LDB   98 | #  cp $DATA_DIR_FR$1".dlc" $DATA_DIR$1".llc" > /dev/null
+LDB   99 | #else
+LDB  100 |   touch $DATA_DIR$1".llc"
+LDB  101 | #endif
+LDB  102 | #mv $DATA_DIR_FR$1".lfc" $DATA_DIR$1".lxc"
+LDB  103 | #mv $DATA_DIR_FR$1".ds" $DATA_DIR$1".lsc"
+LDB  104 | #mv $DATA_DIR_FR$1".dl" $DATA_DIR$1".llc"
+LDB  105 | 
+LDB  106 | #############################################################################
+LDB  107 | #####				Calibration				#####
+LDB  108 | #############################################################################
+LDB  109 | # MLRS-specific calibration code removed
+LDB  110 | 
+LDB  111 | #############################################################################
+LDB  112 | #####				Recalculate Residuals			#####
+LDB  113 | #############################################################################
+LDB  114 | 
+LDB  115 | echo Recalc is now executing...
+LDB  116 | ##bin/llr_npt_crd -r \
+LDB  117 | ## Changed to reprocess old data!
+TTY_STATIC_HITS 125
+TTY_HIT bin/genpred:499 |   E    HEHBS!     HH   HHDHsHËS!     IЋS!     HA/B A   wlb HމHR!     HHǅ/B ǅ   ǅ$  ǅ   HHjHHtHZ  HEH ERROR IH0HN "POLINHXH": READ HH@TITLf@
+TTY_HIT bin/genpred:503 |    HHHHC  HEH ERROR IH0HN "POLINHXH": READ HHHCS VALUEHpf@ S.HEH"H        H8H        HXH        HHH        HpH        Hx @(    f@,  Hǅ`'B ǅN
+TTY_HIT bin/llr_npt_crd:432 | c Hމ.H("     HHǅɱB ǅ   ǅ$  ǅ   HH&-HHtH.  HEH ERROR IH0HN "POLINHXH": READ HH@TITLf@
+TTY_HIT bin/llr_npt_crd:436 |    HH-HH,  HEH ERROR IH0HN "POLINHXH": READ HHHCS VALUEHpf@ S.HEH"H        H8H        HXH        HHH        HpH        Hx @(    f@,  HǅxB ǅv
+TTY_HIT bin/llr_npt_crd:903 | HRH@HE I! Z! Q! H npaug: H<! Htoo manyH<! H normalpH<! Hoints inH<! H this ruH<! Hn.  NumbH<! Her read H<! Hand max H}<! {<! are:
+TTY_HIT src/lun_auto/lun_auto_crd.c:132 | /*  Read lunar data file, saving time and residual of returns */
+TTY_HIT src/lun_auto/lun_auto_crd.c:136 |       /*   Read every record in file */
+TTY_HIT src/lun_auto/lun_auto_crd.c:368 |       /*   Read every record in file */
+TTY_HIT src/lun_auto/lun_sdqi_crd.c:83 | /*  Read and reformat lunar data file, one shot at a time  */
+TTY_HIT src/lun_auto/lun_sdqi_crd.c:87 |       /* Read every record in burst */
+TTY_HIT src/lun_auto/lun_sdqi_crd.c:163 |       /*   Read every record in file */
+TTY_HIT src/genpred/LIOCMN.INC:5 | cc  to or read from file types 6 & 7.)
+TTY_HIT src/genpred/eulcomnp.f:196 | c This is now read in by EPHINIT from file CUTABLE.
+TTY_HIT src/genpred/kustner01.f:116 | c  read the file (again?)
+TTY_HIT src/genpred/lunio02.f:7 | C     INPUT: MODE    1 = READ FROM DESIGNATED FILE
+TTY_HIT src/genpred/lunio02.f:22 | C     OUTPUT:IRECD   AN ARRAY TO BE READ FROM FILE
+TTY_HIT src/genpred/misclibnp.f:59 | C     READ RECORD OF LENGTH "LEN" INTO BUFF.  USE "LEN" TO
+TTY_HIT src/genpred/misclibnp.f:97 | C     TO READ RECORD OF LENGTH "LEN" INTO BUFF.  USE "LEN" TO
+TTY_HIT src/genpred/genpred.f:1 | C        PROGRAM EULER(INPUT,OUTPUT,TTY,UTPOLE,POLDAT,MITEPHB,
+TTY_HIT src/genpred/genpred.f:2 | C     X TAPE5=INPUT,TAPE6=OUTPUT,TAPE10=TTY)
+TTY_HIT src/genpred/genpred.f:333 | c:read polar motion & ut1-utc polynomial coefficients
+TTY_HIT src/genpred/genpred.f:568 | C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT
+TTY_HIT src/genpred/pparin11.f:27 | C  READ CONTROL PARAMETERS,
+TTY_HIT src/genpred/pparin11.f:44 | C	07-20-87 - READ PROPER REFLECTOR COORDINATE SET FROM FILE LREFL1.PC
+TTY_HIT src/genpred/pparin11.f:105 | C:READ CONTROL, MODEL, & REFLECTOR FILES
+TTY_HIT src/genpred/pparin11.f:111 | c  read into /modinf/ starting at "nammod"
+TTY_HIT src/genpred/pparin11.f:115 | c  read into /rflinf/ starting at "rfset"
+TTY_HIT src/genpred/djeulpkg.f:144 | c  Oct 89 - tlr:  read time from file "CUTABLE"
+TTY_HIT src/genpred/djeulpkg.f:168 | c Read in the TIME array from file CUTABLE.
+TTY_HIT src/genpred/djeulpkg.f:256 | C 24 Sep 90, 0947:add option to read JPL ephemeris.
+TTY_HIT src/genpred/djeulpkg.f:304 | C:ELSE CALL READ ERROR ROUTINE; STOP
+TTY_HIT src/genpred/djeulpkg.f:351 | c  Read from JPL or MIT ephemeris.
+TTY_HIT src/genpred/djeulpkg.f:1144 | C 25 Sep 90, 0836: add option to read JPL ephemeris.
+TTY_HIT src/genpred/djeulpkg.f:1193 | C:ELSE CALL READ ERROR ROUTINE; STOP
+TTY_HIT src/genpred/djeulpkg.f:1266 | c  Read from JPL or MIT ephemeris.
+TTY_HIT src/genpred/djeulpkg.f:1294 | c  Read from JPL or MIT ephemeris.
+TTY_HIT src/genpred/djeulpkg.f:2819 | C  READ INITIAL OR FINAL JULIAN DATES FROM KEYBOARD
+TTY_HIT src/genpred/djeulpkg.f:2872 | C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM
+TTY_HIT src/genpred/djeulpkg.f:2890 | 	MSG=' ERROR IN "POLIN": READ TITLE.'
+TTY_HIT src/genpred/djeulpkg.f:2893 | 	MSG=' ERROR IN "POLIN": READ CS VALUES.'
+TTY_HIT src/genpred/opio.f:83 | C  IF THE FILENAME READ IN ALREADY CARRIES AN EXTENSION, IT IS USED IN
+TTY_HIT src/genpred/jjreadnp.f:6 | c  and the JPL supplied routines PLEPH etc that read the JPL ephemeris.
+TTY_HIT src/Poisson/Poisson_crd.f:81 | C v1.9a 06/20/97 - Drop record at read rather than write, so that stats
+TTY_HIT src/Poisson/Poisson_crd.f:294 | C read time / residual data from file.
+TTY_HIT src/Poisson/Poisson_crd.f:418 | C Read control parameters for Poisson filtering run.
+TTY_HIT src/Poisson/Poisson_crd.f:448 | C open file, read parameters, and close
+TTY_HIT src/Poisson/Poisson_crd.f:1621 | C   IF THE FILENAME READ IN ALREADY CARRIES AN EXTENSION, IT IS USED IN
+TTY_HIT src/utilib/read_crdf.f:2 | C * Subroutines: read CRD data record from an input string
+TTY_HIT src/utilib/read_crdf.f:131 | C  Read the correct number of parameters
+TTY_HIT src/utilib/read_crd.c:6 |  * Subroutines: read CRD data records from an input string.
+TTY_HIT src/llr_npt/LIOCMN.INC:5 | cc  to or read from file types 6 & 7.)
+TTY_HIT src/llr_npt/parin11.f:39 | C  READ CONTROL PARAMETERS,
+TTY_HIT src/llr_npt/parin11.f:55 | C	07-20-87 - READ PROPER REFLECTOR COORDINATE SET FROM FILE LREFL1.PC
+TTY_HIT src/llr_npt/parin11.f:117 | C:READ CONTROL, MODEL, & REFLECTOR FILES
+TTY_HIT src/llr_npt/lunio01.f:27 | cc 23 Apr 90 - tlr:  For file types 6 & 7, only read from or
+TTY_HIT src/llr_npt/lunio01.f:37 | C     INPUT: MODE    1 = READ FROM DESIGNATED FILE
+TTY_HIT src/llr_npt/lunio01.f:52 | C     OUTPUT:IRECD   AN ARRAY TO BE READ FROM FILE
+TTY_HIT src/llr_npt/putnp_crd.f:144 | C	  sdqi is read from input fr file
+TTY_HIT src/llr_npt/sncalc.f:6 | c  To do this, we accept the o-c residuals read from the data.  A
+TTY_HIT src/llr_npt/eulcomnp.f:196 | c This is now read in by EPHINIT from file CUTABLE.
+TTY_HIT src/llr_npt/np_crd.f:23 | C     1) ADD FAKE AZOFF/ALTOFF UNTIL IT CAN BE READ INTO
+TTY_HIT src/llr_npt/np_crd.f:283 | c:read control, model, & reflector files
+TTY_HIT src/llr_npt/np_crd.f:295 | c:initialize ephemeris read package
+TTY_HIT src/llr_npt/np_crd.f:323 | c:read next observation (unless there is already one in /d10/)
+TTY_HIT src/llr_npt/np_crd.f:344 | 		      dontread= .true.			! we just read a detail
+TTY_HIT src/llr_npt/np_crd.f:351 | c  did we read a header set? if it's not the first one, form a norm pt
+TTY_HIT src/llr_npt/np_crd.f:426 | C:WRITE TTY RECORD INFO
+TTY_HIT src/llr_npt/np_crd.f:468 | C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT
+TTY_HIT src/llr_npt/kustner01.f:116 | c  read the file (again?)
+TTY_HIT src/llr_npt/jeulpkg.f:139 | c  Oct 89 - tlr:  read time from file "CUTABLE"
+TTY_HIT src/llr_npt/jeulpkg.f:163 | c Read in the TIME array from file CUTABLE.
+TTY_HIT src/llr_npt/jeulpkg.f:251 | C 24 Sep 90, 0947:add option to read JPL ephemeris.
+TTY_HIT src/llr_npt/jeulpkg.f:299 | C:ELSE CALL READ ERROR ROUTINE; STOP
+TTY_HIT src/llr_npt/jeulpkg.f:344 | c  Read from JPL or MIT ephemeris.
+TTY_HIT src/llr_npt/jeulpkg.f:1111 | C 25 Sep 90, 0836: add option to read JPL ephemeris.
+TTY_HIT src/llr_npt/jeulpkg.f:1160 | C:ELSE CALL READ ERROR ROUTINE; STOP
+TTY_HIT src/llr_npt/jeulpkg.f:1220 | c  Read from JPL or MIT ephemeris.
+TTY_HIT src/llr_npt/jeulpkg.f:2603 | C  READ INITIAL OR FINAL JULIAN DATES FROM KEYBOARD
+TTY_HIT src/llr_npt/jeulpkg.f:2656 | C  READ POLAR MOTION & UT1-UTC POLYNOMIAL COEFFICIENTS FROM
+TTY_HIT src/llr_npt/jeulpkg.f:2674 | 	MSG=' ERROR IN "POLIN": READ TITLE.'
+TTY_HIT src/llr_npt/jeulpkg.f:2677 | 	MSG=' ERROR IN "POLIN": READ CS VALUES.'
+TTY_HIT src/llr_npt/rdlun12.f:88 | C  NOT A RUN HEADER RECORD, SO READ ANOTHER
+TTY_HIT src/llr_npt/rdlun12.f:95 | C  READ A BURST HEADER. CHECK FOR OUT OF SEQUENCE!
+TTY_HIT src/llr_npt/np12.f:54 | C     1) ADD FAKE AZOFF/ALTOFF UNTIL IT CAN BE READ INTO
+TTY_HIT src/llr_npt/np12.f:304 | c:read control, model, & reflector files
+TTY_HIT src/llr_npt/np12.f:318 | c:initialize ephemeris read package
+TTY_HIT src/llr_npt/np12.f:344 | c:read next observation (unless there is already one in ip buffer)
+TTY_HIT src/llr_npt/np12.f:364 | 		      dontread= .true.			! we just read a detail
+TTY_HIT src/llr_npt/np12.f:369 | 	      go to 100					! read the next recd
+TTY_HIT src/llr_npt/np12.f:373 | c  did we read a header set? if it's not the first one, form a norm pt
+TTY_HIT src/llr_npt/np12.f:379 | 	      go to 100					! read the next recd
+TTY_HIT src/llr_npt/np12.f:398 | c  did we read a header set? if it's not the first one, form a norm pt
+TTY_HIT src/llr_npt/np12.f:457 | C:WRITE TTY RECORD INFO
+TTY_HIT src/llr_npt/np12.f:493 | C:PRINT REFLECTOR NUMBER, AZ, ALT, & RANGE ONTO TTY & LPT
+TTY_HIT src/llr_npt/putnp13.f:88 | C  (MUST READ W/F14.0 AND SCALE BY 1.D-13)
+TTY_HIT src/llr_npt/putnp13.f:119 | C  POINT TO NPSKEL.  READ W/F10.0 AND SCALE BY 1.D-7.
+TTY_HIT src/llr_npt/putnp13.f:168 | C  (MUST READ W/F14.0 AND MULTIPLY BY 1.D-13)
+TTY_HIT src/llr_npt/putnp13.f:211 | C  POINT TO NPSKEL.  READ W/F10.0 AND SCALE BY 1.D-7.
+TTY_HIT src/llr_npt/testrda.f:47 | 	type *, ' Error on read record ',irecerr
+TTY_HIT src/llr_npt/lunio02.f:6 | C     INPUT: MODE    1 = READ FROM DESIGNATED FILE
+FAILURE_STAGE_REPEATABLE YES
+STANDARD_MODEL_RESIDUAL_BASELINE NO
+FULL_TAU_REFIT_EXECUTED NO
+JSON /home/emil/zeitdrift-ipta/phase9c-standard-residual/PHASE9C_MLRS_REFERENCE_FAILURE_DIAG.json
